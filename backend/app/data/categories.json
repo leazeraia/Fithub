@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "label": "Cyclisme"
+    },
+    {
+        "id": 2,
+        "label": "Exercice intérieur"
+    },
+    {
+        "id": 3,
+        "label": "Danse"
+    },
+    {
+        "id": 4,
+        "label": "Pêche et chasse"
+    },
+    {
+        "id": 5,
+        "label": "Activité domestique"
+    },
+    {
+        "id": 6,
+        "label": "Réparation domestique"
+    },
+    {
+        "id": 7,
+        "label": "Pelouse et jardin"
+    },
+    {
+        "id": 8,
+        "label": "Profession"
+    },
+    {
+        "id": 9,
+        "label": "Course"
+    },
+    {
+        "id": 10,
+        "label": "Sport"
+    },
+    {
+        "id": 11,
+        "label": "Marche"
+    },
+    {
+        "id": 12,
+        "label": "Activité nautique et aquatique"
+    },
+    {
+        "id": 13,
+        "label": "Activité hivernale"
+    }
+]
