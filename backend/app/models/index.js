@@ -149,7 +149,6 @@ CategoryActivity.hasMany(Activity, {
     foreignKey: "category_activity_id"
 });
 
-// TODO missing achievement
 /*
 // comment_product_user
 
