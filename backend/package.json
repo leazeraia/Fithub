@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "DEBUG": "DEBUG=error, node-dev index.js",
+    "DEBUG": "DEBUG=controller:*, DEBUG=utils:*, node-dev index.js",
     "seeding": "node ./app/data/seeding.js"
   },
   "dependencies": {

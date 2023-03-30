@@ -1,7 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const userRouter = require("./user/userRoute");
+const userRoute = require("./routes/users/userRoute");
 
-router.use("/user", userRouter);
+const challengeRoute = require("./routes/others/challengeRoute");
+
+// user
+
+router.use("/user", userRoute);
+
+// challenge
+
+router.use("/challenge", challengeRoute);
 
 module.exports = router;
