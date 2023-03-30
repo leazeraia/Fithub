@@ -1,0 +1,4046 @@
+[
+ {
+   "code": 1003,
+   "met": 14.0,
+   "category_activity_id": 1,
+   "label": "cyclisme, en montagne, en montée, effort vigoureux"
+ },
+ {
+   "code": 1004,
+   "met": 16.0,
+   "category_activity_id": 1,
+   "label": "cyclisme, en montagne, en compétition, en course"
+ },
+ {
+   "code": 1008,
+   "met": 8.5,
+   "category_activity_id": 1,
+   "label": "cyclisme, BMX"
+ },
+ {
+   "code": 1009,
+   "met": 8.5,
+   "category_activity_id": 1,
+   "label": "cyclisme, en montagne, général"
+ },
+ {
+   "code": 1010,
+   "met": 4.0,
+   "category_activity_id": 1,
+   "label": "cyclisme, <16 km/h, loisirs, pour aller au travail ou pour le plaisir (code Taylor 115)"
+ },
+ {
+   "code": 1011,
+   "met": 6.8,
+   "category_activity_id": 1,
+   "label": "cyclisme, pour aller/revenir du travail, à son rythme"
+ },
+ {
+   "code": 1013,
+   "met": 5.8,
+   "category_activity_id": 1,
+   "label": "cyclisme, sur terre ou route de campagne, rythme modéré"
+ },
+ {
+   "code": 1015,
+   "met": 7.5,
+   "category_activity_id": 1,
+   "label": "cyclisme, général"
+ },
+ {
+   "code": 1018,
+   "met": 3.5,
+   "category_activity_id": 1,
+   "label": "cyclisme, loisir, 9 km/h"
+ },
+ {
+   "code": 1019,
+   "met": 5.8,
+   "category_activity_id": 1,
+   "label": "cyclisme, loisir, 15 km/h"
+ },
+ {
+   "code": 1020,
+   "met": 6.8,
+   "category_activity_id": 1,
+   "label": "cyclisme, 16-19,2 km/h, loisirs, rythme lent, effort léger"
+ },
+ {
+   "code": 1030,
+   "met": 8.0,
+   "category_activity_id": 1,
+   "label": "cyclisme, 19,3-22,4 km/h, loisirs, effort modéré"
+ },
+ {
+   "code": 1040,
+   "met": 10.0,
+   "category_activity_id": 1,
+   "label": "cyclisme, 22,5-25,6 km/h, course ou loisirs, rythme rapide, effort vigoureux"
+ },
+ {
+   "code": 1050,
+   "met": 12.0,
+   "category_activity_id": 1,
+   "label": "cyclisme, 25,7-30,6 km/h, course/sans aspiration ou > 30,6 km/h avec aspiration, rythme très rapide, course générale"
+ },
+ {
+   "code": 1060,
+   "met": 15.8,
+   "category_activity_id": 1,
+   "label": "cyclisme, > 32 km/h, course, sans aspiration"
+ },
+ {
+   "code": 1065,
+   "met": 8.5,
+   "category_activity_id": 1,
+   "label": "cyclisme, 19,3 km/h, assis, mains sur les cocottes de frein ou en bas du guidon, 80 tr/min"
+ },
+ {
+   "code": 1066,
+   "met": 9.0,
+   "category_activity_id": 1,
+   "label": "cyclisme, 19,3 km/h, en danseuse, mains sur les cocottes de frein, 60 tr/min"
+ },
+ {
+   "code": 1070,
+   "met": 5.0,
+   "category_activity_id": 1,
+   "label": "monocyclisme"
+ },
+ {
+   "code": 2001,
+   "met": 2.3,
+   "category_activity_id": 2,
+   "label": "jeu vidéo réclamant une activité (par ex. Wii Fit), effort léger (par ex. position d’équilibre, yoga)"
+ },
+ {
+   "code": 2003,
+   "met": 3.8,
+   "category_activity_id": 2,
+   "label": "jeu vidéo réclamant une activité (par ex. Wii Fit), effort modéré (par ex. aérobic, résistance)"
+ },
+ {
+   "code": 2005,
+   "met": 7.2,
+   "category_activity_id": 2,
+   "label": "jeu vidéo/d’arcade réclamant une activité (par ex. Exergaming, Dance Dance Revolution), effort vigoureux"
+ },
+ {
+   "code": 2008,
+   "met": 5.0,
+   "category_activity_id": 2,
+   "label": "parcours d’obstacle de type militaire, programme de formation de camp d’entraînement"
+ },
+ {
+   "code": 2010,
+   "met": 7.0,
+   "category_activity_id": 2,
+   "label": "cyclisme, vélo d'appartement, général"
+ },
+ {
+   "code": 2011,
+   "met": 3.5,
+   "category_activity_id": 2,
+   "label": "cyclisme, vélo d'appartement, 30-50 watts, effort très léger à léger"
+ },
+ {
+   "code": 2012,
+   "met": 6.8,
+   "category_activity_id": 2,
+   "label": "cyclisme, vélo d'appartement, 90-100 watts, effort modéré à vigoureux"
+ },
+ {
+   "code": 2013,
+   "met": 8.8,
+   "category_activity_id": 2,
+   "label": "cyclisme, vélo d'appartement, 101-160 watts, effort vigoureux"
+ },
+ {
+   "code": 2014,
+   "met": 11.0,
+   "category_activity_id": 2,
+   "label": "cyclisme, vélo d'appartement, 161-200 watts, effort vigoureux"
+ },
+ {
+   "code": 2015,
+   "met": 14.0,
+   "category_activity_id": 2,
+   "label": "cyclisme, vélo d'appartement, 201-270 watts, effort très vigoureux"
+ },
+ {
+   "code": 2017,
+   "met": 4.8,
+   "category_activity_id": 2,
+   "label": "cyclisme, vélo d'appartement, 51-89 watts, effort léger à modéré"
+ },
+ {
+   "code": 2019,
+   "met": 8.5,
+   "category_activity_id": 2,
+   "label": "cyclisme, vélo d’appartement, cardiovélo"
+ },
+ {
+   "code": 2020,
+   "met": 8.0,
+   "category_activity_id": 2,
+   "label": "gymnastique suédoise (par ex. pompes, abdominaux, tractions, sauts en écart), effort vigoureux"
+ },
+ {
+   "code": 2022,
+   "met": 3.8,
+   "category_activity_id": 2,
+   "label": "gymnastique suédoise (par ex. pompes, redressements assis, fentes), effort modéré"
+ },
+ {
+   "code": 2024,
+   "met": 2.8,
+   "category_activity_id": 2,
+   "label": "gymnastique suédoise (par ex. redressements assis, abdominaux), effort léger"
+ },
+ {
+   "code": 2030,
+   "met": 3.5,
+   "category_activity_id": 2,
+   "label": "gymnastique suédoise, effort léger à modéré, général (par ex. exercices pour le dos), monter et descendre les escaliers (code Taylor 150)"
+ },
+ {
+   "code": 2035,
+   "met": 4.3,
+   "category_activity_id": 2,
+   "label": "entraînement en circuit, effort modéré"
+ },
+  {
+   "code": 2040,
+   "met": 8.0,
+   "category_activity_id": 2,
+   "label": "entraînement en circuit, avec des haltères, comprenant des mouvements d'aérobic avec un temps de repos minimal, général, effort vigoureux"
+ },
+ {
+   "code": 2045,
+   "met": 3.5,
+   "category_activity_id": 2,
+   "label": "TM\nexercices Curveschez les femmes"
+ },
+ {
+   "code": 2048,
+   "met": 5.0,
+   "category_activity_id": 2,
+   "label": "machine elliptique, effort modéré"
+ },
+ {
+   "code": 2050,
+   "met": 6.0,
+   "category_activity_id": 2,
+   "label": "entraînement en résistance (haltérophilie, poids libre, nautilus ou universel), force athlétique ou body-building, effort vigoureux (code Taylor 210)"
+ },
+ {
+   "code": 2052,
+   "met": 5.0,
+   "category_activity_id": 2,
+   "label": "entraînement en résistance (à une masse), squats, effort lent ou explosif"
+ },
+ {
+   "code": 2054,
+   "met": 3.5,
+   "category_activity_id": 2,
+   "label": "entraînement en résistance (à une masse), exercices multiples, 8-15 répétitions à des résistances variées"
+ },
+ {
+   "code": 2060,
+   "met": 5.5,
+   "category_activity_id": 2,
+   "label": "exercice de club de remise en forme, général (code Taylor 160)"
+ },
+ {
+   "code": 2061,
+   "met": 5.0,
+   "category_activity_id": 2,
+   "label": "exercice de club de remise en forme, général, gym/musculation en une même séance"
+ },
+ {
+   "code": 2062,
+   "met": 7.8,
+   "category_activity_id": 2,
+   "label": "exercice de club de remise en forme, cours de conditionnement"
+ },
+ {
+   "code": 2064,
+   "met": 3.8,
+   "category_activity_id": 2,
+   "label": "exercice à la maison, général"
+ },
+ {
+   "code": 2065,
+   "met": 9.0,
+   "category_activity_id": 2,
+   "label": "tapis de course, général"
+ },
+ {
+   "code": 2068,
+   "met": 12.3,
+   "category_activity_id": 2,
+   "label": "corde à sauter, général"
+ },
+ {
+   "code": 2070,
+   "met": 6.0,
+   "category_activity_id": 2,
+   "label": "rame, rameur d'appartement, général, effort vigoureux"
+ },
+ {
+   "code": 2071,
+   "met": 4.8,
+   "category_activity_id": 2,
+   "label": "rame, rameur d’appartement, général, effort modéré"
+ },
+ {
+   "code": 2072,
+   "met": 7.0,
+   "category_activity_id": 2,
+   "label": "rame, rameur d’appartement, 100 watts, effort modéré"
+ },
+ {
+   "code": 2073,
+   "met": 8.5,
+   "category_activity_id": 2,
+   "label": "rame, rameur d'appartement, 150 watts, effort vigoureux"
+ },
+ {
+   "code": 2074,
+   "met": 12.0,
+   "category_activity_id": 2,
+   "label": "rame, rameur d'appartement, 200 watts, effort très vigoureux"
+ },
+ {
+   "code": 2080,
+   "met": 6.8,
+   "category_activity_id": 2,
+   "label": "machine d'entraînement au ski, général"
+ },
+ {
+   "code": 2085,
+   "met": 11.0,
+   "category_activity_id": 2,
+   "label": "tapis pour glissements latéraux, général"
+ },
+ {
+   "code": 2090,
+   "met": 6.0,
+   "category_activity_id": 2,
+   "label": "slimnastics, jazzercise"
+ },
+ {
+   "code": 2101,
+   "met": 2.3,
+   "category_activity_id": 2,
+   "label": "stretching doux"
+ },
+ {
+   "code": 2105,
+   "met": 3.0,
+   "category_activity_id": 2,
+   "label": "Pilates, général"
+ },
+ {
+   "code": 2110,
+   "met": 6.8,
+   "category_activity_id": 2,
+   "label": "cours d’exercices (par ex. aérobic, aquagym)"
+ },
+ {
+   "code": 2112,
+   "met": 2.8,
+   "category_activity_id": 2,
+   "label": "ballon d’exercice thérapeutique, exercice au Fitball"
+ },
+ {
+   "code": 2115,
+   "met": 2.8,
+   "category_activity_id": 2,
+   "label": "exercices du haut du corps, ergomètre à bras"
+ },
+ {
+   "code": 2117,
+   "met": 4.3,
+   "category_activity_id": 2,
+   "label": "exercices du haut du corps, vélo d’appartement – Airdyne (bras uniquement) 40 tr/min, effort modéré"
+ },
+ {
+   "code": 2140,
+   "met": 2.3,
+   "category_activity_id": 2,
+   "label": "exercices de gymnastique en vidéo, programmes TV de remise en forme (par ex. yoga, stretching), effort léger"
+ },
+ {
+   "code": 2143,
+   "met": 4.0,
+   "category_activity_id": 2,
+   "label": "exercices de gymnastique en vidéo, programmes TV de remise en forme (par ex. entraînement cardio-pulmonaire), effort modéré"
+ },
+ {
+   "code": 2146,
+   "met": 6.0,
+   "category_activity_id": 2,
+   "label": "exercices de gymnastique en vidéo, programmes TV de remise en forme (par ex. entraînement cardio-pulmonaire), effort vigoureux"
+ },
+ {
+   "code": 2150,
+   "met": 2.5,
+   "category_activity_id": 2,
+   "label": "yoga, Hatha"
+ },
+ {
+   "code": 2160,
+   "met": 4.0,
+   "category_activity_id": 2,
+   "label": "yoga, Power"
+ },
+ {
+   "code": 2170,
+   "met": 2.0,
+   "category_activity_id": 2,
+   "label": "yoga, Nadisodhana"
+ },
+ {
+   "code": 2180,
+   "met": 3.3,
+   "category_activity_id": 2,
+   "label": "yoga, Surya Namaskar"
+ },
+ {
+   "code": 2200,
+   "met": 5.3,
+   "category_activity_id": 2,
+   "label": "activités physiques néozélandaises (par ex. Haka Powhiri, Moteatea, Waita Tira, Whakawatea, etc.), général, effort modéré"
+ },
+  {
+   "code": 2205,
+   "met": 6.8,
+   "category_activity_id": 2,
+   "label": "activités physiques néozélandaises (par ex. Haka, Taiahab), général, effort vigoureux"
+ },
+ {
+   "code": 3010,
+   "met": 5.0,
+   "category_activity_id": 3,
+   "label": "ballet, moderne ou jazz, général, répétition ou cours"
+ },
+ {
+   "code": 3012,
+   "met": 6.8,
+   "category_activity_id": 3,
+   "label": "ballet, moderne ou jazz, représentation, effort vigoureux"
+ },
+ {
+   "code": 3014,
+   "met": 4.8,
+   "category_activity_id": 3,
+   "label": "claquettes"
+ },
+ {
+   "code": 3015,
+   "met": 7.3,
+   "category_activity_id": 3,
+   "label": "aérobic, général"
+ },
+ {
+   "code": 3016,
+   "met": 7.5,
+   "category_activity_id": 3,
+   "label": "aérobic, step, avec un step de 15-20 cm"
+ },
+ {
+   "code": 3017,
+   "met": 9.5,
+   "category_activity_id": 3,
+   "label": "aérobic, step, avec un step de 25-30 cm"
+ },
+ {
+   "code": 3018,
+   "met": 5.5,
+   "category_activity_id": 3,
+   "label": "aérobic, step, avec un step de 10 cm"
+ },
+ {
+   "code": 3019,
+   "met": 8.5,
+   "category_activity_id": 3,
+   "label": "cours de step sur banc, général"
+ },
+ {
+   "code": 3020,
+   "met": 5.0,
+   "category_activity_id": 3,
+   "label": "aérobic, faible impact"
+ },
+ {
+   "code": 3021,
+   "met": 7.3,
+   "category_activity_id": 3,
+   "label": "aérobic, fort impact"
+ },
+ {
+   "code": 3022,
+   "met": 10.0,
+   "category_activity_id": 3,
+   "label": "aérobic danse avec des lests de 4,5-7 kg"
+ },
+ {
+   "code": 3025,
+   "met": 4.5,
+   "category_activity_id": 3,
+   "label": "danse ethnique ou culturelle (par ex. grecque, moyen-orientale, hula, salsa, merengue, bamba y plena, flamenco, danse du ventre et swing)"
+ },
+ {
+   "code": 3030,
+   "met": 5.5,
+   "category_activity_id": 3,
+   "label": "danse de salon, rapide (code Taylor 125)"
+ },
+ {
+   "code": 3031,
+   "met": 7.8,
+   "category_activity_id": 3,
+   "label": "danse générale (par ex. disco, folk, gigue irlandaise à claquettes, danse de groupe, polka, contra, country)"
+ },
+ {
+   "code": 3038,
+   "met": 11.3,
+   "category_activity_id": 3,
+   "label": "danse de salon, en compétition, général"
+ },
+ {
+   "code": 3040,
+   "met": 3.0,
+   "category_activity_id": 3,
+   "label": "ème\ndanse de salon, lente (par ex. valse, fox-trot, slow, samba, tango, danse du XIXsiècle, mambo, cha-cha)"
+ },
+ {
+   "code": 3050,
+   "met": 5.5,
+   "category_activity_id": 3,
+   "label": "danse à clochettes Anishinaabe"
+ },
+ {
+   "code": 3060,
+   "met": 3.5,
+   "category_activity_id": 3,
+   "label": "danse caribéenne (Abakua, Beguine, Bellair, Bongo, Brukin's, quadrille caribéen, Dinki Mini, Gere, Gumbay, Ibo, Jonkonnu, Kumina, Oreisha,\nJambu)"
+ },
+ {
+   "code": 4001,
+   "met": 3.5,
+   "category_activity_id": 4,
+   "label": "pêche, général"
+ },
+ {
+   "code": 4005,
+   "met": 4.5,
+   "category_activity_id": 4,
+   "label": "pêche, pêche au crabe"
+ },
+ {
+   "code": 4007,
+   "met": 4.0,
+   "category_activity_id": 4,
+   "label": "pêche, capture du poisson à la main"
+ },
+ {
+   "code": 4010,
+   "met": 4.3,
+   "category_activity_id": 4,
+   "label": "activités liées à la pêche, recherche de vers, avec une pelle"
+ },
+ {
+   "code": 4020,
+   "met": 4.0,
+   "category_activity_id": 4,
+   "label": "pêcher depuis la rive et marcher"
+ },
+ {
+   "code": 4030,
+   "met": 2.0,
+   "category_activity_id": 4,
+   "label": "pêcher depuis un bateau ou canoë, position assise"
+ },
+ {
+   "code": 4040,
+   "met": 3.5,
+   "category_activity_id": 4,
+   "label": "pêche depuis la rive, position debout (code Taylor 660)"
+ },
+ {
+   "code": 4050,
+   "met": 6.0,
+   "category_activity_id": 4,
+   "label": "pêcher dans le courant, avec des cuissardes (code Taylor 670)"
+ },
+ {
+   "code": 4060,
+   "met": 2.0,
+   "category_activity_id": 4,
+   "label": "pêche, glace, position assise"
+ },
+ {
+   "code": 4061,
+   "met": 1.8,
+   "category_activity_id": 4,
+   "label": "pêcher, à la turlutte ou à la ligne, en position debout, général"
+ },
+ {
+   "code": 4062,
+   "met": 3.5,
+   "category_activity_id": 4,
+   "label": "pêcher, épuisette, placer le filet et récupérer le poisson, général"
+ },
+ {
+   "code": 4063,
+   "met": 3.8,
+   "category_activity_id": 4,
+   "label": "pêcher, filet fixe, poser le filet et récupérer le poisson, général"
+ },
+ {
+   "code": 4064,
+   "met": 3.0,
+   "category_activity_id": 4,
+   "label": "pêcher, moulinet, placer le filet et récupérer le poisson, général"
+ },
+ {
+   "code": 4065,
+   "met": 2.3,
+   "category_activity_id": 4,
+   "label": "pêcher au harpon, debout"
+ },
+ {
+   "code": 4070,
+   "met": 2.5,
+   "category_activity_id": 4,
+   "label": "chasse, arc et flèches ou arbalète"
+ },
+ {
+   "code": 4080,
+   "met": 6.0,
+   "category_activity_id": 4,
+   "label": "chasse, cerf, élan, gros gibier (code Taylor 170)"
+ },
+ {
+   "code": 4081,
+   "met": 11.3,
+   "category_activity_id": 4,
+   "label": "chasse au gros gibier, en traînant la carcasse"
+ },
+ {
+   "code": 4083,
+   "met": 4.0,
+   "category_activity_id": 4,
+   "label": "chasse aux gros animaux marins"
+ },
+ {
+   "code": 4085,
+   "met": 2.5,
+   "category_activity_id": 4,
+   "label": "chasse au gros gibier, depuis une cache, peu de marche"
+ },
+ {
+   "code": 4086,
+   "met": 2.0,
+   "category_activity_id": 4,
+   "label": "chasse au gros gibier à partir d'une voiture, un avion ou un bateau"
+ },
+ {
+   "code": 4090,
+   "met": 2.5,
+   "category_activity_id": 4,
+   "label": "chasse, canard, échassier"
+ },
+ {
+   "code": 4095,
+   "met": 3.0,
+   "category_activity_id": 4,
+   "label": "chasse, roussette, écureuil"
+ },
+ {
+   "code": 4100,
+   "met": 5.0,
+   "category_activity_id": 4,
+   "label": "chasse, général"
+ },
+ {
+   "code": 4110,
+   "met": 6.0,
+   "category_activity_id": 4,
+   "label": "chasse, faisans ou tétras (code Taylor 680)"
+ },
+ {
+   "code": 4115,
+   "met": 3.3,
+   "category_activity_id": 4,
+   "label": "chasse, oiseaux"
+ },
+ {
+   "code": 4120,
+   "met": 5.0,
+   "category_activity_id": 4,
+   "label": "chasse, lapin, écureuil, tétra des prairies, raton laveur, petit gibier (code Taylor 690)"
+ },
+ {
+   "code": 4123,
+   "met": 3.3,
+   "category_activity_id": 4,
+   "label": "chasse, cochons sauvages"
+ },
+ {
+   "code": 4124,
+   "met": 2.0,
+   "category_activity_id": 4,
+   "label": "piégeage, général"
+ },
+ {
+   "code": 4125,
+   "met": 9.5,
+   "category_activity_id": 4,
+   "label": "chasse, randonnée avec équipement de chasse"
+ },
+ {
+   "code": 4130,
+   "met": 2.5,
+   "category_activity_id": 4,
+   "label": "tir au pistolet ou ball-trap, position debout"
+ },
+ {
+   "code": 4140,
+   "met": 2.3,
+   "category_activity_id": 4,
+   "label": "exercices de tir, position couchée"
+ },
+ {
+   "code": 4145,
+   "met": 2.5,
+   "category_activity_id": 4,
+   "label": "exercices de tir, agenouillé ou en position debout"
+ },
+ {
+   "code": 5010,
+   "met": 3.3,
+   "category_activity_id": 5,
+   "label": "nettoyage, balayer la moquette ou les sols, général"
+ },
+ {
+   "code": 5011,
+   "met": 2.3,
+   "category_activity_id": 5,
+   "label": "nettoyage, balayer, lentement, effort léger"
+ },
+ {
+   "code": 5012,
+   "met": 3.8,
+   "category_activity_id": 5,
+   "label": "nettoyage, balayer, lentement, effort modéré"
+ },
+ {
+   "code": 5020,
+   "met": 3.5,
+   "category_activity_id": 5,
+   "label": "nettoyage, important ou majeur (par ex. nettoyage de la voiture, des fenêtres, du garage), effort modéré"
+ },
+ {
+   "code": 5021,
+   "met": 3.5,
+   "category_activity_id": 5,
+   "label": "nettoyage, lavage, debout, effort modéré"
+ },
+ {
+   "code": 5022,
+   "met": 3.2,
+   "category_activity_id": 5,
+   "label": "nettoyage des fenêtres, lavage des fenêtres, général"
+ },
+ {
+   "code": 5023,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "lavage, debout, effort léger"
+ },
+ {
+   "code": 5024,
+   "met": 4.5,
+   "category_activity_id": 5,
+   "label": "cirage des sols, debout, marche lente, avec une cireuse électrique"
+ },
+ {
+   "code": 5025,
+   "met": 2.8,
+   "category_activity_id": 5,
+   "label": "multiples tâches ménagères en même temps, effort léger"
+ },
+ {
+   "code": 5026,
+   "met": 3.5,
+   "category_activity_id": 5,
+   "label": "multiples tâches ménagères en même temps, effort modéré"
+ },
+ {
+   "code": 5027,
+   "met": 4.3,
+   "category_activity_id": 5,
+   "label": "multiples tâches ménagères en même temps, effort vigoureux"
+ },
+ {
+   "code": 5030,
+   "met": 3.3,
+   "category_activity_id": 5,
+   "label": "nettoyage, maison ou cabane, général, effort modéré"
+ },
+ {
+   "code": 5032,
+   "met": 2.3,
+   "category_activity_id": 5,
+   "label": "époussetage ou cirage des meubles, général"
+ },
+ {
+   "code": 5035,
+   "met": 3.3,
+   "category_activity_id": 5,
+   "label": "activités de cuisine, en général (par ex. cuisiner, laver la vaisselle, nettoyer), effort modéré"
+ },
+ {
+   "code": 5040,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "nettoyage, général (ranger, changer les draps, sortir les poubelles), effort léger"
+ },
+ {
+   "code": 5041,
+   "met": 1.8,
+   "category_activity_id": 5,
+   "label": "faire la vaisselle, debout ou en général (non classé en composants debout/marche)"
+ },
+ {
+   "code": 5042,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "faire la vaisselle, débarrasser les plats de la table, marcher, effort léger"
+ },
+ {
+   "code": 5043,
+   "met": 3.3,
+   "category_activity_id": 5,
+   "label": "passer l'aspirateur, général, effort modéré"
+ },
+ {
+   "code": 5044,
+   "met": 3.0,
+   "category_activity_id": 5,
+   "label": "dépecer des animaux, petits"
+ },
+ {
+   "code": 5045,
+   "met": 6.0,
+   "category_activity_id": 5,
+   "label": "dépecer des animaux, grands, effort vigoureux"
+ },
+ {
+   "code": 5046,
+   "met": 2.3,
+   "category_activity_id": 5,
+   "label": "découper et fumer du poisson, sécher du poisson ou de la viande"
+ },
+  {
+   "code": 5048,
+   "met": 4.0,
+   "category_activity_id": 5,
+   "label": "tanner des peaux, général"
+ },
+ {
+   "code": 5049,
+   "met": 3.5,
+   "category_activity_id": 5,
+   "label": "cuisiner ou préparer des repas, effort modéré"
+ },
+ {
+   "code": 5050,
+   "met": 2.0,
+   "category_activity_id": 5,
+   "label": "cuisiner ou préparer des repas – position debout ou assise ou en général (non classé en composants debout/marche), appareils manuels, effort\nléger"
+ },
+ {
+   "code": 5051,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "servir les aliments, mettre la table, impliquant de marcher ou de se tenir debout"
+ },
+ {
+   "code": 5052,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "cuisiner ou préparer des repas, marcher"
+ },
+ {
+   "code": 5053,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "nourrir des animaux domestiques"
+ },
+ {
+   "code": 5055,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "ranger des provisions (par ex. porter des provisions, faire des courses sans chariot), porter des paquets"
+ },
+ {
+   "code": 5056,
+   "met": 7.5,
+   "category_activity_id": 5,
+   "label": "porter des provisions en montant des escaliers"
+ },
+ {
+   "code": 5057,
+   "met": 3.0,
+   "category_activity_id": 5,
+   "label": "cuisiner du pain indien dans un four d'extérieur"
+ },
+ {
+   "code": 5060,
+   "met": 2.3,
+   "category_activity_id": 5,
+   "label": "faire des courses alimentaires avec ou sans chariot, debout ou en marchant"
+ },
+ {
+   "code": 5065,
+   "met": 2.3,
+   "category_activity_id": 5,
+   "label": "faire des courses non-alimentaires avec ou sans chariot, debout ou en marchant"
+ },
+ {
+   "code": 5070,
+   "met": 1.8,
+   "category_activity_id": 5,
+   "label": "repasser"
+ },
+ {
+   "code": 5080,
+   "met": 1.3,
+   "category_activity_id": 5,
+   "label": "tricoter, coudre, effort léger, emballer des cadeaux, en position assise"
+ },
+ {
+   "code": 5082,
+   "met": 2.8,
+   "category_activity_id": 5,
+   "label": "coudre à la machine"
+ },
+ {
+   "code": 5090,
+   "met": 2.0,
+   "category_activity_id": 5,
+   "label": "faire la lessive, plier ou étendre des vêtements, mettre des vêtements au lave-linge ou au sèche-linge, faire une valise, laver des vêtements à la\nmain, impliquant d'être debout, effort léger"
+ },
+ {
+   "code": 5092,
+   "met": 4.0,
+   "category_activity_id": 5,
+   "label": "faire la lessive, pendre du linge, laver des vêtements à la main, effort modéré"
+ },
+ {
+   "code": 5095,
+   "met": 2.3,
+   "category_activity_id": 5,
+   "label": "faire la lessive, ranger des vêtements, rassembler des vêtements pour les ranger, ranger du linge propre, impliquant de marcher"
+ },
+ {
+   "code": 5100,
+   "met": 3.3,
+   "category_activity_id": 5,
+   "label": "faire le lit, changer les draps"
+ },
+ {
+   "code": 5110,
+   "met": 5.0,
+   "category_activity_id": 5,
+   "label": "récolter et fabriquer du sirop d'érable (porter des seaux, du bois)"
+ },
+ {
+   "code": 5120,
+   "met": 5.8,
+   "category_activity_id": 5,
+   "label": "déplacer des meubles, des objets, porter des cartons"
+ },
+ {
+   "code": 5121,
+   "met": 5.0,
+   "category_activity_id": 5,
+   "label": "déplacer, soulever des charges légères"
+ },
+ {
+   "code": 5125,
+   "met": 4.8,
+   "category_activity_id": 5,
+   "label": "ranger une pièce"
+ },
+ {
+   "code": 5130,
+   "met": 3.5,
+   "category_activity_id": 5,
+   "label": "nettoyer à la brosse des sols, à genoux, nettoyer à la brosse une salle de bain, une baignoire, effort modéré"
+ },
+ {
+   "code": 5131,
+   "met": 2.0,
+   "category_activity_id": 5,
+   "label": "nettoyer à la brosse des sols, à genoux, nettoyer à la brosse une salle de bain, une baignoire, effort léger"
+ },
+ {
+   "code": 5132,
+   "met": 6.5,
+   "category_activity_id": 5,
+   "label": "nettoyer à la brosse des sols, à genoux, nettoyer à la brosse une salle de bain, une baignoire, effort vigoureux"
+ },
+ {
+   "code": 5140,
+   "met": 4.0,
+   "category_activity_id": 5,
+   "label": "balayer le garage, le trottoir ou l'extérieur de la maison"
+ },
+ {
+   "code": 5146,
+   "met": 3.5,
+   "category_activity_id": 5,
+   "label": "être debout, emballer/déballer des cartons, soulever occasionnellement des objets légers, charger ou décharger des articles dans la voiture, effort\nmodéré"
+ },
+ {
+   "code": 5147,
+   "met": 3.0,
+   "category_activity_id": 5,
+   "label": "impliquant de marcher, ranger des objets, effort modéré"
+ },
+ {
+   "code": 5148,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "arroser les plantes"
+ },
+ {
+   "code": 5149,
+   "met": 2.5,
+   "category_activity_id": 5,
+   "label": "faire un feu"
+ },
+ {
+   "code": 5150,
+   "met": 9.0,
+   "category_activity_id": 5,
+   "label": "porter des objets dans des escaliers, porter des cartons ou des meubles"
+ },
+ {
+   "code": 5171,
+   "met": 2.8,
+   "category_activity_id": 5,
+   "label": "être debout, jouer avec un/des enfant(s), effort léger, périodes actives uniquement"
+ },
+  {
+   "code": 5175,
+   "met": 3.5,
+   "category_activity_id": 5,
+   "label": "marcher/courir, jouer avec un/des enfant(s), effort modéré, périodes actives uniquement"
+ },
+ {
+   "code": 5180,
+   "met": 5.8,
+   "category_activity_id": 5,
+   "label": "marcher/courir, jouer avec un/des enfant(s), effort vigoureux, périodes actives uniquement"
+ },
+ {
+   "code": 5181,
+   "met": 3.0,
+   "category_activity_id": 5,
+   "label": "marcher et porter un petit enfant de 7 kg ou plus"
+ },
+ {
+   "code": 5182,
+   "met": 2.3,
+   "category_activity_id": 5,
+   "label": "marcher et porter un petit enfant de moins de 7 kg"
+ },
+ {
+   "code": 5183,
+   "met": 2.0,
+   "category_activity_id": 5,
+   "label": "être debout, porter un enfant"
+ },
+ {
+   "code": 5186,
+   "met": 3.0,
+   "category_activity_id": 5,
+   "label": "s’occuper d’enfants, debout (par ex. habiller, baigner, préparer, nourrir, soulever occasionnellement l'enfant) effort modéré"
+ },
+ {
+   "code": 5191,
+   "met": 2.8,
+   "category_activity_id": 5,
+   "label": "être debout, jouer avec des animaux, effort léger, périodes actives uniquement"
+ },
+ {
+   "code": 5192,
+   "met": 3.0,
+   "category_activity_id": 5,
+   "label": "marcher/courir, jouer avec des animaux, général, effort léger, périodes actives uniquement"
+ },
+ {
+   "code": 5193,
+   "met": 4.0,
+   "category_activity_id": 5,
+   "label": "marcher/courir, jouer avec des animaux, effort modéré, périodes actives uniquement"
+ },
+ {
+   "code": 5194,
+   "met": 5.0,
+   "category_activity_id": 5,
+   "label": "marcher/courir, jouer avec des animaux, effort vigoureux, périodes actives uniquement"
+ },
+ {
+   "code": 6020,
+   "met": 4.0,
+   "category_activity_id": 6,
+   "label": "travailler sur la carrosserie d'une automobile"
+ },
+ {
+   "code": 6030,
+   "met": 3.3,
+   "category_activity_id": 6,
+   "label": "réparation automobile, effort léger ou modéré"
+ },
+ {
+   "code": 6040,
+   "met": 3.0,
+   "category_activity_id": 6,
+   "label": "menuiserie, général, atelier (code Taylor 620)"
+ },
+ {
+   "code": 6050,
+   "met": 6.0,
+   "category_activity_id": 6,
+   "label": "menuiserie, extérieur de la maison, installer des gouttières, construire une clôture (code Taylor 640)"
+ },
+ {
+   "code": 6052,
+   "met": 3.8,
+   "category_activity_id": 6,
+   "label": "menuiserie, extérieur de la maison, construire une clôture"
+ },
+ {
+   "code": 6060,
+   "met": 3.3,
+   "category_activity_id": 6,
+   "label": "menuiserie, finition ou restauration de meubles"
+ },
+ {
+   "code": 6070,
+   "met": 6.0,
+   "category_activity_id": 6,
+   "label": "menuiserie, scier du bois de feuillus"
+ },
+ {
+   "code": 6072,
+   "met": 4.0,
+   "category_activity_id": 6,
+   "label": "menuiserie, travaux de rénovation résidentielle, effort modéré"
+ },
+ {
+   "code": 6074,
+   "met": 2.3,
+   "category_activity_id": 6,
+   "label": "menuiserie, travaux de rénovation résidentielle, effort léger"
+ },
+ {
+   "code": 6080,
+   "met": 5.0,
+   "category_activity_id": 6,
+   "label": "calfeutrer, isoler une cabane en bois"
+ },
+ {
+   "code": 6090,
+   "met": 4.5,
+   "category_activity_id": 6,
+   "label": "calfeutrer, hors cabane"
+ },
+ {
+   "code": 6100,
+   "met": 5.0,
+   "category_activity_id": 6,
+   "label": "nettoyer les gouttières"
+ },
+ {
+   "code": 6110,
+   "met": 5.0,
+   "category_activity_id": 6,
+   "label": "creuser un garage"
+ },
+ {
+   "code": 6120,
+   "met": 5.0,
+   "category_activity_id": 6,
+   "label": "poser des doubles fenêtres"
+ },
+ {
+   "code": 6122,
+   "met": 5.0,
+   "category_activity_id": 6,
+   "label": "poser des plaques de plâtre à l’intérieur d’une maison"
+ },
+ {
+   "code": 6124,
+   "met": 3.0,
+   "category_activity_id": 6,
+   "label": "planter des clous"
+ },
+  {
+   "code": 6126,
+   "met": 2.5,
+   "category_activity_id": 6,
+   "label": "réparation domestique, général, effort léger"
+ },
+ {
+   "code": 6127,
+   "met": 4.5,
+   "category_activity_id": 6,
+   "label": "réparation domestique, général, effort modéré"
+ },
+ {
+   "code": 6128,
+   "met": 6.0,
+   "category_activity_id": 6,
+   "label": "réparation domestique, général, effort vigoureux"
+ },
+ {
+   "code": 6130,
+   "met": 4.5,
+   "category_activity_id": 6,
+   "label": "poser ou retirer de la moquette"
+ },
+ {
+   "code": 6140,
+   "met": 3.8,
+   "category_activity_id": 6,
+   "label": "poser du carrelage ou du linoléum, réparer des appareils"
+ },
+ {
+   "code": 6144,
+   "met": 3.0,
+   "category_activity_id": 6,
+   "label": "réparer des appareils"
+ },
+ {
+   "code": 6150,
+   "met": 5.0,
+   "category_activity_id": 6,
+   "label": "peindre, extérieur de la maison (code Taylor 650)"
+ },
+ {
+   "code": 6160,
+   "met": 3.3,
+   "category_activity_id": 6,
+   "label": "peindre, intérieur de la maison, papier peint, décapage de peinture"
+ },
+ {
+   "code": 6165,
+   "met": 4.5,
+   "category_activity_id": 6,
+   "label": "peindre, (code Taylor 630)"
+ },
+ {
+   "code": 6167,
+   "met": 3.0,
+   "category_activity_id": 6,
+   "label": "plomberie, général"
+ },
+ {
+   "code": 6170,
+   "met": 3.0,
+   "category_activity_id": 6,
+   "label": "poser et retirer une bâche – voilier"
+ },
+ {
+   "code": 6180,
+   "met": 6.0,
+   "category_activity_id": 6,
+   "label": "poser la toiture"
+ },
+ {
+   "code": 6190,
+   "met": 4.5,
+   "category_activity_id": 6,
+   "label": "poncer les sols avec une ponceuse"
+ },
+ {
+   "code": 6200,
+   "met": 4.5,
+   "category_activity_id": 6,
+   "label": "décaper et peindre un voilier ou un hors-bord"
+ },
+ {
+   "code": 6205,
+   "met": 2.0,
+   "category_activity_id": 6,
+   "label": "affûter des outils"
+ },
+ {
+   "code": 6210,
+   "met": 5.0,
+   "category_activity_id": 6,
+   "label": "étaler de la terre à l'aide d'une pelle"
+ },
+ {
+   "code": 6220,
+   "met": 4.5,
+   "category_activity_id": 6,
+   "label": "laver et cirer la coque d'un voilier ou un avion"
+ },
+ {
+   "code": 6225,
+   "met": 2.0,
+   "category_activity_id": 6,
+   "label": "laver et cirer une voiture"
+ },
+ {
+   "code": 6230,
+   "met": 4.5,
+   "category_activity_id": 6,
+   "label": "laver une clôture, peindre une clôture, effort modéré"
+ },
+ {
+   "code": 6240,
+   "met": 3.3,
+   "category_activity_id": 6,
+   "label": "câblage, dériver-connecter"
+ },
+ {
+   "code": 8009,
+   "met": 3.3,
+   "category_activity_id": 7,
+   "label": "porter, charger ou empiler du bois, charger/décharger ou transporter du bois de charpente, effort léger à modéré"
+ },
+ {
+   "code": 8010,
+   "met": 5.5,
+   "category_activity_id": 7,
+   "label": "porter, charger ou empiler du bois, charger/décharger ou transporter du bois de charpente"
+ },
+ {
+   "code": 8019,
+   "met": 4.5,
+   "category_activity_id": 7,
+   "label": "couper du bois, fendre des bûches, effort modéré"
+ },
+ {
+   "code": 8020,
+   "met": 6.3,
+   "category_activity_id": 7,
+   "label": "couper du bois, fendre des bûches, effort vigoureux"
+ },
+ {
+   "code": 8025,
+   "met": 3.5,
+   "category_activity_id": 7,
+   "label": "débroussailler, éclaircir un jardin, effort modéré"
+ },
+ {
+   "code": 8030,
+   "met": 6.3,
+   "category_activity_id": 7,
+   "label": "débroussailler, sous-bois ou terrain, porter des branches, tirer une brouette, effort vigoureux"
+ },
+ {
+   "code": 8040,
+   "met": 5.0,
+   "category_activity_id": 7,
+   "label": "creuser un bac à sable, pelleter du sable"
+ },
+ {
+   "code": 8045,
+   "met": 3.5,
+   "category_activity_id": 7,
+   "label": "creuser, bêcher, garnir le jardin, composter, effort léger à modéré"
+ },
+ {
+   "code": 8050,
+   "met": 5.0,
+   "category_activity_id": 7,
+   "label": "creuser, bêcher, garnir le jardin, composter (code Taylor 590)"
+ },
+ {
+   "code": 8052,
+   "met": 7.8,
+   "category_activity_id": 7,
+   "label": "creuser, bêcher, garnir le jardin, composter, effort vigoureux"
+ },
+ {
+   "code": 8055,
+   "met": 2.8,
+   "category_activity_id": 7,
+   "label": "conduire un tracteur"
+ },
+ {
+   "code": 8057,
+   "met": 8.3,
+   "category_activity_id": 7,
+   "label": "abattre des arbres de grande taille"
+ },
+ {
+   "code": 8058,
+   "met": 5.3,
+   "category_activity_id": 7,
+   "label": "abattre des arbres de taille moyenne à petite"
+ },
+ {
+   "code": 8060,
+   "met": 5.8,
+   "category_activity_id": 7,
+   "label": "jardiner avec des outils motorisés lourds, labourer un jardin, utiliser une tronçonneuse"
+ },
+ {
+   "code": 8065,
+   "met": 2.3,
+   "category_activity_id": 7,
+   "label": "jardiner, avec des conteneurs, personnes de plus de 60 ans"
+ },
+ {
+   "code": 8070,
+   "met": 4.0,
+   "category_activity_id": 7,
+   "label": "canaux d'irrigation, ouvrir et fermer des barrages"
+ },
+ {
+   "code": 8080,
+   "met": 6.3,
+   "category_activity_id": 7,
+   "label": "poser des pierres concassées"
+ },
+ {
+   "code": 8090,
+   "met": 5.0,
+   "category_activity_id": 7,
+   "label": "poser du gazon"
+ },
+ {
+   "code": 8095,
+   "met": 5.5,
+   "category_activity_id": 7,
+   "label": "tondre la pelouse, général"
+ },
+ {
+   "code": 8100,
+   "met": 2.5,
+   "category_activity_id": 7,
+   "label": "tondre la pelouse, conduire une tondeuse (code Taylor 550)"
+ },
+ {
+   "code": 8110,
+   "met": 6.0,
+   "category_activity_id": 7,
+   "label": "tondre la pelouse, marcher, tondeuse manuelle (code Taylor 570)"
+ },
+ {
+   "code": 8120,
+   "met": 5.0,
+   "category_activity_id": 7,
+   "label": "tondre la pelouse, marcher, tondeuse à moteur, effort modéré ou vigoureux"
+ },
+ {
+   "code": 8125,
+   "met": 4.5,
+   "category_activity_id": 7,
+   "label": "tondre la pelouse, tondeuse à moteur, effort léger ou modéré (code Taylor 590)"
+ },
+ {
+   "code": 8130,
+   "met": 2.5,
+   "category_activity_id": 7,
+   "label": "utiliser une souffleuse à neige, marcher"
+ },
+ {
+   "code": 8135,
+   "met": 2.0,
+   "category_activity_id": 7,
+   "label": "planter, rempoter, transplanter des germes ou plantes, effort léger"
+ },
+ {
+   "code": 8140,
+   "met": 4.3,
+   "category_activity_id": 7,
+   "label": "planter des germes, buissons, penché, effort modéré"
+ },
+ {
+   "code": 8145,
+   "met": 4.3,
+   "category_activity_id": 7,
+   "label": "planter des cultures ou jardiner, penché, effort modéré"
+ },
+ {
+   "code": 8150,
+   "met": 4.5,
+   "category_activity_id": 7,
+   "label": "planter des arbres"
+ },
+ {
+   "code": 8160,
+   "met": 3.8,
+   "category_activity_id": 7,
+   "label": "ratisser la pelouse ou des feuilles, effort modéré"
+ },
+ {
+   "code": 8165,
+   "met": 4.0,
+   "category_activity_id": 7,
+   "label": "ratisser la pelouse (code Taylor 600)"
+ },
+ {
+   "code": 8170,
+   "met": 4.0,
+   "category_activity_id": 7,
+   "label": "ratisser le toit avec un grattoir à neige"
+ },
+ {
+   "code": 8180,
+   "met": 3.0,
+   "category_activity_id": 7,
+   "label": "conduire une souffleuse à neige"
+ },
+ {
+   "code": 8190,
+   "met": 4.0,
+   "category_activity_id": 7,
+   "label": "mettre en sac de l'herbe, des feuilles"
+ },
+ {
+   "code": 8192,
+   "met": 5.5,
+   "category_activity_id": 7,
+   "label": "pelleter de la terre ou de la boue"
+ },
+ {
+   "code": 8195,
+   "met": 5.3,
+   "category_activity_id": 7,
+   "label": "pelleter de la neige, à la main, effort modéré"
+ },
+ {
+   "code": 8200,
+   "met": 6.0,
+   "category_activity_id": 7,
+   "label": "pelleter de la neige, à la main (code Taylor 610)"
+ },
+  {
+   "code": 8202,
+   "met": 7.5,
+   "category_activity_id": 7,
+   "label": "pelleter de la neige, à la main, effort vigoureux"
+ },
+ {
+   "code": 8210,
+   "met": 4.0,
+   "category_activity_id": 7,
+   "label": "tailler des arbustes ou des arbres, outil de coupe manuel"
+ },
+ {
+   "code": 8215,
+   "met": 3.5,
+   "category_activity_id": 7,
+   "label": "tailler des arbustes ou des arbres, outil de coupe à moteur, utilisation d'un souffleur de feuilles, d'une débroussailleuse, effort modéré"
+ },
+ {
+   "code": 8220,
+   "met": 3.0,
+   "category_activity_id": 7,
+   "label": "marcher, appliquer de l'engrais ou ensemencer une pelouse, distributeur roulant"
+ },
+ {
+   "code": 8230,
+   "met": 1.5,
+   "category_activity_id": 7,
+   "label": "arroser la pelouse ou le jardin, debout ou en marchant"
+ },
+ {
+   "code": 8239,
+   "met": 3.5,
+   "category_activity_id": 7,
+   "label": "désherber, cultiver le jardin, effort léger à modéré"
+ },
+ {
+   "code": 8240,
+   "met": 4.5,
+   "category_activity_id": 7,
+   "label": "désherber, cultiver le jardin (code Taylor 580)"
+ },
+ {
+   "code": 8241,
+   "met": 5.0,
+   "category_activity_id": 7,
+   "label": "désherber, cultiver le jardin, avec une houe, effort modéré à vigoureux"
+ },
+ {
+   "code": 8245,
+   "met": 3.8,
+   "category_activity_id": 7,
+   "label": "jardiner, général, effort modéré"
+ },
+ {
+   "code": 8246,
+   "met": 3.5,
+   "category_activity_id": 7,
+   "label": "cueillir des fruits sur les arbres, ramasser des fruits/légumes, effort modéré"
+ },
+ {
+   "code": 8248,
+   "met": 4.5,
+   "category_activity_id": 7,
+   "label": "cueillir des fruits, glaner des fruits, ramasser des fruits/légumes, monter une échelle pour cueillir des fruits, effort vigoureux"
+ },
+ {
+   "code": 8250,
+   "met": 3.3,
+   "category_activity_id": 7,
+   "label": "impliquant de marcher/d'être debout – récolter le jardin, effort léger, cueillir des fleurs ou ramasser des légumes"
+ },
+ {
+   "code": 8251,
+   "met": 3.0,
+   "category_activity_id": 7,
+   "label": "marcher, ranger des outils de jardinage"
+ },
+ {
+   "code": 8255,
+   "met": 5.5,
+   "category_activity_id": 7,
+   "label": "brouetter, pousser un chariot ou une brouette de jardinage"
+ },
+ {
+   "code": 8260,
+   "met": 3.0,
+   "category_activity_id": 7,
+   "label": "travaux de cour, général, effort léger"
+ },
+ {
+   "code": 8261,
+   "met": 4.0,
+   "category_activity_id": 7,
+   "label": "travaux de cour, général, effort modéré"
+ },
+ {
+   "code": 8262,
+   "met": 6.0,
+   "category_activity_id": 7,
+   "label": "travaux de cour, général, effort vigoureux"
+ },
+ {
+   "code": 11010,
+   "met": 4.0,
+   "category_activity_id": 8,
+   "label": "boulangerie, général, effort modéré"
+ },
+ {
+   "code": 11015,
+   "met": 2.0,
+   "category_activity_id": 8,
+   "label": "boulangerie, effort léger"
+ },
+ {
+   "code": 11030,
+   "met": 6.0,
+   "category_activity_id": 8,
+   "label": "construction de routes, conduire des machines lourdes"
+ },
+ {
+   "code": 11035,
+   "met": 2.0,
+   "category_activity_id": 8,
+   "label": "construction de routes, gérer la circulation, debout"
+ },
+ {
+   "code": 11038,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "charpenterie, général, effort léger"
+ }, 
+ {
+   "code": 11040,
+   "met": 4.3,
+   "category_activity_id": 8,
+   "label": "charpenterie, général, effort modéré"
+ },
+ {
+   "code": 11042,
+   "met": 7.0,
+   "category_activity_id": 8,
+   "label": "charpenterie, général, effort lourd ou vigoureux"
+ },
+ {
+   "code": 11050,
+   "met": 8.0,
+   "category_activity_id": 8,
+   "label": "port de charges lourdes (par ex. briques, outils)"
+ },
+ {
+   "code": 11060,
+   "met": 8.0,
+   "category_activity_id": 8,
+   "label": "montée de charges modérées dans des escaliers, transport de cartons (11-22 kg)"
+ },
+ {
+   "code": 11070,
+   "met": 4.0,
+   "category_activity_id": 8,
+   "label": "femme de chambre, concierge d'hôtel, faire le lit, nettoyer une salle de bains, pousser un chariot"
+ },
+ {
+   "code": 11080,
+   "met": 5.3,
+   "category_activity_id": 8,
+   "label": "extraction de charbon, perforation du charbon, de la roche"
+ },
+ {
+   "code": 11090,
+   "met": 5.0,
+   "category_activity_id": 8,
+   "label": "extraction de charbon, montage des supports"
+ },
+ {
+   "code": 11100,
+   "met": 5.5,
+   "category_activity_id": 8,
+   "label": "extraction de charbon, général"
+ },
+ {
+   "code": 11110,
+   "met": 6.3,
+   "category_activity_id": 8,
+   "label": "extraction de charbon, pelleter le charbon"
+ },
+ {
+   "code": 11115,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "cuisiner, chef"
+ },
+ {
+   "code": 11120,
+   "met": 4.0,
+   "category_activity_id": 8,
+   "label": "construction, à l'extérieur, rénovation, structures nouvelles (par ex. réparation de toit, divers)"
+ },
+ {
+   "code": 11125,
+   "met": 2.3,
+   "category_activity_id": 8,
+   "label": "travail de concierge, effort léger (par ex. nettoyer lavabos et toilettes, épousseter, passer l'aspirateur, nettoyage léger)"
+ },
+ {
+   "code": 11126,
+   "met": 3.8,
+   "category_activity_id": 8,
+   "label": "travail de concierge, effort modéré (par ex. armoire électrique, balayer, passer la serpillère, sortir les poubelles, passer l'aspirateur)"
+ },
+ {
+   "code": 11130,
+   "met": 3.3,
+   "category_activity_id": 8,
+   "label": "travaux d'électricité (par ex. brancher des fils, dériver-connecter)"
+ },
+ {
+   "code": 11135,
+   "met": 1.8,
+   "category_activity_id": 8,
+   "label": "ingénieur (par ex. mécanique ou électrique)"
+ },
+ {
+   "code": 11145,
+   "met": 7.8,
+   "category_activity_id": 8,
+   "label": "agriculture, effort vigoureux (par ex. fabriquer des bottes de foin, nettoyer une grange)"
+ },
+ {
+   "code": 11146,
+   "met": 4.8,
+   "category_activity_id": 8,
+   "label": "agriculture, effort modéré (par ex. nourrir des animaux, regrouper du bétail à pied et/ou cheval, épandre du fumier, récolter des cultures)"
+ },
+ {
+   "code": 11147,
+   "met": 2.0,
+   "category_activity_id": 8,
+   "label": "agriculture, effort léger (par ex. nettoyer des déjections animales, préparer de la nourriture pour animaux)"
+ },
+ {
+   "code": 11170,
+   "met": 2.8,
+   "category_activity_id": 8,
+   "label": "agriculture, conduites (par ex. conduire un tracteur ou une moissonneuse)"
+ },
+ {
+   "code": 11180,
+   "met": 3.5,
+   "category_activity_id": 8,
+   "label": "agriculture, alimenter de petits animaux"
+ },
+ {
+   "code": 11190,
+   "met": 4.3,
+   "category_activity_id": 8,
+   "label": "agriculture, alimenter le bétail, les chevaux"
+ },
+ {
+   "code": 11191,
+   "met": 4.3,
+   "category_activity_id": 8,
+   "label": "agriculture, transporter de l'eau pour les animaux, transporter de l'eau en général"
+ },
+ {
+   "code": 11192,
+   "met": 4.5,
+   "category_activity_id": 8,
+   "label": "agriculture, s'occuper des animaux (par ex. toilettage, brossage, tonte des moutons, aide à la mise bas, soins médicaux, marquage), général"
+ },
+ {
+   "code": 11195,
+   "met": 3.8,
+   "category_activity_id": 8,
+   "label": "agriculture, riz, plantation, activités de traitement du grain"
+ },
+ {
+   "code": 11210,
+   "met": 3.5,
+   "category_activity_id": 8,
+   "label": "agriculture, traire à la main, nettoyage des seaux, effort modéré"
+ },
+ {
+   "code": 11220,
+   "met": 1.3,
+   "category_activity_id": 8,
+   "label": "agriculture, traire à la machine, effort léger"
+ },
+ {
+   "code": 11240,
+   "met": 8.0,
+   "category_activity_id": 8,
+   "label": "pompier, général"
+ },
+ {
+   "code": 11244,
+   "met": 6.8,
+   "category_activity_id": 8,
+   "label": "pompier, secours de victime, accident automobile, utilisation d’une gaffe"
+ },
+ {
+   "code": 11245,
+   "met": 8.0,
+   "category_activity_id": 8,
+   "label": "pompier, levage et montée de l’échelle avec l’équipement complet, exercice d’extinction de feu"
+ },
+ {
+   "code": 11246,
+   "met": 9.0,
+   "category_activity_id": 8,
+   "label": "pompier, transport de tuyaux au sol, transport du matériel, ouverture de murs, etc., en portant l’équipement complet"
+ },
+ {
+   "code": 11247,
+   "met": 3.5,
+   "category_activity_id": 8,
+   "label": "pêche, commerciale, effort léger"
+ },
+ {
+   "code": 11248,
+   "met": 5.0,
+   "category_activity_id": 8,
+   "label": "pêche, commerciale, effort modéré"
+ },
+ {
+   "code": 11249,
+   "met": 7.0,
+   "category_activity_id": 8,
+   "label": "pêche, commerciale, effort vigoureux"
+ },
+ {
+   "code": 11250,
+   "met": 17.5,
+   "category_activity_id": 8,
+   "label": "foresterie, couper du bois à la hache, très vite, hache de 1,25 kg, 51 coups/minute, effort violent"
+ },
+ {
+   "code": 11260,
+   "met": 5.0,
+   "category_activity_id": 8,
+   "label": "foresterie, couper du bois à la hache, lentement, hache de 1,25 kg, 19 coups/minute, effort modéré"
+ },
+ {
+   "code": 11262,
+   "met": 8.0,
+   "category_activity_id": 8,
+   "label": "foresterie, couper du bois à la hache, vite, hache de 1,25 kg, 35 coups/minute, effort vigoureux"
+ },
+  {
+   "code": 11264,
+   "met": 4.5,
+   "category_activity_id": 8,
+   "label": "foresterie, effort modéré (par ex. scier du bois à la tronçonneuse, désherber, biner)"
+ },
+ {
+   "code": 11266,
+   "met": 8.0,
+   "category_activity_id": 8,
+   "label": "foresterie, effort vigoureux (par ex. écorcer, abattre ou élaguer des arbres, porter ou empiler des buches, planter des semences, scier du bois à la\nmain)"
+ },
+ {
+   "code": 11370,
+   "met": 4.5,
+   "category_activity_id": 8,
+   "label": "pelleterie"
+ },
+ {
+   "code": 11375,
+   "met": 4.0,
+   "category_activity_id": 8,
+   "label": "collecte d’ordures, marcher, verser des conteneurs dans un camion"
+ },
+ {
+   "code": 11378,
+   "met": 1.8,
+   "category_activity_id": 8,
+   "label": "coiffeur (par ex. tresser des cheveux, manucurer, maquiller)"
+ },
+ {
+   "code": 11380,
+   "met": 7.3,
+   "category_activity_id": 8,
+   "label": "palefrenier, nourrir des chevaux, nettoyer des stalles, laver, bouchonner, coiffer, faire travailler les chevaux à la longe ou les monter"
+ },
+ {
+   "code": 11381,
+   "met": 4.3,
+   "category_activity_id": 8,
+   "label": "cheval, nourrir, abreuver, nettoyer des stalles, impliquant de marcher et porter des charges"
+ },
+ {
+   "code": 11390,
+   "met": 7.3,
+   "category_activity_id": 8,
+   "label": "course de chevaux, galop"
+ },
+ {
+   "code": 11400,
+   "met": 5.8,
+   "category_activity_id": 8,
+   "label": "course de chevaux, trot"
+ },
+ {
+   "code": 11410,
+   "met": 3.8,
+   "category_activity_id": 8,
+   "label": "course de chevaux, pas"
+ },
+ {
+   "code": 11413,
+   "met": 3.0,
+   "category_activity_id": 8,
+   "label": "cuisinière"
+ },
+ {
+   "code": 11415,
+   "met": 4.0,
+   "category_activity_id": 8,
+   "label": "jardinier, jardinage, général"
+ },
+ {
+   "code": 11418,
+   "met": 3.3,
+   "category_activity_id": 8,
+   "label": "blanchisseur"
+ },
+ {
+   "code": 11420,
+   "met": 3.0,
+   "category_activity_id": 8,
+   "label": "serrurier"
+ },
+ {
+   "code": 11430,
+   "met": 3.0,
+   "category_activity_id": 8,
+   "label": "travail à la machine (par ex. usinage, tôlerie, montage de machine, tournage, soudage), effort léger à modéré"
+ },
+ {
+   "code": 11450,
+   "met": 5.0,
+   "category_activity_id": 8,
+   "label": "travail à la machine, utilisation d'une poinçonneuse, effort modéré"
+ },
+ {
+   "code": 11472,
+   "met": 1.8,
+   "category_activity_id": 8,
+   "label": "gestionnaire, propriété"
+ },
+ {
+   "code": 11475,
+   "met": 2.8,
+   "category_activity_id": 8,
+   "label": "travail manuel ou non qualifié, général, effort léger"
+ },
+ {
+   "code": 11476,
+   "met": 4.5,
+   "category_activity_id": 8,
+   "label": "travail manuel ou non qualifié, général, effort modéré"
+ },
+ {
+   "code": 11477,
+   "met": 6.5,
+   "category_activity_id": 8,
+   "label": "travail manuel ou non qualifié, général, effort vigoureux"
+ },
+ {
+   "code": 11480,
+   "met": 4.3,
+   "category_activity_id": 8,
+   "label": "maçonnerie, béton, effort modéré"
+ },
+ {
+   "code": 11482,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "maçonnerie, béton, effort léger"
+ },
+ {
+   "code": 11485,
+   "met": 4.0,
+   "category_activity_id": 8,
+   "label": "massothérapeute, debout"
+ },
+ {
+   "code": 11490,
+   "met": 7.5,
+   "category_activity_id": 8,
+   "label": "déplacer, porter ou pousser des objets lourds, 34 kg ou plus (par ex. bureaux, déménagement), périodes actives uniquement"
+ },
+ {
+   "code": 11495,
+   "met": 12.0,
+   "category_activity_id": 8,
+   "label": "plongée sous-marine, homme-grenouille, commandos de marine"
+ },
+ {
+   "code": 11500,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "utiliser un équipement de travail lourd, automatisé, sans conduire"
+ },
+ {
+   "code": 11510,
+   "met": 4.5,
+   "category_activity_id": 8,
+   "label": "travail dans une orangeraie, cueillette des oranges"
+ },
+ {
+   "code": 11514,
+   "met": 3.3,
+   "category_activity_id": 8,
+   "label": "peinture, maison, meubles, effort modéré"
+ },
+ {
+   "code": 11516,
+   "met": 3.0,
+   "category_activity_id": 8,
+   "label": "activités de plomberie"
+ },
+ {
+   "code": 11520,
+   "met": 2.0,
+   "category_activity_id": 8,
+   "label": "impression, travailleur de l'industrie du papier, debout"
+ },
+ {
+   "code": 11525,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "police, faire la circulation, debout"
+ },
+ {
+   "code": 11526,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "police, conduire un véhicule de police, assis"
+ },
+ {
+   "code": 11527,
+   "met": 1.3,
+   "category_activity_id": 8,
+   "label": "police, être conduit dans un véhicule de police, assis"
+ },
+ {
+   "code": 11528,
+   "met": 4.0,
+   "category_activity_id": 8,
+   "label": "police, effectuer une arrestation, debout"
+ },
+ {
+   "code": 11529,
+   "met": 2.3,
+   "category_activity_id": 8,
+   "label": "postier, marcher pour livrer le courrier"
+ },
+ {
+   "code": 11530,
+   "met": 2.0,
+   "category_activity_id": 8,
+   "label": "cordonnerie, général"
+ },
+  {
+   "code": 11540,
+   "met": 7.8,
+   "category_activity_id": 8,
+   "label": "pelleter, creuser des fossés"
+ },
+ {
+   "code": 11550,
+   "met": 8.8,
+   "category_activity_id": 8,
+   "label": "pelleter, plus de 7 kg/minute, en creusant profondément, effort vigoureux"
+ },
+ {
+   "code": 11560,
+   "met": 5.0,
+   "category_activity_id": 8,
+   "label": "pelleter, moins de 4,5 kg/minute, effort modéré"
+ },
+ {
+   "code": 11570,
+   "met": 6.5,
+   "category_activity_id": 8,
+   "label": "pelleter, 4,5-7 kg/minute, effort vigoureux"
+ },
+ {
+   "code": 11580,
+   "met": 1.5,
+   "category_activity_id": 8,
+   "label": "travail assis, effort léger (par ex. travail de bureau, travail de laboratoire de chimie, travail sur ordinateur, réparation d’ensemble léger, réparation de\nmontre, lecture)"
+ },
+ {
+   "code": 11585,
+   "met": 1.5,
+   "category_activity_id": 8,
+   "label": "être assis, réunions, effort léger, général, et/ou impliquant une discussion (par ex. déjeuner d'affaires)"
+ },
+ {
+   "code": 11590,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "travail assis, effort modéré (par ex. pousser de lourds leviers, conduire une tondeuse/un chariot élévateur, commander une grue)"
+ },
+ {
+   "code": 11593,
+   "met": 2.8,
+   "category_activity_id": 8,
+   "label": "être assis, enseigner le stretching ou le yoga, ou cours d’exercices légers"
+ },
+ {
+   "code": 11600,
+   "met": 3.0,
+   "category_activity_id": 8,
+   "label": "être debout, effort léger (par ex. barman, employé de magasin, assemblage, remplissage, reproduction, bibliothécaire, installer un sapin de Noël,\nêtre debout et parler au travail, changer de vêtements lors de l'enseignement de l'éducation physique, debout)"
+ },
+ {
+   "code": 11610,
+   "met": 3.0,
+   "category_activity_id": 8,
+   "label": "être debout, effort léger/modéré (par ex. assembler/réparer des pièces lourdes, souder, stocker des pièces, réparer des automobiles, être debout,\nemballer des objets, soins infirmiers à des patients)"
+ },
+ {
+   "code": 11615,
+   "met": 4.5,
+   "category_activity_id": 8,
+   "label": "être debout, effort modéré, soulever des articles en permanence, 5–10 kg, avec une marche limitée ou sur place"
+ },
+ {
+   "code": 11620,
+   "met": 3.5,
+   "category_activity_id": 8,
+   "label": "être debout, effort modéré, levage intermittent de 23 kg, nouer/lover des cordages"
+ },
+ {
+   "code": 11630,
+   "met": 4.5,
+   "category_activity_id": 8,
+   "label": "être debout, effort modéré/important (par ex. soulever plus de 23 kg, maçonner, peindre, tapisser)"
+ },
+ {
+   "code": 11708,
+   "met": 5.3,
+   "category_activity_id": 8,
+   "label": "aciérie, effort modéré (par ex. ébarber, forger, retourner des moules)"
+ },
+ {
+   "code": 11710,
+   "met": 8.3,
+   "category_activity_id": 8,
+   "label": "aciérie, effort vigoureux (par ex. laminer à la main, laminer des aciers marchands, enlever des scories, alimenter un four)"
+ },
+ {
+   "code": 11720,
+   "met": 2.3,
+   "category_activity_id": 8,
+   "label": "confection, coupe de tissu"
+ },
+ {
+   "code": 11730,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "confection, général"
+ },
+ {
+   "code": 11740,
+   "met": 1.8,
+   "category_activity_id": 8,
+   "label": "confection, coudre à la main"
+ },
+ {
+   "code": 11750,
+   "met": 2.5,
+   "category_activity_id": 8,
+   "label": "confection, coudre à la machine"
+ },
+ {
+   "code": 11760,
+   "met": 3.5,
+   "category_activity_id": 8,
+   "label": "confection, pressing"
+ },
+ {
+   "code": 11763,
+   "met": 2.0,
+   "category_activity_id": 8,
+   "label": "confection, tisser, effort léger (par ex. opérations de finition, lavage, teinture, visite, métrage, paperasse)"
+ },
+ {
+   "code": 11765,
+   "met": 4.0,
+   "category_activity_id": 8,
+   "label": "confection, tissage, effort modéré (par ex. opérations de filage et tissage, apporter des boîtes de fil aux filateurs, chargement d’ensouple de chaîne,\nbobinage, ourdissage, découpe de tissu)"
+ },
+ {
+   "code": 11766,
+   "met": 6.5,
+   "category_activity_id": 8,
+   "label": "conduite de camion, chargement et déchargement du camion, arrimage de la charge, marcher en portant des charges lourdes"
+ },
+ {
+   "code": 11767,
+   "met": 2.0,
+   "category_activity_id": 8,
+   "label": "camion, conduire un camion de livraison, un taxi, un bus navette, un bus scolaire"
+ },
+ {
+   "code": 11770,
+   "met": 1.3,
+   "category_activity_id": 8,
+   "label": "taper des documents avec une machine à écrire électrique, mécanique ou un ordinateur"
+ },
+ {
+   "code": 11780,
+   "met": 6.3,
+   "category_activity_id": 8,
+   "label": "utiliser des outils motorisés lourds tels que des outils pneumatiques (par ex. marteaux-piqueurs, foreuses)"
+ },
+ {
+   "code": 11790,
+   "met": 8.0,
+   "category_activity_id": 8,
+   "label": "utiliser des outils lourds (non motorisés) tels que des pelles, des pioches, des barres à mine, des bêches"
+ },
+ {
+   "code": 11791,
+   "met": 2.0,
+   "category_activity_id": 8,
+   "label": "marcher au travail, à moins de 3,5 km/h, dans un bureau ou laboratoire, rythme très lent"
+ },
+ {
+   "code": 11792,
+   "met": 3.5,
+   "category_activity_id": 8,
+   "label": "marcher au travail à 5 km/h, dans un bureau, rythme modéré, sans rien porter"
+ },
+ {
+   "code": 11793,
+   "met": 4.3,
+   "category_activity_id": 8,
+   "label": "marcher au travail à 6 km/h, dans un bureau, rythme rapide, sans rien porter"
+ },
+ {
+   "code": 11795,
+   "met": 3.5,
+   "category_activity_id": 8,
+   "label": "marcher au travail, à 3 km/h, rythme lent, en portant des objets légers pesant moins de 11 kg"
+ },
+ {
+   "code": 11796,
+   "met": 3.0,
+   "category_activity_id": 8,
+   "label": "marcher, ranger des affaires au travail, se préparer à partir"
+ },
+ {
+   "code": 11797,
+   "met": 3.8,
+   "category_activity_id": 8,
+   "label": "marcher, à 4 km/h, rythme lent, en portant des objets lourds de plus de 11 kg"
+ },
+ {
+   "code": 11800,
+   "met": 4.5,
+   "category_activity_id": 8,
+   "label": "marcher à 5 km/h, rythme modéré, en portant des objets légers de moins de 11 kg"
+ },
+ {
+   "code": 11805,
+   "met": 3.5,
+   "category_activity_id": 8,
+   "label": "marcher, pousser un fauteuil roulant"
+ },
+  {
+   "code": 11810,
+   "met": 4.8,
+   "category_activity_id": 8,
+   "label": "marcher à 6 km/h, rythme rapide, en portant des objets pesant moins de 11 kg"
+ },
+ {
+   "code": 11820,
+   "met": 5.0,
+   "category_activity_id": 8,
+   "label": "marcher ou descendre des escaliers ou se tenir debout en portant des objets pesant de 11 à 22 kg"
+ },
+ {
+   "code": 11830,
+   "met": 6.5,
+   "category_activity_id": 8,
+   "label": "marcher ou descendre des escaliers ou se tenir debout en portant des objets pesant de 22 à 33 kg"
+ },
+ {
+   "code": 11840,
+   "met": 7.5,
+   "category_activity_id": 8,
+   "label": "marcher ou descendre des escaliers ou se tenir debout en portant des objets pesant de 33 à 45 kg"
+ },
+ {
+   "code": 11850,
+   "met": 8.5,
+   "category_activity_id": 8,
+   "label": "marcher ou descendre des escaliers ou se tenir debout en portant des objets pesant de 45 kg ou plus"
+ },
+ {
+   "code": 11870,
+   "met": 3.0,
+   "category_activity_id": 8,
+   "label": "employé d'un magasin de décor, acteur de théâtre, technicien de coulisses"
+ },
+ {
+   "code": 12010,
+   "met": 6.0,
+   "category_activity_id": 9,
+   "label": "combinaison jogging/marche (composant jogging inférieur à 10 minutes) (code Taylor 180)"
+ },
+ {
+   "code": 12020,
+   "met": 7.0,
+   "category_activity_id": 9,
+   "label": "jogging, général"
+ },
+ {
+   "code": 12025,
+   "met": 8.0,
+   "category_activity_id": 9,
+   "label": "jogging, sur-place"
+ },
+ {
+   "code": 12027,
+   "met": 4.5,
+   "category_activity_id": 9,
+   "label": "jogging, sur un mini-trampoline"
+ },
+ {
+   "code": 12029,
+   "met": 6.0,
+   "category_activity_id": 9,
+   "label": "courir à 6,5 km/h (9 min/km)"
+ },
+ {
+   "code": 12030,
+   "met": 8.3,
+   "category_activity_id": 9,
+   "label": "courir à 8 km/h (7,5 min/km)"
+ },
+ {
+   "code": 12040,
+   "met": 9.0,
+   "category_activity_id": 9,
+   "label": "courir à 8,4 km/h (7,3 min/km)"
+ },
+ {
+   "code": 12050,
+   "met": 9.8,
+   "category_activity_id": 9,
+   "label": "courir à 9,6 km/h (6,25 min/km)"
+ },
+ {
+   "code": 12060,
+   "met": 10.5,
+   "category_activity_id": 9,
+   "label": "courir à 10.8 km/h (5,5 min/km)"
+ },
+ {
+   "code": 12070,
+   "met": 11.0,
+   "category_activity_id": 9,
+   "label": "courir à 11,25 km/h (5,3 min/km)"
+ },
+ {
+   "code": 12080,
+   "met": 11.5,
+   "category_activity_id": 9,
+   "label": "courir à 12 km/h (5 min/km)"
+ },
+ {
+   "code": 12090,
+   "met": 11.8,
+   "category_activity_id": 9,
+   "label": "courir à 12,9 km/h (4,65 min/km)"
+ },
+ {
+   "code": 12100,
+   "met": 12.3,
+   "category_activity_id": 9,
+   "label": "courir à 13,8 km/h (4,3 min/km)"
+ },
+ {
+   "code": 12110,
+   "met": 12.8,
+   "category_activity_id": 9,
+   "label": "courir à 14,5 km/h (4,1 min/km)"
+ },
+ {
+   "code": 12120,
+   "met": 14.5,
+   "category_activity_id": 9,
+   "label": "courir à 16 km/h (3,75 min/km)"
+ },
+ {
+   "code": 12130,
+   "met": 16.0,
+   "category_activity_id": 9,
+   "label": "courir à 17,7 km/h (3,4 min/km)"
+ },
+ {
+   "code": 12132,
+   "met": 19.0,
+   "category_activity_id": 9,
+   "label": "courir à 19,3 km/h (3,1 min/km)"
+ },
+ {
+   "code": 12134,
+   "met": 19.8,
+   "category_activity_id": 9,
+   "label": "courir à 20,9 km/h (2,9 min/km)"
+ },
+ {
+   "code": 12135,
+   "met": 23.0,
+   "category_activity_id": 9,
+   "label": "courir à 22,5 km/h (2,66 min/km)"
+ },
+ {
+   "code": 12140,
+   "met": 9.0,
+   "category_activity_id": 9,
+   "label": "courir, cross"
+ },
+ {
+   "code": 12150,
+   "met": 8.0,
+   "category_activity_id": 9,
+   "label": "courir (code Taylor 200)"
+ },
+ {
+   "code": 12170,
+   "met": 15.0,
+   "category_activity_id": 9,
+   "label": "courir, escaliers, montée"
+ },
+ {
+   "code": 12180,
+   "met": 10.0,
+   "category_activity_id": 9,
+   "label": "courir, sur une piste, entraînement d’équipe"
+ },
+ {
+   "code": 12190,
+   "met": 8.0,
+   "category_activity_id": 9,
+   "label": "courir, entraînement, pousser un fauteuil roulant ou landau"
+ },
+ {
+   "code": 12200,
+   "met": 13.3,
+   "category_activity_id": 9,
+   "label": "courir, marathon"
+ },
+ {
+   "code": 15000,
+   "met": 5.5,
+   "category_activity_id": 10,
+   "label": "jeux traditionnels d’Alaska, épreuves olympiques esquimaudes, général"
+ },
+ {
+   "code": 15010,
+   "met": 4.3,
+   "category_activity_id": 10,
+   "label": "tir à l'arc, hors chasse"
+ },
+ {
+   "code": 15020,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "badminton, compétition (code Taylor 450)"
+ },
+ {
+   "code": 15030,
+   "met": 5.5,
+   "category_activity_id": 10,
+   "label": "badminton, double ou simple, général"
+ },
+ {
+   "code": 15040,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "basket-ball, match (code Taylor 490)"
+ },
+ {
+   "code": 15050,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "basket-ball, hors match, général (code Taylor 480)"
+ },
+ {
+   "code": 15055,
+   "met": 6.5,
+   "category_activity_id": 10,
+   "label": "basket-ball, général"
+ },
+ {
+   "code": 15060,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "basket-ball, arbitrage (code Taylor 500)"
+ },
+ {
+   "code": 15070,
+   "met": 4.5,
+   "category_activity_id": 10,
+   "label": "basket-ball, tir au panier"
+ },
+ {
+   "code": 15072,
+   "met": 9.3,
+   "category_activity_id": 10,
+   "label": "basket-ball, exercices, entraînement"
+ },
+ {
+   "code": 15075,
+   "met": 7.8,
+   "category_activity_id": 10,
+   "label": "basket-ball, fauteuil roulant"
+ },
+ {
+   "code": 15080,
+   "met": 2.5,
+   "category_activity_id": 10,
+   "label": "billard"
+ },
+ {
+   "code": 15090,
+   "met": 3.0,
+   "category_activity_id": 10,
+   "label": "bowling (code Taylor 390)"
+ },
+ {
+   "code": 15092,
+   "met": 3.8,
+   "category_activity_id": 10,
+   "label": "bowling, en intérieur, piste de bowling"
+ },
+ {
+   "code": 15100,
+   "met": 12.8,
+   "category_activity_id": 10,
+   "label": "boxe, sur ring, général"
+ },
+ {
+   "code": 15110,
+   "met": 5.5,
+   "category_activity_id": 10,
+   "label": "boxe, sac de frappe"
+ },
+ {
+   "code": 15120,
+   "met": 7.8,
+   "category_activity_id": 10,
+   "label": "boxe, entraînement (sparring-partner)"
+ },
+ {
+   "code": 15130,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "ballon-balai"
+ },
+ {
+   "code": 15135,
+   "met": 5.8,
+   "category_activity_id": 10,
+   "label": "jeux d’enfants, jeux d’adultes (par ex. marelle, 4-square, ballon prisonnier, équipement de cours de récréation, t-ball, spirobole, billes, jeux\nd'arcade), effort modéré"
+ },
+ {
+   "code": 15138,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "majorette, mouvements de gymnastique, compétition"
+ },
+ {
+   "code": 15140,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "entraîner, football, football américain, basketball, baseball, natation, etc."
+ },
+ {
+   "code": 15142,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "entraîner, jouer activement à un sport avec des joueurs"
+ },
+ {
+   "code": 15150,
+   "met": 4.8,
+   "category_activity_id": 10,
+   "label": "cricket, frappe, service, défense"
+ },
+ {
+   "code": 15160,
+   "met": 3.3,
+   "category_activity_id": 10,
+   "label": "croquet"
+ },
+ {
+   "code": 15170,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "curling"
+ },
+ {
+   "code": 15190,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "course de dragster, pousser ou conduire une voiture"
+ },
+  {
+   "code": 15192,
+   "met": 8.5,
+   "category_activity_id": 10,
+   "label": "course de voiture, monoplace"
+ },
+ {
+   "code": 15200,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "escrime"
+ },
+ {
+   "code": 15210,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "football américain, compétition"
+ },
+ {
+   "code": 15230,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "football américain, touch, flag, général (code Taylor 510)"
+ },
+ {
+   "code": 15232,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "football américain, touch, flag, effort léger"
+ },
+ {
+   "code": 15235,
+   "met": 2.5,
+   "category_activity_id": 10,
+   "label": "football américain ou baseball, jeu de balle"
+ },
+ {
+   "code": 15240,
+   "met": 3.0,
+   "category_activity_id": 10,
+   "label": "frisbee, général"
+ },
+ {
+   "code": 15250,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "frisbee, ultimate"
+ },
+ {
+   "code": 15255,
+   "met": 4.8,
+   "category_activity_id": 10,
+   "label": "golf, général"
+ },
+ {
+   "code": 15265,
+   "met": 4.3,
+   "category_activity_id": 10,
+   "label": "golf, marcher, porter des clubs"
+ },
+ {
+   "code": 15270,
+   "met": 3.0,
+   "category_activity_id": 10,
+   "label": "golf, minigolf, practice"
+ },
+ {
+   "code": 15285,
+   "met": 5.3,
+   "category_activity_id": 10,
+   "label": "golf, marcher, tirer des clubs"
+ },
+ {
+   "code": 15290,
+   "met": 3.5,
+   "category_activity_id": 10,
+   "label": "golf, avec un chariot électrique (code Taylor 070)"
+ },
+ {
+   "code": 15300,
+   "met": 3.8,
+   "category_activity_id": 10,
+   "label": "gymnastique, général"
+ },
+ {
+   "code": 15310,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "footbag"
+ },
+ {
+   "code": 15320,
+   "met": 12.0,
+   "category_activity_id": 10,
+   "label": "handball, général (code Taylor 520)"
+ },
+ {
+   "code": 15330,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "handball, équipe"
+ },
+ {
+   "code": 15335,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "accrobranches, éléments multiples"
+ },
+ {
+   "code": 15340,
+   "met": 3.5,
+   "category_activity_id": 10,
+   "label": "deltaplane"
+ },
+ {
+   "code": 15350,
+   "met": 7.8,
+   "category_activity_id": 10,
+   "label": "hockey, sur gazon"
+ },
+ {
+   "code": 15360,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "hockey sur glace, général"
+ },
+ {
+   "code": 15362,
+   "met": 10.0,
+   "category_activity_id": 10,
+   "label": "hockey sur glace, compétition"
+ },
+ {
+   "code": 15370,
+   "met": 5.5,
+   "category_activity_id": 10,
+   "label": "équitation, général"
+ },
+ {
+   "code": 15375,
+   "met": 4.3,
+   "category_activity_id": 10,
+   "label": "toilettage de cheval, donner à manger, à boire, nettoyer les étables avec marche et port de charges"
+ },
+ {
+   "code": 15380,
+   "met": 4.5,
+   "category_activity_id": 10,
+   "label": "seller, nettoyer, toiletter, poser et retirer le harnais d’un cheval"
+ },
+ {
+   "code": 15390,
+   "met": 5.8,
+   "category_activity_id": 10,
+   "label": "équitation, trot"
+ },
+ {
+   "code": 15395,
+   "met": 7.3,
+   "category_activity_id": 10,
+   "label": "équitation, petit ou grand galop"
+ },
+ {
+   "code": 15400,
+   "met": 3.8,
+   "category_activity_id": 10,
+   "label": "équitation, pas"
+ },
+ {
+   "code": 15402,
+   "met": 9.0,
+   "category_activity_id": 10,
+   "label": "équitation, saut d’obstacles"
+ },
+ {
+   "code": 15408,
+   "met": 1.8,
+   "category_activity_id": 10,
+   "label": "charrette à cheval, conduire, être debout ou assis"
+ },
+ {
+   "code": 15410,
+   "met": 3.0,
+   "category_activity_id": 10,
+   "label": "lancer de fer à cheval, quoits"
+ },
+ {
+   "code": 15420,
+   "met": 12.0,
+   "category_activity_id": 10,
+   "label": "pelote basque"
+ },
+ {
+   "code": 15425,
+   "met": 5.3,
+   "category_activity_id": 10,
+   "label": "arts martiaux, différents types, rythme lent, débutants, entraînement"
+ },
+ {
+   "code": 15430,
+   "met": 10.3,
+   "category_activity_id": 10,
+   "label": "arts martiaux, différents types, rythme modéré (par ex. judo, ju-jitsu, karaté, kick-boxing, taekwondo, tai-bo, boxe thaïe)"
+ },
+ {
+   "code": 15440,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "jonglage"
+ },
+ {
+   "code": 15450,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "kickball"
+ },
+  {
+   "code": 15460,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "crosse"
+ },
+ {
+   "code": 15465,
+   "met": 3.3,
+   "category_activity_id": 10,
+   "label": "boulingrin, pétanque, activité extérieure"
+ },
+ {
+   "code": 15470,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "moto-cross, sports automobiles sur circuit, véhicule tous terrains, général"
+ },
+ {
+   "code": 15480,
+   "met": 9.0,
+   "category_activity_id": 10,
+   "label": "course d'orientation"
+ },
+ {
+   "code": 15490,
+   "met": 10.0,
+   "category_activity_id": 10,
+   "label": "jokari, compétition"
+ },
+ {
+   "code": 15500,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "jokari, loisirs, général (code Taylor 460)"
+ },
+ {
+   "code": 15510,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "polo"
+ },
+ {
+   "code": 15520,
+   "met": 10.0,
+   "category_activity_id": 10,
+   "label": "racquetball, compétition"
+ },
+ {
+   "code": 15530,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "racquetball, général (code Taylor 470)"
+ },
+ {
+   "code": 15533,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "escalade, varappe (code Taylor 470) (ancien code = 17120)"
+ },
+ {
+   "code": 15535,
+   "met": 7.5,
+   "category_activity_id": 10,
+   "label": "escalade, varappe, grande difficulté"
+ },
+ {
+   "code": 15537,
+   "met": 5.8,
+   "category_activity_id": 10,
+   "label": "escalade, varappe, difficulté faible à modérée"
+ },
+ {
+   "code": 15540,
+   "met": 5.0,
+   "category_activity_id": 10,
+   "label": "escalade, descente en rappel"
+ },
+ {
+   "code": 15542,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "rodéo, général, effort léger"
+ },
+ {
+   "code": 15544,
+   "met": 5.5,
+   "category_activity_id": 10,
+   "label": "rodéo, général, effort modéré"
+ },
+ {
+   "code": 15546,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "rodéo, général, effort vigoureux"
+ },
+ {
+   "code": 15550,
+   "met": 12.3,
+   "category_activity_id": 10,
+   "label": "corde à sauter, rythme rapide, 120-160 sauts/min"
+ },
+ {
+   "code": 15551,
+   "met": 11.8,
+   "category_activity_id": 10,
+   "label": "corde à sauter, rythme modéré, 100-120 sauts/min, général, saut de 60 cm, saut simple"
+ },
+ {
+   "code": 15552,
+   "met": 8.8,
+   "category_activity_id": 10,
+   "label": "corde à sauter, rythme lent, < 100 sauts/min, saut de 60 cm, saut rythmé"
+ },
+ {
+   "code": 15560,
+   "met": 8.3,
+   "category_activity_id": 10,
+   "label": "rugby à quinze, équipe, compétition"
+ },
+ {
+   "code": 15562,
+   "met": 6.3,
+   "category_activity_id": 10,
+   "label": "rugby, touch, hors compétition"
+ },
+ {
+   "code": 15570,
+   "met": 3.0,
+   "category_activity_id": 10,
+   "label": "jeu de palets"
+ },
+ {
+   "code": 15580,
+   "met": 5.0,
+   "category_activity_id": 10,
+   "label": "skate, général, effort modéré"
+ },
+ {
+   "code": 15582,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "skate, compétition, effort vigoureux"
+ },
+ {
+   "code": 15590,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "patin à roulettes (code Taylor 360)"
+ },
+ {
+   "code": 15591,
+   "met": 7.5,
+   "category_activity_id": 10,
+   "label": "roller, patin en ligne, 14,4 km/h, rythme loisir"
+ },
+ {
+   "code": 15592,
+   "met": 9.8,
+   "category_activity_id": 10,
+   "label": "roller, patin en ligne, 17,7 km/h, rythme modéré, exercice d’entraînement"
+ },
+ {
+   "code": 15593,
+   "met": 12.3,
+   "category_activity_id": 10,
+   "label": "roller, patin en ligne, 21 à 21,7 km/h, rythme rapide, exercice d’entraînement"
+ },
+ {
+   "code": 15594,
+   "met": 14.0,
+   "category_activity_id": 10,
+   "label": "roller, patin en ligne, 24,0 km/h, effort maximal"
+ },
+ {
+   "code": 15600,
+   "met": 3.5,
+   "category_activity_id": 10,
+   "label": "saut en parachute, saut d’un point fixe, saut à l’élastique"
+ },
+ {
+   "code": 15605,
+   "met": 10.0,
+   "category_activity_id": 10,
+   "label": "football, compétition"
+ },
+ {
+   "code": 15610,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "football, loisirs, général (code Taylor 540)"
+ },
+ {
+   "code": 15620,
+   "met": 5.0,
+   "category_activity_id": 10,
+   "label": "softball ou baseball, lancer rapide ou lent, général (code Taylor 440)"
+ },
+ {
+   "code": 15625,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "softball, entraînement"
+ },
+ {
+   "code": 15630,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "softball, arbitrage"
+ },
+ {
+   "code": 15640,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "softball, lancer"
+ },
+  {
+   "code": 15645,
+   "met": 3.3,
+   "category_activity_id": 10,
+   "label": "spectateur de sport, très excité, passionné, mouvements physiques"
+ },
+ {
+   "code": 15650,
+   "met": 12.0,
+   "category_activity_id": 10,
+   "label": "squash (code Taylor 530)"
+ },
+ {
+   "code": 15652,
+   "met": 7.3,
+   "category_activity_id": 10,
+   "label": "squash, général"
+ },
+ {
+   "code": 15660,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "tennis de table, ping-pong (code Taylor 410)"
+ },
+ {
+   "code": 15670,
+   "met": 3.0,
+   "category_activity_id": 10,
+   "label": "tai chi, qi gong, général"
+ },
+ {
+   "code": 15672,
+   "met": 1.5,
+   "category_activity_id": 10,
+   "label": "tai chi, qi gong, position assise, effort léger"
+ },
+ {
+   "code": 15675,
+   "met": 7.3,
+   "category_activity_id": 10,
+   "label": "tennis, général"
+ },
+ {
+   "code": 15680,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "tennis, double, (code Taylor 430)"
+ },
+ {
+   "code": 15685,
+   "met": 4.5,
+   "category_activity_id": 10,
+   "label": "tennis, double"
+ },
+ {
+   "code": 15690,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "tennis, simple, (code Taylor 420)"
+ },
+ {
+   "code": 15695,
+   "met": 5.0,
+   "category_activity_id": 10,
+   "label": "tennis, frapper la balle, jeu récréatif, effort modéré"
+ },
+ {
+   "code": 15700,
+   "met": 3.5,
+   "category_activity_id": 10,
+   "label": "trampoline, récréatif"
+ },
+ {
+   "code": 15702,
+   "met": 4.5,
+   "category_activity_id": 10,
+   "label": "trampoline, compétition"
+ },
+ {
+   "code": 15710,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "volley-ball (code Taylor 400)"
+ },
+ {
+   "code": 15711,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "volley-ball, compétition, gymnase"
+ },
+ {
+   "code": 15720,
+   "met": 3.0,
+   "category_activity_id": 10,
+   "label": "volley-ball, hors compétition, équipe de 6-9 joueurs, général"
+ },
+ {
+   "code": 15725,
+   "met": 8.0,
+   "category_activity_id": 10,
+   "label": "beach-volley, dans le sable"
+ },
+ {
+   "code": 15730,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "lutte (un match = 5 minutes)"
+ },
+ {
+   "code": 15731,
+   "met": 7.0,
+   "category_activity_id": 10,
+   "label": "wallyball, général"
+ },
+ {
+   "code": 15732,
+   "met": 4.0,
+   "category_activity_id": 10,
+   "label": "athlétisme (par ex. lancer de poids, lancer de disque, lancer de marteau)"
+ },
+ {
+   "code": 15733,
+   "met": 6.0,
+   "category_activity_id": 10,
+   "label": "athlétisme (par ex. saut en hauteur, saut en longueur, triple saut, lancer de javelot, saut à la perche)"
+ },
+ {
+   "code": 15734,
+   "met": 10.0,
+   "category_activity_id": 10,
+   "label": "athlétisme (par ex. steeple, course de haies)"
+ },
+ {
+   "code": 17010,
+   "met": 7.0,
+   "category_activity_id": 11,
+   "label": "randonnée (code Taylor 050)"
+ },
+ {
+   "code": 17012,
+   "met": 7.8,
+   "category_activity_id": 11,
+   "label": "randonnée ou marche organisée avec un sac à dos"
+ },
+ {
+   "code": 17020,
+   "met": 5.0,
+   "category_activity_id": 11,
+   "label": "porter une charge de 7 kg (par ex. valise), à plat ou en descendant des escaliers"
+ },
+ {
+   "code": 17021,
+   "met": 2.3,
+   "category_activity_id": 11,
+   "label": "porter un enfant de 7 kg, marche lente"
+ },
+ {
+   "code": 17025,
+   "met": 8.3,
+   "category_activity_id": 11,
+   "label": "porter une charge en montant des escaliers, général"
+ },
+  {
+   "code": 17026,
+   "met": 5.0,
+   "category_activity_id": 11,
+   "label": "porter une charge de 0,5-7 kg en montant des escaliers"
+ },
+ {
+   "code": 17027,
+   "met": 6.0,
+   "category_activity_id": 11,
+   "label": "porter une charge de 7-11 kg en montant des escaliers"
+ },
+ {
+   "code": 17028,
+   "met": 8.0,
+   "category_activity_id": 11,
+   "label": "porter une charge de 11-22 kg en montant des escaliers"
+ },
+ {
+   "code": 17029,
+   "met": 10.0,
+   "category_activity_id": 11,
+   "label": "porter une charge de 22-33 kg en montant des escaliers"
+ },
+ {
+   "code": 17030,
+   "met": 12.0,
+   "category_activity_id": 11,
+   "label": "porter une charge > 34 kg en montant des escaliers"
+ },
+ {
+   "code": 17031,
+   "met": 3.5,
+   "category_activity_id": 11,
+   "label": "charger/décharger une voiture impliquant de la marche"
+ },
+ {
+   "code": 17033,
+   "met": 6.3,
+   "category_activity_id": 11,
+   "label": "randonner en collines, sans charge"
+ },
+ {
+   "code": 17035,
+   "met": 6.5,
+   "category_activity_id": 11,
+   "label": "randonner en collines en portant une charge de 0 à 4 kg"
+ },
+ {
+   "code": 17040,
+   "met": 7.3,
+   "category_activity_id": 11,
+   "label": "randonner en collines en portant une charge de 4,5 à 9 kg"
+ },
+ {
+   "code": 17050,
+   "met": 8.3,
+   "category_activity_id": 11,
+   "label": "randonner en collines en portant une charge de 9,5 à 19 kg"
+ },
+ {
+   "code": 17060,
+   "met": 9.0,
+   "category_activity_id": 11,
+   "label": "randonner en collines en portant une charge supérieure à 19 kg"
+ },
+ {
+   "code": 17070,
+   "met": 3.5,
+   "category_activity_id": 11,
+   "label": "descendre des escaliers"
+ },
+ {
+   "code": 17080,
+   "met": 6.0,
+   "category_activity_id": 11,
+   "label": "randonnée, à travers champs (code Taylor 040)"
+ },
+ {
+   "code": 17082,
+   "met": 5.3,
+   "category_activity_id": 11,
+   "label": "randonner ou marcher à allure normale à travers champs et versants de colline"
+ },
+ {
+   "code": 17085,
+   "met": 2.5,
+   "category_activity_id": 11,
+   "label": "admirer les oiseaux, marche lente"
+ },
+ {
+   "code": 17088,
+   "met": 4.5,
+   "category_activity_id": 11,
+   "label": "marche militaire, vitesse modérée, sans sac"
+ },
+ {
+   "code": 17090,
+   "met": 8.0,
+   "category_activity_id": 11,
+   "label": "marche militaire rapide, sans sac"
+ },
+ {
+   "code": 17100,
+   "met": 4.0,
+   "category_activity_id": 11,
+   "label": "pousser ou tirer une poussette avec un enfant ou marcher avec des enfants, 4 à 5 km/h"
+ },
+ {
+   "code": 17105,
+   "met": 3.8,
+   "category_activity_id": 11,
+   "label": "pousser un fauteuil roulant, cadre privé"
+ },
+ {
+   "code": 17110,
+   "met": 6.5,
+   "category_activity_id": 11,
+   "label": "marche athlétique"
+ },
+ {
+   "code": 17130,
+   "met": 8.0,
+   "category_activity_id": 11,
+   "label": "monter des escaliers, utiliser ou monter sur une échelle (code Taylor 030)"
+ },
+ {
+   "code": 17133,
+   "met": 4.0,
+   "category_activity_id": 11,
+   "label": "monter des escaliers, rythme lent"
+ },
+ {
+   "code": 17134,
+   "met": 8.8,
+   "category_activity_id": 11,
+   "label": "monter des escaliers, rythme rapide"
+ },
+ {
+   "code": 17140,
+   "met": 5.0,
+   "category_activity_id": 11,
+   "label": "utiliser des béquilles"
+ },
+ {
+   "code": 17150,
+   "met": 2.0,
+   "category_activity_id": 11,
+   "label": "marcher à la maison"
+ },
+ {
+   "code": 17151,
+   "met": 2.0,
+   "category_activity_id": 11,
+   "label": "marcher à moins de 3 km/h, à plat, flâner, rythme très lent"
+ },
+ {
+   "code": 17152,
+   "met": 2.8,
+   "category_activity_id": 11,
+   "label": "marcher à 3 km/h, à plat, rythme lent, sol ferme"
+ },
+ {
+   "code": 17160,
+   "met": 3.5,
+   "category_activity_id": 11,
+   "label": "marcher pour le plaisir (code Taylor 010)"
+ },
+ {
+   "code": 17161,
+   "met": 2.5,
+   "category_activity_id": 11,
+   "label": "marcher de la maison à la voiture ou au bus, de la voiture ou du bus vers d'autres endroits, de la voiture ou du bus vers et depuis le lieu de travail"
+ },
+ {
+   "code": 17162,
+   "met": 2.5,
+   "category_activity_id": 11,
+   "label": "marcher vers la maison du voisin ou la maison familiale dans un but social"
+ },
+ {
+   "code": 17165,
+   "met": 3.0,
+   "category_activity_id": 11,
+   "label": "promener le chien"
+ },
+ {
+   "code": 17170,
+   "met": 3.0,
+   "category_activity_id": 11,
+   "label": "marcher à 4 km/h, à plat, sol ferme"
+ },
+ {
+   "code": 17180,
+   "met": 3.3,
+   "category_activity_id": 11,
+   "label": "marcher à 4 km/h, en descente"
+ },
+ {
+   "code": 17190,
+   "met": 3.5,
+   "category_activity_id": 11,
+   "label": "marcher à 4,5-5 km/h, à plat, rythme modéré, sol ferme"
+ },
+ {
+   "code": 17200,
+   "met": 4.3,
+   "category_activity_id": 11,
+   "label": "marcher à 5,5 km/h, à plat, rythme rapide, sol ferme, marcher pour faire de l'exercice"
+ },
+ {
+   "code": 17210,
+   "met": 5.3,
+   "category_activity_id": 11,
+   "label": "marcher à 4,5-5,5 km/h, en montée de 1 à 5 %"
+ },
+ {
+   "code": 17211,
+   "met": 8.0,
+   "category_activity_id": 11,
+   "label": "marcher à 4,5-5,5 km/h, en montée de 6-15 %"
+ },
+ {
+   "code": 17220,
+   "met": 5.0,
+   "category_activity_id": 11,
+   "label": "marcher à 6,5 km/h, à plat, sol ferme, rythme très rapide"
+ },
+ {
+   "code": 17230,
+   "met": 7.0,
+   "category_activity_id": 11,
+   "label": "marcher à 7 km/h, à plat, sol ferme, rythme extrêmement rapide"
+ },
+ {
+   "code": 17231,
+   "met": 8.3,
+   "category_activity_id": 11,
+   "label": "marcher à 8 km/h, à plat, sol ferme"
+ },
+ {
+   "code": 17235,
+   "met": 9.8,
+   "category_activity_id": 11,
+   "label": "marcher à 8 km/h, en montée de 3 %"
+ },
+ {
+   "code": 17250,
+   "met": 3.5,
+   "category_activity_id": 11,
+   "label": "marcher pour le plaisir, pause de travail"
+ },
+ {
+   "code": 17260,
+   "met": 4.8,
+   "category_activity_id": 11,
+   "label": "marcher dans l'herbe"
+ },
+ {
+   "code": 17262,
+   "met": 4.5,
+   "category_activity_id": 11,
+   "label": "marcher à un rythme normal, dans un champ labouré ou dans du sable"
+ },
+ {
+   "code": 17270,
+   "met": 4.0,
+   "category_activity_id": 11,
+   "label": "marcher pour aller au travail ou à l'école (code Taylor 015)"
+ },
+ {
+   "code": 17280,
+   "met": 2.5,
+   "category_activity_id": 11,
+   "label": "marcher vers et depuis une dépendance"
+ },
+ {
+   "code": 17302,
+   "met": 4.8,
+   "category_activity_id": 11,
+   "label": "marcher pour l’exercice à 5,5-6,5 km/h avec des bâtons de ski, marche nordique, à plat, rythme modéré"
+ },
+ {
+   "code": 17305,
+   "met": 9.5,
+   "category_activity_id": 11,
+   "label": "marcher pour l’exercice à 8 km/h avec des bâtons de ski, marche nordique, à plat, rythme rapide"
+ },
+ {
+   "code": 17310,
+   "met": 6.8,
+   "category_activity_id": 11,
+   "label": "marcher pour l’exercice avec des bâtons de ski, marche nordique, en montée"
+ },
+ {
+   "code": 17320,
+   "met": 6.0,
+   "category_activity_id": 11,
+   "label": "marcher, en arrière, 5,5 km/h, à plat"
+ },
+ {
+   "code": 17325,
+   "met": 8.0,
+   "category_activity_id": 11,
+   "label": "marcher, en arrière à 5,5 km/h, en montée de 5%"
+ },
+ {
+   "code": 18010,
+   "met": 2.5,
+   "category_activity_id": 12,
+   "label": "navigation, au moteur, barrer"
+ },
+ {
+   "code": 18012,
+   "met": 1.3,
+   "category_activity_id": 12,
+   "label": "navigation, au moteur, passager, effort léger"
+ },
+ {
+   "code": 18020,
+   "met": 4.0,
+   "category_activity_id": 12,
+   "label": "canoë, pendant une randonnée avec camping (code Taylor 270)"
+ },
+ {
+   "code": 18025,
+   "met": 3.3,
+   "category_activity_id": 12,
+   "label": "canoë, récolte de riz sauvage en faisant tomber le riz des tiges"
+ },
+ {
+   "code": 18030,
+   "met": 7.0,
+   "category_activity_id": 12,
+   "label": "canoë, portage"
+ },
+ {
+   "code": 18040,
+   "met": 2.8,
+   "category_activity_id": 12,
+   "label": "canoë, pagayer à 3,2-4,8 km/h, effort léger"
+ },
+ {
+   "code": 18050,
+   "met": 5.8,
+   "category_activity_id": 12,
+   "label": "canoë, pagayer à 6,4-8 km/h, effort modéré"
+ },
+ {
+   "code": 18060,
+   "met": 12.5,
+   "category_activity_id": 12,
+   "label": "canoë, pagayer, kayak, compétition, > 9,65 km/h, effort vigoureux"
+ },
+ {
+   "code": 18070,
+   "met": 3.5,
+   "category_activity_id": 12,
+   "label": "canoë, pagayer pour le plaisir, général (code Taylor 250)"
+ },
+ {
+   "code": 18080,
+   "met": 12.0,
+   "category_activity_id": 12,
+   "label": "canoë, pagayer, compétition, en équipe ou en couple (code Taylor 260)"
+ },
+ {
+   "code": 18090,
+   "met": 3.0,
+   "category_activity_id": 12,
+   "label": "plongeon, tremplin ou plateforme"
+ },
+ {
+   "code": 18100,
+   "met": 5.0,
+   "category_activity_id": 12,
+   "label": "kayak, effort modéré"
+ },
+ {
+   "code": 18110,
+   "met": 4.0,
+   "category_activity_id": 12,
+   "label": "bateau à aubes"
+ },
+ {
+   "code": 18120,
+   "met": 3.0,
+   "category_activity_id": 12,
+   "label": "voile, voilier et planche à voile, windsurf, voile sur glace, général (code Taylor 235)"
+ },
+ {
+   "code": 18130,
+   "met": 4.5,
+   "category_activity_id": 12,
+   "label": "voile, compétition"
+ },
+ {
+   "code": 18140,
+   "met": 3.3,
+   "category_activity_id": 12,
+   "label": "voile, Sunfish/Laser/Hobby Cat, quillards, navigation hauturière, croisière, plaisance"
+ },
+ {
+   "code": 18150,
+   "met": 6.0,
+   "category_activity_id": 12,
+   "label": "ski nautique ou wakeboard (code Taylor 220)"
+ },
+ {
+   "code": 18160,
+   "met": 7.0,
+   "category_activity_id": 12,
+   "label": "scooter des mers, conduire, dans l'eau"
+ },
+ {
+   "code": 18180,
+   "met": 15.8,
+   "category_activity_id": 12,
+   "label": "plongée sous-marine, rythme rapide"
+ },
+ {
+   "code": 18190,
+   "met": 11.8,
+   "category_activity_id": 12,
+   "label": "plongée sous-marine, rythme modéré"
+ },
+ {
+   "code": 18200,
+   "met": 7.0,
+   "category_activity_id": 12,
+   "label": "plongée sous-marine, général (code Taylor 310)"
+ },
+  {
+   "code": 18210,
+   "met": 5.0,
+   "category_activity_id": 12,
+   "label": "plongée libre (code Taylor 310)"
+ },
+ {
+   "code": 18220,
+   "met": 3.0,
+   "category_activity_id": 12,
+   "label": "surf, corps ou planche, général"
+ },
+ {
+   "code": 18222,
+   "met": 5.0,
+   "category_activity_id": 12,
+   "label": "surf, corps ou planche, compétition"
+ },
+ {
+   "code": 18225,
+   "met": 6.0,
+   "category_activity_id": 12,
+   "label": "planche à rame, en position debout"
+ },
+ {
+   "code": 18230,
+   "met": 9.8,
+   "category_activity_id": 12,
+   "label": "longueurs de piscine, nage libre, rythme rapide, effort vigoureux"
+ },
+ {
+   "code": 18240,
+   "met": 5.8,
+   "category_activity_id": 12,
+   "label": "longueurs de piscine, nage libre, crawl, rythme lent, effort modéré ou léger"
+ },
+ {
+   "code": 18250,
+   "met": 9.5,
+   "category_activity_id": 12,
+   "label": "natation, nage sur le dos, général, entraînement ou compétition"
+ },
+ {
+   "code": 18255,
+   "met": 4.8,
+   "category_activity_id": 12,
+   "label": "natation, nage sur le dos, loisirs"
+ },
+ {
+   "code": 18260,
+   "met": 10.3,
+   "category_activity_id": 12,
+   "label": "natation, brasse, général, entraînement ou compétition"
+ },
+ {
+   "code": 18265,
+   "met": 5.3,
+   "category_activity_id": 12,
+   "label": "natation, brasse, loisirs"
+ },
+ {
+   "code": 18270,
+   "met": 13.8,
+   "category_activity_id": 12,
+   "label": "natation, papillon, général"
+ },
+ {
+   "code": 18280,
+   "met": 10.0,
+   "category_activity_id": 12,
+   "label": "natation, crawl, rythme rapide (~70 mètres/minute), effort vigoureux"
+ },
+ {
+   "code": 18290,
+   "met": 8.3,
+   "category_activity_id": 12,
+   "label": "natation, crawl, rythme rapide (~45 mètres/minute), effort vigoureux"
+ },
+ {
+   "code": 18300,
+   "met": 6.0,
+   "category_activity_id": 12,
+   "label": "natation, lac, océan, rivière (codes Taylor 280, 295)"
+ },
+ {
+   "code": 18310,
+   "met": 6.0,
+   "category_activity_id": 12,
+   "label": "natation, loisirs, sans longueurs, général"
+ },
+ {
+   "code": 18320,
+   "met": 7.0,
+   "category_activity_id": 12,
+   "label": "natation, nage indienne, général"
+ },
+ {
+   "code": 18330,
+   "met": 8.0,
+   "category_activity_id": 12,
+   "label": "natation, synchronisée"
+ },
+ {
+   "code": 18340,
+   "met": 9.8,
+   "category_activity_id": 12,
+   "label": "natation, sur-place, rythme rapide, effort vigoureux"
+ },
+ {
+   "code": 18350,
+   "met": 3.5,
+   "category_activity_id": 12,
+   "label": "natation, sur-place, effort modéré, général"
+ },
+ {
+   "code": 18352,
+   "met": 2.3,
+   "category_activity_id": 12,
+   "label": "descendre en chambre à air, flotter sur une rivière, général"
+ },
+  {
+   "code": 2120,
+   "met": 5.3,
+   "category_activity_id": 2,
+   "label": "aérobic aquatique, gymnastique suédoise aquatique, exercices dans l’eau"
+ },
+ {
+   "code": 18355,
+   "met": 5.5,
+   "category_activity_id": 12,
+   "label": "aérobic aquatique, gymnastique suédoise aquatique"
+ },
+ {
+   "code": 18360,
+   "met": 10.0,
+   "category_activity_id": 12,
+   "label": "water polo"
+ },
+ {
+   "code": 18365,
+   "met": 3.0,
+   "category_activity_id": 12,
+   "label": "water volley-ball"
+ },
+ {
+   "code": 18366,
+   "met": 9.8,
+   "category_activity_id": 12,
+   "label": "water jogging"
+ },
+ {
+   "code": 18367,
+   "met": 2.5,
+   "category_activity_id": 12,
+   "label": "marcher dans l’eau, effort léger, rythme lent"
+ },
+ {
+   "code": 18368,
+   "met": 4.5,
+   "category_activity_id": 12,
+   "label": "marcher dans l’eau, effort modéré, rythme modéré"
+ },
+ {
+   "code": 18369,
+   "met": 6.8,
+   "category_activity_id": 12,
+   "label": "marcher dans l’eau, effort vigoureux, rythme soutenu"
+ },
+ {
+   "code": 18370,
+   "met": 5.0,
+   "category_activity_id": 12,
+   "label": "rafting, kayak, canoë en eau vive"
+ },
+ {
+   "code": 18380,
+   "met": 5.0,
+   "category_activity_id": 12,
+   "label": "planche à voile, sans pomper pour gagner en vitesse"
+ },
+ {
+   "code": 18385,
+   "met": 11.0,
+   "category_activity_id": 12,
+   "label": "planche à voile ou kitesurf, entraînement"
+ },
+ {
+   "code": 18390,
+   "met": 13.5,
+   "category_activity_id": 12,
+   "label": "planche à voile, compétition, en pompant pour gagner en vitesse"
+ },
+ {
+   "code": 19005,
+   "met": 7.5,
+   "category_activity_id": 13,
+   "label": "randonnée en traîneau à chiens en tant que musher"
+ },
+ {
+   "code": 19006,
+   "met": 2.5,
+   "category_activity_id": 13,
+   "label": "randonnée en traîneau à chiens en tant que passager"
+ },
+ {
+   "code": 19010,
+   "met": 6.0,
+   "category_activity_id": 13,
+   "label": "retrait de la glace, maison, créer/forer des trous"
+ },
+ {
+   "code": 19011,
+   "met": 2.0,
+   "category_activity_id": 13,
+   "label": "pêche sur glace, position assise"
+ },
+ {
+   "code": 19018,
+   "met": 14.0,
+   "category_activity_id": 13,
+   "label": "patinage, dance sur glace"
+ },
+  {
+   "code": 19020,
+   "met": 5.5,
+   "category_activity_id": 13,
+   "label": "patinage sur glace à 14,5 km/h ou moins"
+ },
+ {
+   "code": 19030,
+   "met": 7.0,
+   "category_activity_id": 13,
+   "label": "patinage sur glace, général (code Taylor 360)"
+ },
+ {
+   "code": 19040,
+   "met": 9.0,
+   "category_activity_id": 13,
+   "label": "patinage sur glace, rythme rapide, plus de 14,5 km/h, hors compétition"
+ },
+ {
+   "code": 19050,
+   "met": 13.3,
+   "category_activity_id": 13,
+   "label": "patinage de vitesse, compétition"
+ },
+ {
+   "code": 19060,
+   "met": 7.0,
+   "category_activity_id": 13,
+   "label": "saut à ski, monter en portant des skis"
+ },
+ {
+   "code": 19075,
+   "met": 7.0,
+   "category_activity_id": 13,
+   "label": "ski, général"
+ },
+ {
+   "code": 19080,
+   "met": 6.8,
+   "category_activity_id": 13,
+   "label": "ski de fond à 4 km/h, rythme lent ou effort léger, marche nordique"
+ },
+ {
+   "code": 19090,
+   "met": 9.0,
+   "category_activity_id": 13,
+   "label": "ski de fond à 6,5-8 km/h, rythme et effort modérés, général"
+ },
+ {
+   "code": 19100,
+   "met": 12.5,
+   "category_activity_id": 13,
+   "label": "ski de fond à 8-12,5 km/h, rythme rapide, effort vigoureux"
+ },
+ {
+   "code": 19110,
+   "met": 15.0,
+   "category_activity_id": 13,
+   "label": "ski de fond à plus de 13 km/h, skieur d’élite, course"
+ },
+ {
+   "code": 19130,
+   "met": 15.5,
+   "category_activity_id": 13,
+   "label": "ski de fond, neige dure, montée, maximum, alpinisme"
+ },
+ {
+   "code": 19135,
+   "met": 13.3,
+   "category_activity_id": 13,
+   "label": "ski de fond, patinage"
+ },
+ {
+   "code": 19140,
+   "met": 13.5,
+   "category_activity_id": 13,
+   "label": "ski de fond, biathlon, pas de patineur"
+ },
+ {
+   "code": 19150,
+   "met": 4.3,
+   "category_activity_id": 13,
+   "label": "ski, descente, ski alpin ou snowboard, effort léger, périodes d’activité uniquement"
+ },
+ {
+   "code": 19160,
+   "met": 5.3,
+   "category_activity_id": 13,
+   "label": "ski, descente, ski alpin ou snowboard, effort modéré, général, périodes d’activité uniquement"
+ },
+ {
+   "code": 19170,
+   "met": 8.0,
+   "category_activity_id": 13,
+   "label": "ski, descente, effort vigoureux, course"
+ },
+ {
+   "code": 19175,
+   "met": 12.5,
+   "category_activity_id": 13,
+   "label": "ski, ski à roulettes, coureurs d’élite"
+ },
+ {
+   "code": 19180,
+   "met": 7.0,
+   "category_activity_id": 13,
+   "label": "traîneau, toboggan, bobsleigh, luge (code Taylor 370)"
+ },
+ {
+   "code": 19190,
+   "met": 5.3,
+   "category_activity_id": 13,
+   "label": "raquettes à neige, effort modéré"
+ },
+ {
+   "code": 19192,
+   "met": 10.0,
+   "category_activity_id": 13,
+   "label": "raquettes à neige, effort vigoureux"
+ },
+ {
+   "code": 19200,
+   "met": 3.5,
+   "category_activity_id": 13,
+   "label": "moto des neiges, conduire, effort modéré"
+ },
+ {
+   "code": 19202,
+   "met": 2.0,
+   "category_activity_id": 13,
+   "label": "moto des neiges, passager"
+ },
+ {
+   "code": 19252,
+   "met": 5.3,
+   "category_activity_id": 13,
+   "label": "déblayer la neige à la pelle, à la main, effort modéré"
+ },
+ {
+   "code": 19254,
+   "met": 7.5,
+   "category_activity_id": 13,
+   "label": "déblayer la neige à la pelle, à la main, effort vigoureux"
+ },
+ {
+   "code": 19260,
+   "met": 2.5,
+   "category_activity_id": 13,
+   "label": "passer la souffleuses à neige, marcher et pousser"
+ }
+]
