@@ -117,6 +117,16 @@ Challenge.belongsToMany(User, {
     otherKey: "user_id"
 });
 
+User.belongsTo(Challenge, {
+    as: "DailyChallenge",
+    foreignKey: "challenge_id",
+});
+
+Challenge.hasMany(User, {
+    as: "ChallengesDaily",
+    foreignKey: "challenge_id"
+});
+
 // activity_user
 
 User.belongsToMany(Activity, {

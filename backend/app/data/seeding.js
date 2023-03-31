@@ -2,7 +2,7 @@ require("dotenv").config();
 const activities = require("./activities.json");
 const categories = require("./categories.json");
 
-const { Activity ,CategoryActivity } = require("../models");
+const { Activity, CategoryActivity } = require("../models");
 
 async function insertInto(tableName, data){
     switch(tableName){

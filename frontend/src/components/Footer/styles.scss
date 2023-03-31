@@ -1,0 +1,23 @@
+.footer {
+  background-color: #bc9b5a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  &__text {
+    margin: 0;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin: 1rem;
+  }
+}
+
