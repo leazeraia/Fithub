@@ -36,7 +36,6 @@ CREATE TABLE IF NOT EXISTS "user" (
     updated_at TIMESTAMPTZ DEFAULT NULL
 );
 
-
 CREATE TYPE completed_challenge AS ENUM ('yes', 'no');
 
 CREATE TABLE IF NOT EXISTS challenge_user (
