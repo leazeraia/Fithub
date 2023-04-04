@@ -1,19 +1,16 @@
 const express = require("express");
 const router = express.Router();
-
 const userRoute = require("./routes/users/userRoute");
-const activityRoute = require("./routes/activities/activityRoute");
-const challengeRoute = require("./routes/others/challengeRoute");
 
-// user
+const activityRoute = require("./routes/activities/activityRoute");
+const categoryActivityRoute = require("./routes/activities/categoryActivityRoute");
+
+const challengeRoute = require("./routes/others/challengeRoute");
 
 router.use("/user", userRoute);
 
-// activity
-
 router.use("/activity", activityRoute);
-
-// challenge
+router.use("/category-activity", categoryActivityRoute);
 
 router.use("/challenge", challengeRoute);
 
