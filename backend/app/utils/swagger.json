@@ -1,0 +1,1023 @@
+{
+    "openapi": "3.0.3",
+    "info": {
+        "title": "FitHub - API",
+        "description": "Welcome to FitHub api's documentation. Here you will find all the routes at disposal including details and their HTTP methods."
+    },
+    "tags": [
+        {
+            "name": "User",
+            "description": "HTTP requests concerning users."
+        },
+        {
+            "name": "Activity",
+            "description": "HTTP requests concerning activities."
+        },
+        {
+            "name": "Category activity",
+            "description": "HTTP requests concerning category activities."
+        },
+        {
+            "name": "Challenge",
+            "description": "HTTP requests concerning challenges."
+        }
+    ],
+    "paths": {
+        "/user": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Fetch all users & their public informations.",
+                "description": "Returns an array of objects with users' informations.",
+                "operationid": "findAll",
+                "responses": {
+                    "200": {
+                        "description": " Returns a JSON object with users' data.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Users cannot be found."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new user account.",
+                "description": "Create a new user account based on the data retrieved.",
+                "operationId": "createOne",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/User"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "User created !"
+                    },
+                    "400": {
+                        "description": "Missing required fields."
+                    },
+                    "409": {
+                        "description": "Nickname, email or phone already linked to a user."
+                    }
+                }
+            }
+        },
+        "/user/:userId": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Fetch one user & their public informations.",
+                "description": "Returns an object with the user's informations.",
+                "operationid": "findOne",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "User's id to find.",
+                        "required": "true",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": " Returns a JSON object with user's data.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "User cannot be found."
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Patch one user's informations.",
+                "description": "Returns an object with the user's updated informations.",
+                "operationid": "patchOne",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "User's id to update.",
+                        "required": "true",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/User"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": " Returns a JSON object with user's data.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/User"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "User cannot be found."
+                    },
+                    "409": {
+                        "description": "Nickname, email or phone already linked to a user."
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Delete a user and their informations.",
+                "description": "Returns a deletion confirmation message.",
+                "operationid": "deleteOne",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "ID of user to return",
+                        "required": "true",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": " Returns a JSON object with 'User deleted !'"
+                    },
+                    "404": {
+                        "description": "User cannot be found."
+                    }
+                }
+            }   
+        },
+        "user/session/login": {
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "User's login route.",
+                "description": "User logins by sending email and password for verification.",
+                "operationId": "login",
+                "requestBody": {
+                    "description": "User credentials sent from the client.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/LoginForm"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": " User logged in !"
+                    },
+                    "401": {
+                        "description": "User already logged in"
+                    },
+                    "404" : {
+                            "description": "User cannot be found."
+                    }                    
+                }
+            }
+        },
+        "user/session/logout": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Logs user out.",
+                "description": "Logs user out and deletes their session.",
+                "operationid": "logout",
+                "responses": {
+                    "200": {
+                        "description": " User logged out !"
+                    },
+                    "401": {
+                        "description": "Unauthorized actions, user not logged in."
+                    },
+                    "404": {
+                        "description": "User cannot be found."
+                    }
+                }
+            }
+        },
+        "/activity": {
+            "get": {
+                "tags": [
+                    "Activity"
+                ],
+                "summary": "Fetch all activities.",
+                "description": "Fetch all activities and their categories.",
+                "operationid": "findAll",
+                "responses": {
+                    "200": {
+                        "description": " Returns a JSON array object with activities' data.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Activity"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Activity not found."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Activity"
+                ],
+                "summary": "Create a new activity.",
+                "description": "Create a new activity and assign it to a category.",
+                "operationid": "createOne",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema" : {
+                                "$ref": "#/components/schemas/Activity"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": " Activity created !"
+                    },
+                    "404": {
+                        "description": "Activity not found."
+                    },
+                    "409": {
+                        "description": "Activity's label or code already exists."
+                    }
+                }
+            }
+        },
+        "/activity/:activityId": {
+            "patch": {
+                "tags": [
+                    "Activity"
+                ],
+                "summary": "Update an activity.",
+                "description": "Update an activity.",
+                "operationid": "createOne",
+                "parameters": [
+                    {
+                        "name": "activityId",
+                        "in": "path",
+                        "description": "Activity's ID to update",
+                        "required": "true"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema" : {
+                                "$ref": "#/components/schemas/Activity"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": " Activity updated !"
+                    },
+                    "404": {
+                        "description": "Activity not found."
+                    },
+                    "409": {
+                        "description": "Activity's label or code already exists."
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Activity"
+                ],
+                "summary": "Delete an activity.",
+                "description": "Delete an activity and removes it from their category.",
+                "operationid": "createOne",
+                "parameters": [
+                    {
+                        "name": "activityId",
+                        "in": "path",
+                        "description": "Activity's ID to delete",
+                        "required": "true"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema" : {
+                                "$ref": "#/components/schemas/Activity"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": " Activity deleted !"
+                    },
+                    "404": {
+                        "description": "Activity not found."
+                    }
+                }
+            }
+        },
+        "/activity/user": {
+            "post": {
+                "tags": [
+                    "Activity"
+                ],
+                "summary": "Assign an activity to a user.",
+                "description": "Assign an activity",
+                "operationId": "assignActivityToUser",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "query",
+                        "description": "User's id to assign an activity.",
+                        "required": "true"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "description": "Activities' data.",
+                            "schema" : {
+                                "$ref": "#/components/schemas/Activity"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": " Activity assigned to user !"
+                    },
+                    "404": {
+                        "description": "Activity or user not found."
+                    }
+                }
+            }
+        },
+        "/activity/:userId/:activityUserId": {
+            "delete": {
+                "tags": [
+                    "Activity"
+                ],
+                "summary": "Removed an activity from a user.",
+                "description": "Removed an activity from a user.",
+                "operationId": "removeActivityFromUser",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "in": "path",
+                        "description": "User's id to remove an activity.",
+                        "required": "true"
+                    },
+                    {
+                        "name": "activityUserId",
+                        "in": "path",
+                        "description": "User's activity and date entry.",
+                        "required": "true"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": " Activity removed from user !"
+                    },
+                    "404": {
+                        "description": "Activity or user not found."
+                    }
+                }
+            }
+        },
+        "/category-activity" : {
+            "get": {
+                "tags": [
+                    "Category activity"
+                ],
+                "summary": "Fetch all categories of activities.",
+                "description": "Fetch all categories of activities",
+                "operationId": "findAll",
+                "responses": {
+                    "200": {
+                        "description": " Returns a JSON array object with all categories.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Category activity"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Categories not found."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Category activity"
+                ],
+                "summary": "Create a new category.",
+                "description": "Create a new activities' category.",
+                "operationId": "createOne",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref":"#/components/schemas/Category activity"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200" : {
+                        "description": "Category created !"
+                    },
+                    "400": {
+                        "description": "Label is required."
+                    },
+                    "409": {
+                        "description": "Category already exists."
+                    }
+                }
+            }
+        },
+        "/category-activity/:categoryActivityId": {
+            "get": {
+                "tags": [
+                    "Category activity"
+                ],
+                "summary": "Fetch one category activity.",
+                "description": "Fetch one category activitiy and their related activities.",
+                "operationid": "findOne",
+                "parameters": [
+                    {
+                        "name": "categoryActivityId",
+                        "in": "path",
+                        "description": "Category's id to find.",
+                        "required": "true",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": " Category updated !",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/Category activity"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Missing label."
+                    },
+                    "404": {
+                        "description": "Category cannot be found."
+                    },
+                    "409": {
+                        "description": "Category already exists."
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "Category activity"
+                ],
+                "summary": "Update a category",
+                "description": "Update category of activities.",
+                "operationid": "updateOne",
+                "parameters": [
+                    {
+                        "name": "categoryActivityId",
+                        "description": "ID of category to update.",
+                        "required": "true",
+                        "in": "path"
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Category activity"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Category deleted !"
+                    },
+                    "404": {
+                        "description": "Category cannot be found."
+                    },
+                    "409": {
+                        "description": "Label already exists."
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Category activity"
+                ],
+                "summary": "Delete a category",
+                "description": "Delete category of activities.",
+                "operationid": "deleteOne",
+                "parameters": [
+                    {
+                        "name": "categoryActivityId",
+                        "description": "ID of category to delete.",
+                        "required": "true",
+                        "in": "path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Category deleted !"
+                    },
+                    "404": {
+                        "description": "Category cannot be found."
+                    }
+                }
+            }
+        },
+        "/challenge": {
+            "get": {
+                "tags": [
+                    "Challenge"
+                ],
+                "summary": "Fetch all challenges.",
+                "description": "Fetch all challenges",
+                "operationId": "findAll",
+                "responses": {
+                    "200": {
+                        "description": "Returns a JSON array object with all the challenges.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/Challenge"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Challenges cannot be found."
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Challenge"
+                ],
+                "summary": "Create a new challenge.",
+                "description": "Create a new challenge.",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref":"#/components/schemas/Challenge"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Challenge created !"
+                    },
+                    "400": {
+                        "description": "Label is required."
+                    },
+                    "409": {
+                        "description": "Challenge already exists."
+                    }
+                }
+            }
+        },
+        "/challenge/:challengeId": {
+            "get": {
+                "tags": [
+                    "Challenge"
+                ],
+                "summary": "Fetch one challenge.",
+                "description": "Fetch one challenge.",
+                "operationId": "findOne",
+                "parameters": [
+                    {
+                        "name": "challengeId",
+                        "required": "true",
+                        "in": "path",
+                        "description": "ID of category to return."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Returns a JSON object with the challenge data.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/Challenge"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Challenge cannot be found."
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "Challenge"
+                ],
+                "summary": "Update a challenge.",
+                "description": "Update a challenge.",
+                "operationid": "updateOne",
+                "parameters": [
+                    {
+                        "name": "challengeId",
+                        "required": "true",
+                        "in": "path",
+                        "description": "ID of challenge to update."
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Challenge"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Challenge updated !"
+                    },
+                    "404": {
+                        "description": "Challenge cannot be found."
+                    },
+                    "409": {
+                        "description": "Challenge already exists."
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Challenge"
+                ],
+                "summary": "Delete a challenge",
+                "description": "Delete a challenge",
+                "operationId": "deleteOne",
+                "parameters": [
+                      {
+                        "name": "challengeId",
+                        "required": "true",
+                        "in": "path",
+                        "description": "ID of challenge to delete."
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Challenge deleted !"
+                    },
+                    "404": {
+                        "description": "Challenge cannot be found."
+                    }
+                }
+            }
+        },
+        "challenge/user": {
+            "post": {
+                "tags": [
+                    "Challenge"
+                ],
+                "summary": "Assign a random challenge to a user",
+                "description": "Assign a random challenge to a user",
+                "operationId": "assignChallenge",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref":"#/components/schemas/Assign challenge"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Challenge assigned !"
+                    },
+                    "404": {
+                        "description": "Challenge or user cannot be found."
+                    },
+                    "409": {
+                        "description": "User already receveived a challenge today."
+                    }
+                }
+            }
+        },
+        "/challenge/user/:userId": {
+            "patch": {
+                "tags": [
+                    "Challenge"
+                ],
+                "summary": "Checks or unchecks a challenge completion.",
+                "description": "Checks or unchecks a challenge completion",
+                "operationId": "challengeChecker",
+                "parameters": [
+                    {
+                        "name": "userId",
+                        "required": "true",
+                        "description": "ID of user to update their challenge status.",
+                        "in": "path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Challenge completion updated !"
+                    },
+                    "400":{
+                        "description": "Only current day's challenge can be validated."
+                    },
+                    "404": {
+                        "description": "Challenge or user cannot be found. Otherwise challenge was not assigned."
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "User": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 2
+                    },
+                    "firstname": {
+                        "type": "string",
+                        "example": "John",
+                        "required": "true"
+                    },
+                    "lastname": {
+                        "type": "string",
+                        "example": "Doe",
+                        "required": "true"
+                    },
+                    "nickname": {
+                        "type": "string",
+                        "example": "John_Doe_73",
+                        "required": "true"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "example": "0123456789",
+                        "required": "false",
+                        "default": "null"
+                    },
+                    "role": {
+                        "type": "string",
+                        "example": "user",
+                        "enum": [
+                            "user",
+                            "admin"
+                        ],
+                        "default": "user"
+                    },
+                    "login_streak": {
+                        "type": "integer",
+                        "example": 10,
+                        "default": 0
+                    },
+                    "password": {
+                        "type": "string",
+                        "example": "$2b$10$wyzLD2T8Jxpb2Fp4r7cgWOapKwfTGkLGMKq1VVwsc2r4LTNUDXIhq",
+                        "required": "true"
+                    },
+                    "email": {
+                        "type": "string",
+                        "example": "johndoe73@mymail.com",
+                        "required": "true"
+                    },
+                    "weight": {
+                        "type": "integer",
+                        "example": 64,
+                        "required": "true"
+                    },
+                    "age": {
+                        "type": "integer",
+                        "example": 25,
+                        "required": "true"
+                    },
+                    "gender": {
+                        "type": "string",
+                        "example": "homme",
+                        "enum": [
+                            "femme",
+                            "homme",
+                            "non-spécifié"
+                        ],
+                        "default": "non-spécifié"
+                    },
+                    "challenge_id": {
+                        "type": "integer",
+                        "example": 2,
+                        "default": "null"
+                    },
+                    "xp": {
+                        "type": "integer",
+                        "example": 478054,
+                        "default": "null"
+                    },
+                    "profile_visibility": {
+                        "type": "string",
+                        "example": "privé",
+                        "enum": [
+                            "publique",
+                            "privé"
+                        ],
+                        "default": "publique"
+                    },
+                    "image_path": {
+                        "type": "string",
+                        "example": "dirName/fileName123",
+                        "default": "null"
+                    },
+                    "image_mimetype": {
+                        "type": "string",
+                        "example": "image/jpeg",
+                        "default": "null"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "2023-04-02 13:39:13.472+02"
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "null"
+                    }
+                }
+            },
+            "LoginForm": {
+                "type": "object",
+                "properties": {
+                    "email": 
+                    {
+                        "type": "string",
+                        "example": "johndoe73@mymail.com",
+                        "required": "true"
+                    },                            
+                    "password": {
+                           "type": "string",
+                        "example": "$2b$10$wyzLD2T8Jxpb2Fp4r7cgWOapKwfTGkLGMKq1VVwsc2r4LTNUDXIhq",
+                        "required": "true"                                                           
+                    }
+                }
+            },
+            "Activity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 5
+                    },
+                    "code": {
+                        "type": "string",
+                        "required": "true",
+                        "example": "1070"
+                    },
+                    "met": {
+                        "type": "number",
+                        "example": "14.0",
+                        "format": "float",
+                        "required": "true"
+                    },
+                    "label": {
+                        "type": "string",
+                        "example": "Aviron",
+                        "required": "true"
+                    },
+                    "category_activity_id": {
+                        "type": "integer",
+                        "required": "true",
+                        "example": "2"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "2023-04-02 13:39:13.472+02"
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "null"
+                    }
+                }
+            },
+            "Category activity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 5
+                    },
+                    "label": {
+                        "type": "string",
+                        "example": "course",
+                        "required": "true"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "2023-04-02 13:39:13.472+02"
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "null"
+                    }
+                }
+            },
+            "Challenge": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "example": 15
+                    },
+                    "label": {
+                        "type": "string",
+                        "example": "Faire 20 pompes.",
+                        "required": "true"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "2023-04-02 13:39:13.472+02"
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "default": "null"
+                    }
+                }
+            },
+            "Assign challenge": {
+                "type": "object",
+                "properties": {
+                    "user_id": {
+                        "type": "integer",
+                        "example": 1,
+                        "required": "true"
+                    }
+                }
+            }
+        }
+    }
+}

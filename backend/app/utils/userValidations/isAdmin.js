@@ -1,15 +1,16 @@
-const userValidations = require("debug")("utils:isAdmin");
+const isAdminError = require("debug")("utils:isAdminError");
 const isAdmin = (req, res, next) => {
-    // Checks if there is a user and then if it's an admin
+    // Checks if the user is an admin
     if(!req.session.user){
-        userValidations("Error, not authenticated.", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
+        isAdminError("Error, not authenticated.", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
         return res.status(403).json("Access denied.");
     };
 
     if(req.session.user.role !== "admin"){
-        userValidations("Error, not admin.", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
+        isAdminError("Error, not admin.", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
         return res.status(403).json("Access denied.");
     }
+
     next();
 };
 
