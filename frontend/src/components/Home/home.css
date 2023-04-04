@@ -1,0 +1,52 @@
+.home-section{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../assets/images/backround-home.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.home-section h1{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+.home-section .item-section {
+    width: 25rem;
+    color: #ffffff;
+    font-weight: 00;
+    
+
+}
+.box-section{
+    display: flex;
+    gap: 0.8rem;
+    margin: 1.5rem;
+
+}
+.box-section img{
+    width: 1.8rem;
+    height: 1.8rem;
+    object-fit: cover;
+    background-color:#ffffff;
+    border-radius: 50%;
+
+}
+.box-section p{
+    max-width: 80% ;
+
+}
+
+.box-section .paraph-section{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
