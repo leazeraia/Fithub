@@ -19,13 +19,12 @@ const Footer = () => {
   // création de la balise footer, des liens et du paragraphe
   <footer className="footer">
     <Link to='/contacts' className="footer__link" onClick={handleContactsClick}>Contacts</Link>
+
     <Link to='/mentionslegales' className="footer__link">Mentions légales</Link>
     <p className="footer__text">© 2023 - Tous droits réservés</p>
   </footer>
 );
-
-
-  };
+};
 
 // export du composant Footer
 export default Footer;

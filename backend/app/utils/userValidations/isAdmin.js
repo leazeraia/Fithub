@@ -10,7 +10,6 @@ const isAdmin = (req, res, next) => {
         isAdminError("Error, not admin.", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
         return res.status(403).json("Access denied.");
     }
-
     next();
 };
 
