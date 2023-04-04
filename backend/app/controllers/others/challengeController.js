@@ -24,10 +24,11 @@ const challengeController = {
 
         const findChallenge = await Challenge.findByPk(challengeId);
         
-            challengeControllerError("Error, no challenge found", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
-
-            return res.status(404).json("Challenge cannot be found.");
+        if(result.length === 0){
+            challengeControllerError("Error, no challenges found", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
+            return res.status(404).json("No challenges found.");
         };
+
 
         res.status(200).json(findChallenge);
     },
