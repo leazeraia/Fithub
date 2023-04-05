@@ -1,0 +1,188 @@
+.calendar{
+  max-width: 80%;
+  margin: 1rem auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  &__container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__day{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bc9b5a;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem;
+    padding: 1rem;
+    border : 3px solid #753c00;
+    border-radius: 10px;
+
+  }
+
+  &__day__name{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  }
+
+  .generateButton{
+    text-align: center;
+    margin: 1rem;
+
+    &__button{
+      background-color: #bc9b5a;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border : 2px solid #753c00;
+      border-radius: 10px;
+      transition: background-color 0.3s ease-in-out;
+      transition: color 0.3s ;
+
+
+    }
+
+    .generateButton__button:hover {
+      background-color: #4c7032;
+      color: black;
+    }
+   
+  }
+
+  .record{
+
+  text-align: center;
+  margin: 2rem;
+  border-top: solid 2px #753c00;
+
+  &__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top:2.5rem;
+  }
+
+  &__form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+ &__container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    &__label{
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      color: black;
+      font-size: 1rem;
+    }
+
+ }
+
+ &__button{
+
+  background-color: #bc9b5a;
+  color: #fff; 
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border : 2px solid #753c00;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  transition: color 0.3s ;
+
+  }
+
+ &__button:hover {
+    background-color: #4c7032;
+    color: black;
+ }
+  }
+
+  }
+
+@media screen and (max-width: 768px) {
+  .calendar{
+    &__container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__day{
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 3rem;
+      margin: 0.8rem;
+    }
+
+    &__day__name{
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+
+  i{
+    font-size: 1.5rem;
+  }
+
+  .generateButton{
+
+    &__button{
+ 
+      font-size: 1rem;
+      
+    }
+
+  }
+
+  .record{
+    &__form{
+      &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+  

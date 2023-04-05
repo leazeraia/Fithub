@@ -1,8 +1,6 @@
 // == Import : npm
 import { createRoot } from 'react-dom/client';
 
-import { BrowserRouter as Router } from 'react-router-dom';
-
 // == Import : local
 // Composants
 import App from 'src/components/App';
@@ -12,9 +10,7 @@ import App from 'src/components/App';
 //    => crée une structure d'objets imbriqués (DOM virtuel)
 
 const rootReactElement = (
-
-<App />
-
+  <App />
 );
 
 // 2. La cible du DOM (là où la structure doit prendre vie dans le DOM)
