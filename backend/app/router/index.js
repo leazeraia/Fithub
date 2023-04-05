@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
 const userRoute = require("./routes/users/userRoute");
-
 const activityRoute = require("./routes/activities/activityRoute");
 const categoryActivityRoute = require("./routes/activities/categoryActivityRoute");
 
