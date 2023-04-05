@@ -92,26 +92,28 @@
   padding: 1rem;
   max-width: 80%;
   margin: 0 auto;
-
+  
   &__title{
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 2rem;
-    padding: 0 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 2rem;
+  padding: 0 1rem;
   }
-
+  
   &__text{
-    font-size: 1.2rem;
-    margin: 1rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+  line-height: 2rem;
+  max-width: 30%;
   }
-
+  
   &__link{
-    font-size: 1.2rem;
-    margin: 1rem;
+  font-size: 1.2rem;
+  margin: 1rem;
   }
-
+  
   &__link:hover{
-    color: #bc9b5a;
+  color: #bc9b5a;
   }
 }
 

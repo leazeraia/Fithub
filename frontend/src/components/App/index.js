@@ -20,8 +20,11 @@ import Mentionslegales from '../Footer/MentionsLegales';
 
 // == Composant
 function App() {
+
   return (  
+  
     <BrowserRouter>
+
       <Header/>  
       <Routes>
 
@@ -31,6 +34,7 @@ function App() {
          <Route path="/profiles/:id" element={<Profile name="Quentin" />} />
          <Route path="/reset-password" element={<ResetPassword/>} />
          <Route path="/contacts" element={<Contacts />} />
+         <Route path="/mentionslegales" element={<Mentionslegales/>} />
 
       </Routes> 
       <Footer />
@@ -40,3 +44,5 @@ function App() {
      
 // == Export
 export default App;
+
+
