@@ -12,11 +12,15 @@ import ResetPassword from "../resetPassword";
 import Header from "../Header";
 import Footer from '../Footer';
 import Contacts from '../Footer/Contacts';
+import Mentionslegales from '../Footer/MentionsLegales';
 
 // == Composant
 function App() {
+
   return (  
+  
     <BrowserRouter>
+
       <Header/>  
       <Routes>
 
