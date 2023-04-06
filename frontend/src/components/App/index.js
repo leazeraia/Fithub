@@ -1,5 +1,4 @@
 // == Import
-
 import React from "react";
 import {
   BrowserRouter,
@@ -11,7 +10,7 @@ import './styles.css';
 import Home from '../Home'; 
 import ResetPassword from "../resetPassword";
 import Header from "../Header";
-
+import Signup from '../Signup';
 import Profile from '../Profile';
 import Footer from '../Footer';
 import Contacts from '../Footer/Contacts';
@@ -29,7 +28,7 @@ function App() {
       <Routes>
 
          <Route path="/" element={<Home/>} />
-         <Route path="/signup" element={"<h1>Hello</h1>"}/>
+         <Route path="/signup" element={<Signup />}/>
          <Route path="/profiles" element={<Users />} />
          <Route path="/profiles/:id" element={<Profile name="Quentin" />} />
          <Route path="/reset-password" element={<ResetPassword/>} />
@@ -44,5 +43,3 @@ function App() {
      
 // == Export
 export default App;
-
-
