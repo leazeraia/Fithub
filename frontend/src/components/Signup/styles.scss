@@ -1,6 +1,5 @@
 .signup-container{
-  background-color: #bc9b5a;
-  
+  background-color: #fff;
 
 }
 .signup-container .signup-title{
@@ -10,18 +9,17 @@
 }
 
 .signup-container .signup-title h1 {
-  color: #fff;
+  color: black;
   font-weight: bold;
 }
-
 
 .signup-container .signup-form{
   width: 60%;
   margin: 1.5rem auto;
   border: 1px solid #d1d1d1;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 0.8rem;
-  background-color: #fff; 
-  
+  background-color: #fff;   
 }
 
 .signup-form-content{
@@ -54,7 +52,6 @@
   border-color: #bc9b5a;
   cursor: pointer;
 }
-
 
 .signup-form-column .signup-form-group{
   margin:1rem;
