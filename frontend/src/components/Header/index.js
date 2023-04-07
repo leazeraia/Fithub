@@ -31,6 +31,7 @@ function Header() {
        
     
     }
+
   return (
      <nav className='header-nav'>
         <div className='logo-nav'>
@@ -44,6 +45,7 @@ function Header() {
            <ul>
 
            <li> <Link to="/profiles">Membres</Link></li>
+
 
             <li> <Link to="/signup"> S'inscrire</Link></li>
             

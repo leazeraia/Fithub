@@ -19,11 +19,8 @@ import Mentionslegales from '../Footer/MentionsLegales';
 
 // == Composant
 function App() {
-
   return (  
-  
     <BrowserRouter>
-
       <Header/>  
       <Routes>
 

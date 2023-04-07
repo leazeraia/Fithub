@@ -3,7 +3,6 @@ const router = express.Router();
 const userRoute = require("./routes/users/userRoute");
 const activityRoute = require("./routes/activities/activityRoute");
 const categoryActivityRoute = require("./routes/activities/categoryActivityRoute");
-
 const challengeRoute = require("./routes/others/challengeRoute");
 
 router.use("/user", userRoute);
