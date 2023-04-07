@@ -1,0 +1,106 @@
+.signup-container{
+  background-color: #fff;
+
+}
+.signup-container .signup-title{
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.signup-container .signup-title h1 {
+  color: black;
+  font-weight: bold;
+}
+
+.signup-container .signup-form{
+  width: 60%;
+  margin: 1.5rem auto;
+  border: 1px solid #d1d1d1;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 0.8rem;
+  background-color: #fff;   
+}
+
+.signup-form-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.signup-form-content .signup-form-column input[type="text"],
+.signup-form-content .signup-form-column input[type="password"],
+.signup-form-content .signup-form-column input[type="email"],
+.signup-form-content .signup-form-column select {
+  width: 98%;
+  padding: 0.5em 0.8rem;
+  font-size: 1.1rem;
+  border-radius: 0.6rem;
+  border: 1px solid #868686;
+  outline: transparent;
+}
+
+.signup-form-column input[type="text"]:hover,
+.signup-form-column input[type="password"]:hover,
+.signup-form-column input[type="email"]:hover,
+.signup-form-column select :hover{
+  border-color: #bc9b5a;
+  cursor: pointer;
+}
+
+.signup-form-column .signup-form-group{
+  margin:1rem;
+}
+
+.signup-form-column .signup-form-group label{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.signup-form-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+}
+
+.signup-form-button button{
+  padding: 0.8rem 5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.6rem;
+  background-color:#bc9b5a;
+}
+
+button:hover{
+  background-color: #c8a868;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+  .signup-container .signup-form{
+    width: 97%;
+   
+  }
+  
+.signup-form-content{
+  padding: 0.8rem;
+  
+ }
+}
+

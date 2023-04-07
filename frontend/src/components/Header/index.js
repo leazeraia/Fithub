@@ -31,9 +31,6 @@ function Header() {
        
     
     }
-        
-
-        
 
   return (
      <nav className='header-nav'>
@@ -46,6 +43,10 @@ function Header() {
 
         <div className='link-nav'>
            <ul>
+
+           <li> <Link to="/profiles">Membres</Link></li>
+
+
             <li> <Link to="/signup"> S'inscrire</Link></li>
             
             <li className='login-nav'>

@@ -48,5 +48,4 @@
       }
     }
   },
-  "requireConfigFile": false // désactive la vérification du fichier de configuration Babel
 }
