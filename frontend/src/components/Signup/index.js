@@ -2,9 +2,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
-import logo from 'src/assets/images/logo.png';
-import image from 'src/assets/images/image.jpg';
+
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import closebtn from 'src/assets/images/closebtn.png';
+import imgchoice from 'src/assets/images/imgchoice.png';
+
 import './styles.scss';
 
 // Stockage des données de l'utilisateur dans le state
@@ -22,6 +25,10 @@ function Signup() {
   const [height, setHeight] = useState('');
   const [photo, setPhoto] = useState('');
 
+  const [checkImage, setCheckImage] = useState(false);
+  // const [user, setUser] = useState('');
+
+
   // Récupération de la valeur entré par l'utilisateur
   const handleFirstNameChange = (event) => setFirstName(event.target.value);
   const handleLastNameChange = (event) => setLastName(event.target.value);
@@ -34,9 +41,33 @@ function Signup() {
   const handleGenderChange = (event) => setGender(event.target.value);
   const handleWeightChange = (event) => setWeight(event.target.value);
   const handleHeightChange = (event) => setHeight(event.target.value);
-  const handlePhotoChange = (event) => setPhoto(event.target.files[0]);
 
-  const handleSubmit = (event) => {
+  //  const handlePhotoChange = (event) => setPhoto(event.target.files[0]);
+
+  // const handleUserChange = async (event) => {
+  //   const result = await fetch('https://ynck-hng-server.eddi.cloud:8080/user/12');
+  //   console.log(await result.json());
+  // };
+  const handlePreviewImage = (event) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (reader.readyState === 2) {
+        setPhoto(reader.result);
+      }
+    };
+    reader.readAsDataURL(event.target.files[0]);
+    setCheckImage(true);
+  };
+
+  const handleClosePrewiewImage = () => {
+    setPhoto('');
+    setCheckImage(false);
+  };
+
+  const navigate = useNavigate();
+
+  const handleSubmit = async (event) => {
+  
     event.preventDefault();
 
     if (!firstName || !lastName || !email || !password || !confirmPassword || !age || !weight || !height) {
@@ -59,10 +90,20 @@ function Signup() {
       // inscrire l'utilisateur ici
     }
 
+    const hasMinimumLength = password.length >= 8;
+    const hasSpecialChar = /^(?=.*[A-Z])(?=.*[&@!$#*])(?=.*[0-9]).{8,50}$/.test(password);
+
+    if (!hasMinimumLength || !hasSpecialChar) {
+      alert(' le mot de passe doit avoir au moins 8 caractères, une majuscule et un caractère spécial !');
+      return;
+    }
+    // faire d'autres traitements ou envoyer le mot de passe au serveur
+
     const formData = new FormData();
 
     formData.append('firstname', firstName);
     formData.append('lastname', lastName);
+    formData.append('nickname', nickName);
     formData.append('email', email);
     formData.append('password', password);
     formData.append('passwordConfirm', confirmPassword);
@@ -73,41 +114,23 @@ function Signup() {
     formData.append('height', height);
     formData.append('image', photo);
 
-    // const data = {
-    //   firstname: firstName,
-    //   lastname: lastName,
-    //   nickname: nickName,
-    //   email,
-    //   password,
-    //   passwordConfirm: confirmPassword,
-    //   phone,
-    //   age,
-    //   gender,
-    //   weight,
-    //   height,
-    // };
-
-    fetch('https://ynck-hng-server.eddi.cloud:8080/user', {
+    const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    }).then((response) => {
-      if (response.ok) {
-        console.log('Inscription réussie.');
-      }
-      else {
-        console.log('Erreur lors de l\'inscription.');
-      }
-    })
-      .catch((error) => {
-        console.log('Une erreur est survenue :', error);
-      });
+      body: (formData),
+    });
 
-    // Empecher la page de se recharger
-    // Envoi de la requête d'inscription à l'API
-    // et traitement de la réponse ici
+    if (response.ok) {
+      navigate('/');
+    }
+    // .then((response) => {
+    //   console.log(response.ok);
+    //   if (response.ok) {
+    //     redirect('/');
+    //   }
+    // })
+    //   .catch((error) => {
+    //     console.log('Une erreur est survenue :', error);
+    //   });
   };
 
   return (
@@ -151,6 +174,7 @@ function Signup() {
             <div className="signup-form-group">
               <div>
                 <label htmlFor="password">Mot de passe : </label>
+                <p className="label-password">Votre mot de passe doit contenir une majuscule , 1 caractere special(&@!$#*) et minimum 8 caractere</p>
               </div>
               <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
             </div>
@@ -162,6 +186,28 @@ function Signup() {
               <input type="password" id="confirmPassword" name="confirmPassword" value={confirmPassword} onChange={handleConfirmPasswordChange} />
             </div>
 
+          </div>
+
+          <div className="signup-form-column signup-form-group-image">
+            <div className="preview-image">
+              {checkImage && (
+                <div className="closebtn" onClick={handleClosePrewiewImage}>
+                  <img src={closebtn} alt="fermeture bouton" />
+                </div>
+              )}
+              {checkImage && (<img src={photo} alt="photo choisir" />)}
+            </div>
+
+            <div className="signup-form-group">
+
+              <label htmlFor="photo" className="profil-image">
+                <span className="choice-photo-label">Choisir Photo</span>
+                <img className="choice-photo" src={imgchoice} />
+              </label>
+
+              <input type="file" id="photo" name="image" accept="image/png, image/jpeg, image/jpg" onChange={handlePreviewImage} />
+
+            </div>
           </div>
 
           <div className="signup-form-column">
@@ -177,6 +223,7 @@ function Signup() {
                 <label htmlFor="age">Age : </label>
               </div>
               <input type="text" id="age" name="age" value={age} onChange={handleAgeChange} />
+
             </div>
 
             <div className="signup-form-group">
@@ -192,24 +239,18 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="weigth">Poids : </label>
+                <label htmlFor="weigth">Poids (kg): </label>
               </div>
               <input type="text" id="weight" name="weigth" value={weight} onChange={handleWeightChange} />
             </div>
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="height"> Taille : </label>
+                <label htmlFor="height"> Taille (cm): </label>
               </div>
               <input type="text" id="height" name="height" value={height} onChange={handleHeightChange} />
             </div>
 
-            <div className="signup-form-group">
-              <div>
-                <label htmlFor="photo"> Photo de profil: </label>
-              </div>
-              <input type="file" id="photo" name="image" accept="image/png, image/jpeg, image/jpg" />
-            </div>
           </div>
 
         </div>
@@ -217,8 +258,8 @@ function Signup() {
         <div className="signup-form-button">
           <button type="submit">Envoyer</button>
         </div>
-
       </form>
+
     </div>
   );
 }

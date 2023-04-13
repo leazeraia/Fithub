@@ -1,7 +1,8 @@
 .signup-container{
   background-color: #fff;
-
+  margin-bottom: 11rem;
 }
+
 .signup-container .signup-title{
   margin-top: 1rem;
   font-size: 1.8rem;
@@ -45,6 +46,14 @@
   outline: transparent;
 }
 
+.signup-form-group .label-password{
+  width: 15rem;
+  font-size: 0.8rem;
+  margin: 0.5rem 0;
+  color: #555555;
+
+}
+
 .signup-form-column input[type="text"]:hover,
 .signup-form-column input[type="password"]:hover,
 .signup-form-column input[type="email"]:hover,
@@ -84,13 +93,72 @@ button:hover{
 }
 
 
+.signup-form-group-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+ .preview-image{
+  height: 19rem;
+  width: 20rem;
+  position: relative;
+  border-radius: 0.8rem;
+  border: 1px solid #949494;
+}
 
+.preview-image .closebtn{
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 100%;
+  opacity: 0.8;
+}
 
+.preview-image .closebtn img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+.preview-image img{
+  width: 100%;
+   height: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
 
+.signup-form-group .profil-image{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem;
+  width: 20rem;
+  background-color: #888808;
+  border-radius: 0.8rem;
+  text-align: right;
+  
+}
+.profil-image .choice-photo{
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+}
+.profil-image .choice-photo-label{
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff;
+}
 
-
-
+.signup-form-group #photo{
+  display: none;
+}
 
 @media screen and (max-width: 760px) {
   .signup-container .signup-form{
@@ -103,4 +171,3 @@ button:hover{
   
  }
 }
-
