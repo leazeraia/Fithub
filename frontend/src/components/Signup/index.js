@@ -24,6 +24,7 @@ function Signup() {
   const [weight, setWeight] = useState('');
   const [height, setHeight] = useState('');
   const [photo, setPhoto] = useState('');
+  const [image, setImage] = useState('');
 
   const [checkImage, setCheckImage] = useState(false);
   // const [user, setUser] = useState('');
@@ -41,7 +42,7 @@ function Signup() {
   const handleGenderChange = (event) => setGender(event.target.value);
   const handleWeightChange = (event) => setWeight(event.target.value);
   const handleHeightChange = (event) => setHeight(event.target.value);
-
+  
   //  const handlePhotoChange = (event) => setPhoto(event.target.files[0]);
 
   // const handleUserChange = async (event) => {
@@ -53,6 +54,7 @@ function Signup() {
     reader.onload = () => {
       if (reader.readyState === 2) {
         setPhoto(reader.result);
+        setImage(event.target.files[0]);
       }
     };
     reader.readAsDataURL(event.target.files[0]);
@@ -112,7 +114,8 @@ function Signup() {
     formData.append('gender', gender);
     formData.append('weight', weight);
     formData.append('height', height);
-    formData.append('image', photo);
+    
+    formData.append('image', image);
 
     const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user', {
       method: 'POST',
