@@ -237,6 +237,7 @@ function Signup() {
                 <option>Sélectionner</option>
                 <option value="femme">Femme</option>
                 <option value="homme">Homme</option>
+                <option value="non-spécifié">Non-spécifié</option>
               </select>
             </div>
 
