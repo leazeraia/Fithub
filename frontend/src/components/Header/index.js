@@ -60,6 +60,7 @@ function Header({
     }
   };
 
+
   const disconnectButton = async () => {
     const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user/session/logout', {
       credentials: 'include',
