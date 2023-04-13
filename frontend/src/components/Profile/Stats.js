@@ -1,14 +1,37 @@
 // import des dépendances
-import PropTypes from 'prop-types';
 import Chart from 'chart.js/auto';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import moment from 'moment';
 
 // création du composant Stats
 // ce composant reçoit 3 props : date, calories et level
-function Stats({ date, calories, level }) {
-  // création d'une référence pour le canvas
-  const chartRef = React.createRef();
+function Stats() {
+  const [chartDatas, setChartDatas] = useState([]);
+  const [level, setLevel] = useState('');
+  const [inscriptionDate, setInscriptionDate] = useState('');
+  const { userId } = useParams();
 
+  async function fetchGraphDatas() {
+    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    const datas = await response.json();
+
+    const user = datas.userTotalActivityByDay;
+    const { xp } = datas.resultDataWithImage;
+    const date = moment(datas.resultDataWithImage.created_at).format('DD/MM/YYYY');
+    const levelfetched = (Math.sqrt(xp) * 0.08).toFixed(2);
+    setLevel(levelfetched);
+    setInscriptionDate(date);
+    // const activities = datas.resultDataWithImage.ActivitiesUsers;
+    // const durationByActivity = activities.map((activity) => activity.ActivityUser.duration);
+    // console.log('durations', durationByActivity);
+    // console.log('données récupérées dans fetchGraphDatas', user);
+    setChartDatas(user);
+  }
+
+  // Création d'une référence pour le canvas
+  const chartRef = React.createRef();
+  // console.log('données récupérées dans chartDatas', chartDatas);
   // initialiser le graphique
   // useEffect prend deux paramètres : une fonction et un tableau de dépendances
   // le tableau de dépendances permet de définir quand la fonction doit être exécutée
@@ -24,21 +47,21 @@ function Stats({ date, calories, level }) {
       type: 'bar',
       // données à afficher
       data: {
-        labels: ['J1 ', 'J2 ', 'J3 ', 'J4 ', 'J5 ', 'J6', 'J7'],
+        labels: chartDatas.map((data) => data.date_assigned),
         // datasets contient un tableau d'objets
         // chaque objet représente un jeu de données à afficher : label, données, couleur, etc.
         datasets: [
           {
             label: ['Nombre de calories brûlées'],
-            data: [300, 200, 100, 400, 500, 600, 700],
+            data: chartDatas.map((data) => data.total_calories_by_date),
             // yAxisID permet de spécifier sur quel axe afficher les données
             yAxisID: 'y',
             borderWidth: 1,
-            backgroundColor: '#F0F',
+            backgroundColor: '#72a119',
           },
           {
-            label: ['Durée de l\'activité'],
-            data: [30, 20, 10, 40, 50, 60, 70],
+            label: ['Durée de l\'effort'],
+            data: chartDatas.map((data) => data.total_duration_by_date),
             // yAxisID permet de spécifier sur quel axe afficher les données
             yAxisID: 'y1',
             borderWidth: 1,
@@ -52,8 +75,8 @@ function Stats({ date, calories, level }) {
         responsive: true, // rend le graphique redimensionnable
         scales: {
           y: {
-            min: 0, // valeur minimale de l'axe des ordonnées
-            max: 1000, // valeur maximale de l'axe des ordonnées
+            // min: 0, // valeur minimale de l'axe des ordonnées
+            // max: 1000, // valeur maximale de l'axe des ordonnées
             beginAtZero: true,
             type: 'linear',
             position: 'left',
@@ -70,8 +93,8 @@ function Stats({ date, calories, level }) {
           },
 
           y1: {
-            min: 0, // valeur minimale de l'axe des ordonnées
-            max: 120, // valeur maximale de l'axe des ordonnées
+            // min: 0, // valeur minimale de l'axe des ordonnées
+            // max: 120, // valeur maximale de l'axe des ordonnées
             beginAtZero: true,
             type: 'linear',
             position: 'right',
@@ -100,14 +123,17 @@ function Stats({ date, calories, level }) {
     return () => {
       chart.destroy();
     };
-  }, [calories]);
+  }, [chartDatas]);
+
+  useEffect(() => {
+    fetchGraphDatas();
+  }, []);
 
   return (
     <div className="stats">
-      <h2 className="stats__title">Statistiques </h2>
-      <p className="stats__infos">Inscrit depuis le : {date}</p>
-      <p className="stats__infos">Nombre de calories brûlées : {calories}</p>
-      <p className="stats__infos">Niveau : {level}</p>
+      <h1 className="stats__title">Statistiques </h1>
+      <p className="stats__infos">Inscrit depuis le : {inscriptionDate} </p>
+      <p className="stats__infos">Niveau : {level} </p>
       {/** le canvas référence le graphique */}
       <div className="stats__chart">
         <canvas ref={chartRef} />
@@ -115,11 +141,5 @@ function Stats({ date, calories, level }) {
     </div>
   );
 }
-
-Stats.propTypes = {
-  date: PropTypes.string.isRequired,
-  calories: PropTypes.number.isRequired,
-  level: PropTypes.number.isRequired,
-};
 
 export default Stats;

@@ -1,5 +1,6 @@
 // import des fichiers de style
 import './styles.scss';
+import avatar from 'src/assets/images/avatar.jpg';
 
 // import de la librairie PropTypes pour configurer et valider les props
 import PropTypes from 'prop-types';
@@ -9,27 +10,45 @@ import { useParams } from 'react-router-dom';
 
 // import des composants Challenge et Stats
 import Challenge from 'src/components/Challenge';
+import { useEffect, useState } from 'react';
 import Stats from './Stats';
+// import Historic from './Historic';
 
 // création du composant Profile
 // ce composant reçoit une prop name
-function Profile({ name }) {
+function Profile({ isAuthenticated, sessionId }) {
   // récupération du paramètre id de l'URL
-  const { id } = useParams();
-  console.log(id); // affichage de l'id dans la console
+  const { userId } = useParams();
+
+  const [image, setImage] = useState('');
+  const [name, setname] = useState('');
+
+  async function fetchUser() {
+    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    const datas = await response.json();
+    const imagefetched = datas.resultDataWithImage.dataURI;
+    const namefetched = datas.resultDataWithImage.nickname;
+    setname(namefetched);
+    setImage(imagefetched);
+  }
+
+  useEffect(() => {
+    fetchUser();
+  });
 
   // affichage du composant
   return (
     <div className="profile">
       {/** la prop name est utilisée dans le composant entre les accolades */
       /** la variable name contient du code js correspondant aux proptypes */}
-      <h1 className="profile__title">Profile de {name}</h1>
-      <img className="profile__user-image" src="https://cdn.discordapp.com/attachments/1092419561556553770/1092419631295250472/box-g2d4630b48_1920.jpg" alt="user-logo" />
-      <p className="profile__presentation">Bienvenue {name} ! Ici tu retrouveras tes défis quotidiens à découvrir sur le calendrier, et ton suivi de champion.ne. A toi de jouer !</p>
-      <img className="profile__image" src="https://cdn.discordapp.com/attachments/1085935594250702978/1090929221460832297/man-g4a95936ad_1920.jpg" alt="challenge" />
-      <Challenge />
+      <h1 className="profile__title">Profil de {name}</h1>
+      <img className="profile__user-image" src={image || avatar} alt="user-logo" />
+      <p className="profile__presentation">Bienvenue {name} ! Ici tu retrouveras tes défis quotidiens, un tracker d'activités et un suivi pour ne pas perdre le fil !</p>
+      {isAuthenticated && Number(userId) === sessionId && <Challenge />}
       {/** appel du composant Stats avec ses 3 props : date, calories et level */}
-      <Stats date="31/03/2023" calories={500} level={5} />
+      <Stats />
+      {/** * ici on a un système d'historique qui affiche l'historique des activités de l'utilisateur, sa durée, son nom, la catégorie et la date */}
+      {/* <Historic /> */}
 
     </div>
   );
@@ -37,7 +56,8 @@ function Profile({ name }) {
 
 // validation des props : name est obligatoire et doit être une chaîne de caractères
 Profile.propTypes = {
-  name: PropTypes.string.isRequired,
+  isAuthenticated: PropTypes.bool.isRequired,
+  sessionId: PropTypes.number.isRequired,
 };
 
 // export du composant

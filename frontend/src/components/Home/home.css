@@ -1,7 +1,7 @@
 .home-section{
     display: flex;
     flex-direction: column;
-    background-image: url(../../assets/images/backround-home.jpg);
+    background-image: url("https://cdn.discordapp.com/attachments/1085935594250702978/1090929221460832297/man-g4a95936ad_1920.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
