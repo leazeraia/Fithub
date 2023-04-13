@@ -31,7 +31,7 @@ function Users() {
     {dataUsers.map((user)=> {
           
          
-       return   <Link to={"/user"} key={user.id} className='link-card-user'>
+       return   <Link to={`${user.id}`} key={user.id} className='link-card-user'>
                 <div className="card-user">
                     <div className="profil-user">
                         <div className="image-user border-bronze">
@@ -41,14 +41,13 @@ function Users() {
                         <p>{user.nickname}</p>
                     </div>
                     <div className="tag-level-user">
-                        <p className="level-user backgroundColor-bronze">Niveau 5</p>
+                        <p className="level-user backgroundColor-bronze">Niveau : {(Math.sqrt(user.xp) * 0.08).toFixed(1)}</p>
                         <div className="tag-user">
                             <img src={medaille_bronze} alt="medaille"/>
                         </div>
                     </div>
                     <div className="xp-views-user backgroundColor-bronze">
                         <p>{user.xp} <br /> XP</p>
-                        <p className='last-xp-views'>15000 <br /> VUES</p>
                     </div>
                 </div>
             </Link>
