@@ -14,6 +14,12 @@
     text-decoration: none;
     color: black;
 }
+
+.container-users-title {
+  font-size: 2rem;
+  margin: 50px 0;
+}
+
 .link-card-user .card-user {
     display: flex;
     flex-direction: column;
@@ -24,6 +30,11 @@
     border-radius: 10px;
     overflow: hidden;
 }
+
+.nickname-user {
+  margin-top: 15px;
+}
+
 .profil-user .image-user {
     width: 5rem;
     height: 5rem;
@@ -32,7 +43,6 @@
     margin: 0 auto;
 }
 .profil-user p {
-    margin-top: 0;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -43,6 +53,11 @@
     object-fit: cover;
     border-radius: 50%;
 }
+
+.profil-user {
+  margin-top: 15px;
+}
+
 .tag-level-user {
     display: flex;
     flex-direction: column;

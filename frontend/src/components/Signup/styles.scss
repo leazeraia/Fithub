@@ -1,10 +1,14 @@
 .signup-container{
   background-color: #fff;
-  margin-bottom: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0;
 }
 
 .signup-container .signup-title{
-  margin-top: 1rem;
+  margin: 0.8rem 0;
   font-size: 1.8rem;
   text-align: center;
 }
@@ -76,7 +80,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 1.5rem;
-
 }
 
 .signup-form-button button{
@@ -86,6 +89,7 @@
   border: none;
   border-radius: 0.6rem;
   background-color:#bc9b5a;
+  color: white;
 }
 
 button:hover{

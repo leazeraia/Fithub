@@ -5,6 +5,7 @@ import medaille_argent from '../../assets/images/medaille-argent.png';
 import medaille_bronze from '../../assets/images/medaille-bronze.png';
 import avatar_femmme from '../../assets/images/avatar-femme.png';
 import avatar_homme from '../../assets/images/avatar-homme.png';
+import avatar from '../../assets/images/avatar.jpg';
 import "./users.css";
 
 
@@ -26,7 +27,7 @@ function Users() {
 
   return (
     <div className="container-users">
-        <h1>La communauté FitHub</h1>
+        <h1 className="container-users-title">La communauté FitHub</h1>
         <div className="contener-users">
     {dataUsers.map((user)=> {
           
@@ -35,10 +36,9 @@ function Users() {
                 <div className="card-user">
                     <div className="profil-user">
                         <div className="image-user border-bronze">
-                            <img src={user.dataURI} alt="utilisateur"/>
+                            <img src={user.dataURI || avatar} alt="utilisateur"/>
                         </div>
-                        <p>{user.firstname}</p>
-                        <p>{user.nickname}</p>
+                        <p className='nickname-user'>{user.nickname}</p>
                     </div>
                     <div className="tag-level-user">
                         <p className="level-user backgroundColor-bronze">Niveau : {(Math.sqrt(user.xp) * 0.08).toFixed(1)}</p>
@@ -71,7 +71,6 @@ function Users() {
                     </div>
                     <div className="xp-views-user backgroundColor-argent">
                         <p>30000 <br /> XP</p>
-                        <p className='last-xp-views'>15000 <br /> VUES</p>
                     </div>
                 </div>
             </Link>
@@ -91,7 +90,6 @@ function Users() {
                     </div>
                     <div className="xp-views-user backgroundColor-bronze">
                         <p>30000 <br /> XP</p>
-                        <p className='last-xp-views'>15000 <br /> VUES</p>
                     </div>
                 </div>
             </Link>
@@ -111,7 +109,6 @@ function Users() {
                     </div>
                     <div className="xp-views-user backgroundColor-or">
                         <p>30000 <br /> XP</p>
-                        <p className='last-xp-views'>15000 <br /> VUES</p>
                     </div>
                 </div>
             </Link>

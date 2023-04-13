@@ -177,14 +177,14 @@ function Signup() {
             <div className="signup-form-group">
               <div>
                 <label htmlFor="password">Mot de passe : </label>
-                <p className="label-password">Votre mot de passe doit contenir une majuscule , 1 caractere special(&@!$#*) et minimum 8 caractere</p>
+                <p className="label-password">Votre mot de passe doit contenir une majuscule, 1 caractère spécial (&@!$#*) et minimum 8 caractères. </p>
               </div>
               <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
             </div>
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="confirmPassword">Confirmer Mot de passe : </label>
+                <label htmlFor="confirmPassword">Confirmez votre mot de passe : </label>
               </div>
               <input type="password" id="confirmPassword" name="confirmPassword" value={confirmPassword} onChange={handleConfirmPasswordChange} />
             </div>
