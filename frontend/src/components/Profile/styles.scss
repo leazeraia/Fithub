@@ -205,9 +205,9 @@
   }}
 
   .stats__chart{
-    width: 90vw;
-    height: 40vh;
+    max-height: 40vh;
     // pour centrer le graphique
-    margin: 0 auto;
+  
     }
+
   }
