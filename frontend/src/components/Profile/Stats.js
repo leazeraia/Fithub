@@ -93,8 +93,10 @@ function Stats() {
           },
 
           y1: {
+
             // min: 0, // valeur minimale de l'axe des ordonnées
             // max: 120, // valeur maximale de l'axe des ordonnées
+
             beginAtZero: true,
             type: 'linear',
             position: 'right',

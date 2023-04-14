@@ -7,7 +7,6 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import closebtn from 'src/assets/images/closebtn.png';
 import imgchoice from 'src/assets/images/imgchoice.png';
-
 import './styles.scss';
 
 // Stockage des données de l'utilisateur dans le state
@@ -29,7 +28,6 @@ function Signup() {
   const [checkImage, setCheckImage] = useState(false);
   // const [user, setUser] = useState('');
 
-
   // Récupération de la valeur entré par l'utilisateur
   const handleFirstNameChange = (event) => setFirstName(event.target.value);
   const handleLastNameChange = (event) => setLastName(event.target.value);
@@ -42,7 +40,7 @@ function Signup() {
   const handleGenderChange = (event) => setGender(event.target.value);
   const handleWeightChange = (event) => setWeight(event.target.value);
   const handleHeightChange = (event) => setHeight(event.target.value);
-  
+
   //  const handlePhotoChange = (event) => setPhoto(event.target.files[0]);
 
   // const handleUserChange = async (event) => {
@@ -69,7 +67,6 @@ function Signup() {
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
-  
     event.preventDefault();
 
     if (!firstName || !lastName || !email || !password || !confirmPassword || !age || !weight || !height) {
@@ -212,7 +209,6 @@ function Signup() {
 
             </div>
           </div>
-
           <div className="signup-form-column">
             <div className="signup-form-group">
               <div>
@@ -226,7 +222,7 @@ function Signup() {
                 <label htmlFor="age">Age : </label>
               </div>
               <input type="text" id="age" name="age" value={age} onChange={handleAgeChange} />
-
+                
             </div>
 
             <div className="signup-form-group">
@@ -238,6 +234,7 @@ function Signup() {
                 <option value="femme">Femme</option>
                 <option value="homme">Homme</option>
                 <option value="non-spécifié">Non-spécifié</option>
+
               </select>
             </div>
 

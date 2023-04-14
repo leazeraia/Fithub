@@ -87,7 +87,6 @@
   }
 
   .record{
-
     max-width: 80%;
   text-align: center;
   margin: 2rem auto;
@@ -95,7 +94,7 @@
   border: solid 2px #72a119;
   border-radius : 2rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-
+    
   &__title{
     font-size: 1.5rem;
     font-weight: bold;
@@ -213,7 +212,7 @@
       align-items: center;
       justify-content: center;
       margin: 1rem;
-
+      
       &__container{
         display: flex;
         flex-direction: column;

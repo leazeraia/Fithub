@@ -54,7 +54,6 @@ function Users() {
          })
        
         }
-
             <Link to={'/user'} className='link-card-user'>
                 <div className="card-user">
                     <div className="profil-user">
