@@ -121,10 +121,12 @@ function Record() {
               onChange={(event) => {
               // console.log(`catégorie du onChange : ${event.target.value}`);
                 fetchActivitiesByCategory(event.target.value);
+                setAllActivities([]);
               }}
             >
 
               { /* allCategories.map((cat) => (<option>{cat.label}</option>)) */}
+              <option value=""> - Sélectionner -</option>
               {
               allCategories ? allCategories.map((cat) => (<option key={cat.id} value={cat.id}>{cat.label}</option>)) : ' '
             }
@@ -138,6 +140,7 @@ function Record() {
                 setActivity(event.target.value);
               }}
             >
+              <option value="">- Sélectionner -</option>
               {allActivities ? allActivities.map((act) => (<option key={act.id} value={act.id}>{act.label}</option>)) : ' '}
             </select>
           </div>
