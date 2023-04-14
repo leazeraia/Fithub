@@ -12,11 +12,12 @@ import { useParams } from 'react-router-dom';
 import Challenge from 'src/components/Challenge';
 import { useEffect, useState } from 'react';
 import Stats from './Stats';
+import DeleteUserButton from './DeleteUserButton';
 // import Historic from './Historic';
 
-// création du composant Profile
+// création Du composant Profile
 // ce composant reçoit une prop name
-function Profile({ isAuthenticated, sessionId }) {
+function Profile({ setIsAuthenticated, isAuthenticated, sessionId }) {
   // récupération du paramètre id de l'URL
   const { userId } = useParams();
 
@@ -49,7 +50,7 @@ function Profile({ isAuthenticated, sessionId }) {
       <Stats />
       {/** * ici on a un système d'historique qui affiche l'historique des activités de l'utilisateur, sa durée, son nom, la catégorie et la date */}
       {/* <Historic /> */}
-
+      {isAuthenticated && Number(userId) === sessionId && <DeleteUserButton isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />}
     </div>
   );
 }
@@ -58,6 +59,7 @@ function Profile({ isAuthenticated, sessionId }) {
 Profile.propTypes = {
   isAuthenticated: PropTypes.bool.isRequired,
   sessionId: PropTypes.number.isRequired,
+  setIsAuthenticated: PropTypes.func,
 };
 
 // export du composant

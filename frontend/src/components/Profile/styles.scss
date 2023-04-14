@@ -110,6 +110,29 @@
   color:#000;
 }
 
+.deleteUserButton{
+  display: block;
+   text-align: center;
+
+  &__button{
+  font-size: 1rem;
+  font-weight: bold;
+  color : red;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+  border: solid 1px #ffff;
+  }
+
+  &__warning{
+    font-size: 1rem;
+    font-weight: bold;
+    color : red;
+    margin-bottom: 1rem;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
   .profile{

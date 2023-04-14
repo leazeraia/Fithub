@@ -47,9 +47,9 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />}/>
+        <Route path="/signup" element={<Signup />} />
         <Route path="/profiles" element={<Users />} />
-        <Route path="/profiles/:userId" element=<Profile isAuthenticated={isAuthenticated} sessionId={sessionId} setSessionId={setSessionId} /> />
+        <Route path="/profiles/:userId" element=<Profile isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} sessionId={sessionId} setSessionId={setSessionId} /> />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/mentionslegales" element={<Mentionslegales />} />
