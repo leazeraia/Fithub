@@ -117,11 +117,16 @@
   &__button{
   font-size: 1rem;
   font-weight: bold;
-  color : red;
+  color : white;
+  background-color: red;
   margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 15px;
   border: solid 1px #ffff;
+  }
+
+  &__button:hover{
+    background-color: rgb(218, 104, 104);
   }
 
   &__warning{
