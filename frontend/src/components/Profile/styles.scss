@@ -161,9 +161,9 @@
   z-index: 1000;
 
   &__closeButton{
-    top:150px;
-    right:380px;
-position:absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 15px 0 0;
   }
 }
 

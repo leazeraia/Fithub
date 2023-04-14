@@ -126,8 +126,8 @@ function SettingsButton() {
       </div>
       {isModalOpen && (
       <div className="settingsModal">
-        <i className="fa-regular fa-circle-xmark settingsModal__closeButton" onClick={handleCloseModal} />
         <form onSubmit={handleSubmit} className="signup-form">
+        <i className="fa-regular fa-circle-xmark settingsModal__closeButton" onClick={handleCloseModal} />
           <div className="signup-form-content">
 
             <div className="signup-form-column">
