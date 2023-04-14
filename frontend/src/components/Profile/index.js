@@ -13,6 +13,7 @@ import Challenge from 'src/components/Challenge';
 import { useEffect, useState } from 'react';
 import Stats from './Stats';
 import DeleteUserButton from './DeleteUserButton';
+import SettingsButton from './SettingsButton';
 // import Historic from './Historic';
 
 // création Du composant Profile
@@ -44,7 +45,8 @@ function Profile({ setIsAuthenticated, isAuthenticated, sessionId }) {
       /** la variable name contient du code js correspondant aux proptypes */}
       <h1 className="profile__title">Profil de {name}</h1>
       <img className="profile__user-image" src={image || avatar} alt="user-logo" />
-      <p className="profile__presentation">Bienvenue {name} ! Ici tu retrouveras tes défis quotidiens, un tracker d'activités et un suivi pour ne pas perdre le fil !</p>
+      {isAuthenticated && Number(userId) === sessionId && <SettingsButton />}
+      {isAuthenticated && Number(userId) === sessionId ? <p className="profile__presentation">Bonjour {name} ! Ici tu retrouveras tes défis quotidiens, un tracker d'activités et un suivi pour ne pas perdre le fil !</p> : '' }
       {isAuthenticated && Number(userId) === sessionId && <Challenge />}
       {/** appel du composant Stats avec ses 3 props : date, calories et level */}
       <Stats />
