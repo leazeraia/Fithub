@@ -159,12 +159,12 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-
   &__closeButton{
     display: flex;
     justify-content: flex-end;
     margin: 15px 15px 0 0;
   }
+  
 }
 
 .signup-form{
@@ -172,6 +172,20 @@
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 }
+
+
+@media screen and (max-width: 760px) {
+  .signup-container .signup-form{
+    width: 97%;
+   
+  }
+  
+.signup-form-content{
+  padding: 0.8rem;
+  
+ }
+}
+
 
 @media screen and (max-width: 768px) {
 
