@@ -70,7 +70,7 @@ function Record() {
     // console.log(`categoryId${categoryId}`);
     const response = await allCategories.find((cat) => cat.id === Number(categoryId));
     // console.log(response.ActivitiesCategory);
-    setAllActivities(response.ActivitiesCategory);
+    setAllActivities(response?.ActivitiesCategory);
     // return response.ActivitiesCategory;
   }
 
