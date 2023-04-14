@@ -1,11 +1,12 @@
 .home-section{
     display: flex;
     flex-direction: column;
-    background-image: url(../../assets/images/backround-home.jpg);
+    background-image: url("https://cdn.discordapp.com/attachments/1085935594250702978/1090929221460832297/man-g4a95936ad_1920.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
+    align-items: center;
 }
 
 
@@ -20,17 +21,19 @@
 }
 
 .home-section .item-section {
-    width: 25rem;
+    width: 50rem;
     color: #ffffff;
     font-weight: 00;
-    
+
 
 }
 .box-section{
     display: flex;
     gap: 0.8rem;
-    margin: 1.5rem;
-
+    margin: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .box-section img{
     width: 1.8rem;
@@ -50,3 +53,16 @@
   font-weight: 500;
 }
 
+.join-us{
+  border: solid 2px white;
+  padding: 15px 10px;
+  margin-top: 50px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-section{
+  margin-top: 75px;
+}

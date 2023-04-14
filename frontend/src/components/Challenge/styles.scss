@@ -1,11 +1,15 @@
 .calendar{
   max-width: 80%;
   margin: 1rem auto;
+  padding: 2rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: solid 2px #72a119;
+  border-radius : 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 
   &__title {
 
@@ -31,17 +35,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #bc9b5a;
+    background-color: #72a119;
     font-size: 3rem;
     font-weight: bold;
     margin: 3rem;
     padding: 1rem;
-    border : 3px solid #753c00;
     border-radius: 10px;
 
   }
 
   &__day__name{
+    color: #fff;
     margin-bottom: 2rem;
     text-align: center;
     font-size: 1rem;
@@ -54,37 +58,47 @@
     margin: 1rem;
 
     &__button{
-      background-color: #bc9b5a;
-      color: #fff;
       padding: 1rem;
-      text-align: center;
-      font-size: 1.5rem;
-      font-weight: bold;
-      border : 2px solid #753c00;
-      border-radius: 10px;
-      transition: background-color 0.3s ease-in-out;
-      transition: color 0.3s ;
-
-
+      margin: 1rem 0;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      background-color: #72a119;
+      border: solid 1px #72a119;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+  
+    &__button:hover{
+      background-color: #fff;
+      color: #72a119;
     }
 
-    .generateButton__button:hover {
-      background-color: #4c7032;
-      color: black;
+    &__challengeGenerated{
+      font-size: 2rem;
+      font-weight: bold;
+      margin : 2rem;
+    }
+
+    &__hidden{
+      display: none;
     }
    
   }
 
   .record{
-
+    max-width: 80%;
   text-align: center;
-  margin: 2rem;
-  border-top: solid 2px #753c00;
-
+  margin: 2rem auto;
+  padding: 2rem;
+  border: solid 2px #72a119;
+  border-radius : 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
   &__title{
     font-size: 1.5rem;
     font-weight: bold;
-    padding-top:2.5rem;
+    padding:1rem;
   }
 
   &__form{
@@ -99,12 +113,13 @@
 
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 1rem;
+    max-width: 100%;
+    
 
     &__label{
-      width: 100%;
-      height: 100%;
+      max-width: 100%;
       padding: 1rem;
       color: black;
       font-size: 1rem;
@@ -113,29 +128,46 @@
  }
 
  &__button{
-
-  background-color: #bc9b5a;
-  color: #fff; 
   padding: 1rem;
-  margin: 1rem;
-  font-size: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background-color: #72a119;
+  border: solid 1px #72a119;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+&__button:hover{
+  background-color: #fff;
+  color: #72a119;
+}
+  }
+
+  }
+#category{
+  width: 300px;
+}
+#activity{
+  max-width: 300px;
+}
+
+.success__message{
+  color: #72a119;
+  animation: success__message 3s infinite;
+  font-size: 1.5rem;
   font-weight: bold;
-  border : 2px solid #753c00;
-  border-radius: 10px;
-  transition: background-color 0.3s ease-in-out;
-  transition: color 0.3s ;
+  margin: 2rem;
+}
 
-  }
+@keyframes success__message {
+  0% { opacity:0; }
+  50% { opacity:1; } 
+  100% { opacity:0; }
+}
 
- &__button:hover {
-    background-color: #4c7032;
-    color: black;
- }
-  }
-
-  }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1500px) {
   .calendar{
     &__container {
       display: flex;
@@ -175,14 +207,41 @@
 
   .record{
     &__form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+      
       &__container{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 0.5rem;
+        margin: 1rem;
+        max-width: 100%;
+
+        &__label{
+          max-width: 100%;
+          padding: 1rem;
+          color: black;
+          font-size: 1rem;
+        }
       }
     }
+  }
+
+  #category{
+    height: 2rem;
+    max-width: 90%;
+  }
+  #activity{
+    height: 2rem;
+    max-width: 90%;
+  }
+  #duration{
+    height: 2rem;
+    max-width: 90%;
   }
 }
   
