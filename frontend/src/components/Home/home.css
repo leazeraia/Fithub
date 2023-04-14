@@ -21,7 +21,7 @@
 }
 
 .home-section .item-section {
-    width: 45rem;
+    width: 50rem;
     color: #ffffff;
     font-weight: 00;
 
@@ -61,4 +61,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.item-section{
+  margin-top: 75px;
 }
