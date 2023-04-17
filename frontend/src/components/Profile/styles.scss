@@ -63,6 +63,22 @@
     height: 80vh;
   }
 
+  &__refresh{
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #72a119;
+    border: solid 1px #72a119;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__refresh:hover{
+    background-color: #fff;
+    color: #72a119;
+  }
+
 }
 
 .historic{

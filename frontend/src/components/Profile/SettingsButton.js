@@ -1,11 +1,18 @@
+/* eslint-disable no-alert */
+/* eslint-disable jsx-a11y/label-has-associated-control */
+// import de la feuille de style
 import './styles.scss';
 
+// import des hooks
 import { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import imgchoice from 'src/assets/images/imgchoice.png';
-import closebtn from 'src/assets/images/closebtn.png';
 
+// import du logo du changement d'image
+import imgchoice from 'src/assets/images/imgchoice.png';
+
+// composant SettingsButton
 function SettingsButton() {
+  // states
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -13,18 +20,21 @@ function SettingsButton() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const [phone, setPhone] = useState(''); // le tél est facultatif
+  const [phone, setPhone] = useState(''); // facultatif
   const [age, setAge] = useState('');
-  const [gender, setGender] = useState(''); // le sexe est facultatif pour cette 1ère version
+  const [gender, setGender] = useState('');
   const [weight, setWeight] = useState('');
   const [height, setHeight] = useState('');
   const [photo, setPhoto] = useState('');
   const [image, setImage] = useState('');
   const [checkImage, setCheckImage] = useState(false);
 
+  // récupération du paramètre id de l'URL
   const { userId } = useParams();
+  // récupération de la fonction navigate
   const navigate = useNavigate();
-  // Récupération de la valeur entré par l'utilisateur
+
+  // Récupération de la valeur entrée par l'utilisateur dans les champs de formulaire
   const handleFirstNameChange = (event) => setFirstName(event.target.value);
   const handleLastNameChange = (event) => setLastName(event.target.value);
   const handleNickNameChange = (event) => setNickName(event.target.value);
@@ -37,6 +47,7 @@ function SettingsButton() {
   const handleWeightChange = (event) => setWeight(event.target.value);
   const handleHeightChange = (event) => setHeight(event.target.value);
 
+  // prévisualisation de l'image
   const handlePreviewImage = (event) => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -49,40 +60,45 @@ function SettingsButton() {
     setCheckImage(true);
   };
 
+  // fermeture de l'image en prévisualisation
   const handleClosePrewiewImage = () => {
     setPhoto('');
     setCheckImage(false);
   };
 
+  // ouverture de la modale
   function handleSettings() {
     setIsModalOpen(true);
   }
 
+  // envoi des données du formulaire
   async function handleSubmit(event) {
     event.preventDefault();
 
+    // si on la modification du mot de passe, on procède à des vérifications de la confirmation
     if (password) {
+      // si les mots de passe ne correspondent pas
       if (password !== confirmPassword) {
-      // les mots de passe ne correspondent pas
+      // on affiche un message d'erreur
         alert('Le mot de passe et la confirmation du mot de passe ne correspondent pas.');
-      }
-      else {
-      // les mots de passe correspondent
-      // inscrire l'utilisateur ici
       }
     }
 
+    // vérification du mot de passe : au moins 8 caractères, une majuscule et un caractère spécial
     const hasMinimumLength = password.length >= 8;
     const hasSpecialChar = /^(?=.*[A-Z])(?=.*[&@!$#*])(?=.*[0-9]).{8,50}$/.test(password);
 
+    // si on a modification du mot de passe, on procède à d'autres vérifications
     if (password) {
+      // si le mot de passe ne respecte pas les conditions
       if (!hasMinimumLength || !hasSpecialChar) {
+        // on affiche un message d'erreur
         alert(' le mot de passe doit avoir au moins 8 caractères, une majuscule et un caractère spécial !');
         return;
       }
     }
-    // faire d'autres traitements ou envoyer le mot de passe au serveur
 
+    // récupération des données du formulaire
     const formData = new FormData();
 
     formData.append('firstname', firstName);
@@ -98,23 +114,25 @@ function SettingsButton() {
     formData.append('height', height);
     formData.append('image', image);
 
+    // envoi des données au serveur avec une requête PATCH (modification)
     const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`, {
       method: 'PATCH',
       credentials: 'include',
       body: (formData),
     });
 
+    // si la requête est ok, on vide les champs du formulaire et on ferme la modale
+    // redirection vers la page de profil pour afficher les modifications directement
     if (response.ok) {
       event.target.querySelectorAll(('input')).forEach((input) => {
-        console.log(input.value);
         input.value = '';
       });
       navigate(`/profiles/${userId}`);
       setIsModalOpen(false);
-      console.log('modifications enregistrées');
     }
   }
 
+  // fermeture de la modale
   function handleCloseModal() {
     setIsModalOpen(false);
   }
@@ -127,7 +145,7 @@ function SettingsButton() {
       {isModalOpen && (
       <div className="settingsModal">
         <form onSubmit={handleSubmit} className="signup-form">
-        <i className="fa-regular fa-circle-xmark settingsModal__closeButton" onClick={handleCloseModal} />
+          <i className="fa-regular fa-circle-xmark settingsModal__closeButton" onClick={handleCloseModal} />
           <div className="signup-form-content">
 
             <div className="signup-form-column">
@@ -179,18 +197,16 @@ function SettingsButton() {
             <div className="signup-form-column signup-form-group-image">
               <div className="preview-image">
                 {checkImage && (
-                <div className="closebtn" onClick={handleClosePrewiewImage}>
-                  <img src={closebtn} alt="fermeture bouton" />
-                </div>
+                <i className="fa-regular fa-circle-xmark closebtn" onClick={handleClosePrewiewImage} />
                 )}
-                {checkImage && (<img src={photo} alt="photo choisir" />)}
+                {checkImage && (<img src={photo} alt="pic" />)}
               </div>
 
               <div className="signup-form-group">
 
                 <label htmlFor="photo" className="profil-image">
                   <span className="choice-photo-label">Modifier Photo</span>
-                  <img className="choice-photo" src={imgchoice} />
+                  <img className="choice-photo" src={imgchoice} alt="pic" />
                 </label>
 
                 <input type="file" id="photo" name="image" accept="image/png, image/jpeg, image/jpg" onChange={handlePreviewImage} />

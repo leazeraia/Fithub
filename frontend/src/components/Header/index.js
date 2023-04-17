@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Cookie from 'js-cookie';
@@ -59,7 +59,6 @@ function Header({
       return setErrorMessage('Vous êtes déjà connecté');
     }
   };
-
 
   const disconnectButton = async () => {
     const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user/session/logout', {
