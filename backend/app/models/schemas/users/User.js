@@ -36,7 +36,7 @@ User.init({
         defaultValue: null
     },
     role: {
-        type: Sequelize.TEXT,
+        type: Sequelize.ENUM('user', 'admin'),
         allowNull: false,
         defaultValue: 'user'
     },
@@ -64,6 +64,13 @@ User.init({
             isInt: true
         }
     },
+    age: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        validate: {
+            isInt: true
+        }
+    },
     gender: {
         type: Sequelize.ENUM('femme', 'homme', 'non-spécifié'),
         defaultValue: 'non-spécifié',
@@ -80,6 +87,16 @@ User.init({
     profile_visibility: {
         type: Sequelize.ENUM('publique', 'privé'),
         defaultValue: 'publique'
+    },
+    image_path: {
+        type: Sequelize.TEXT,
+        allowNull: true,
+        defaultValue: null
+    },
+    image_mimetype: {
+        type: Sequelize.TEXT,
+        allowNull: true,
+        defaultValue: null
     },
     created_at: Sequelize.DATE,
     updated_at: Sequelize.DATE

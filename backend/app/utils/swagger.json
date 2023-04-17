@@ -185,7 +185,7 @@
                 }
             }   
         },
-        "user/session/login": {
+        "/user/session/login": {
             "post": {
                 "tags": [
                     "User"
@@ -216,7 +216,7 @@
                 }
             }
         },
-        "user/session/logout": {
+        "/user/session/logout": {
             "get": {
                 "tags": [
                     "User"
