@@ -111,7 +111,7 @@ function Signup() {
     formData.append('gender', gender);
     formData.append('weight', weight);
     formData.append('height', height);
-    
+
     formData.append('image', image);
 
     const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user', {

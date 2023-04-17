@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // == Import
 
 import React, { useState, useEffect } from 'react';
@@ -18,6 +19,7 @@ import Footer from '../Footer';
 import Contacts from '../Footer/Contacts';
 import Users from '../Users';
 import Mentionslegales from '../Footer/MentionsLegales';
+import NotFound from '../Page_404';
 
 // == Composant
 function App() {
@@ -53,6 +55,7 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/mentionslegales" element={<Mentionslegales />} />
+        <Route path="*" element={<NotFound />} />
 
       </Routes>
       <Footer />

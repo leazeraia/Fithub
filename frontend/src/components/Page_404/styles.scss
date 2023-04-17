@@ -1,0 +1,33 @@
+.container-redirection{
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+ // flex-direction: column;
+ text-align: center;
+ margin-bottom: 28.8rem;
+ height: 100%;
+}
+.container-redirection .redirection-title{
+  margin-top: 2rem;
+}
+
+.container-redirection .redirection-title h1{
+  
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  text-align: center;
+  
+}
+
+.redirection-link{
+  display: block;
+  width: 20rem;
+  margin: 5rem auto;
+  font-size: 1.3rem;
+  color: #5e790e ;
+}
+
+.redirection-link:hover{
+  color: #8db710;
+
+}
