@@ -57,7 +57,7 @@ function Profile({
       <h1 className="profile__title">Profil de {name}</h1>
       {/** l'image sera soit celle de l'utilisateur s'il en a une,
        * sinon on affiche l'avatar par défaut */}
-      <img className="profile__user-image" src={`https://ynck-hng-server.eddi.cloud:8080/${image}` || avatar} alt="user-logo" />
+      <img className="profile__user-image" src={image ? `https://ynck-hng-server.eddi.cloud:8080/${image}` : avatar} alt="user-logo" />
       {/** si l'utilisateur est connecté et que son id est le même que celui de l'url, on affiche :
        *  le bouton de suppression de compte
        *  le bouton de paramètres

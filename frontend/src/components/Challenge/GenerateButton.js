@@ -45,12 +45,12 @@ function GenerateButton() {
     const datas = await response.json();
     const challengeFetched = datas.resultDataWithImage.ChallengesUser;
     // récupère le résultat du dernier défi généré
-    const resultFetched = challengeFetched[challengeFetched.length - 1].ChallengeUser.completed;
+    const resultFetched = challengeFetched[0].ChallengeUser.completed;
     // récupère et formate la date du dernier défi généré
-    const challengeDate = moment(challengeFetched[challengeFetched.length - 1].ChallengeUser.date_assigned).format('dddd Do MMMM');
+    const challengeDate = moment(challengeFetched[0].ChallengeUser.date_assigned).format('dddd Do MMMM');
     // vérifie si le défi du jour a déjà été généré et mise à jour des states
     if (challengeDate === moment().format('dddd Do MMMM')) {
-      setChallenge(challengeFetched[challengeFetched.length - 1]);
+      setChallenge(challengeFetched[0]);
       setIsChallengeGenerated(true);
       switch (resultFetched) {
         case 'yes':

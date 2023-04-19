@@ -28,6 +28,7 @@ function SettingsButton() {
   const [photo, setPhoto] = useState('');
   const [image, setImage] = useState('');
   const [checkImage, setCheckImage] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
   // récupération du paramètre id de l'URL
   const { userId } = useParams();
@@ -76,12 +77,15 @@ function SettingsButton() {
     event.preventDefault();
 
     // si on la modification du mot de passe, on procède à des vérifications de la confirmation
-    if (password) {
+    if (password && confirmPassword) {
       // si les mots de passe ne correspondent pas
       if (password !== confirmPassword) {
       // on affiche un message d'erreur
-        alert('Le mot de passe et la confirmation du mot de passe ne correspondent pas.');
+        setErrorMessage('Les mots de passe ne correspondent pas');
       }
+    }
+    if (!confirmPassword) {
+      setErrorMessage('Veuillez confirmer votre mot de passe');
     }
 
     // vérification du mot de passe : au moins 8 caractères, une majuscule et un caractère spécial
@@ -188,6 +192,13 @@ function SettingsButton() {
               <div className="signup-form-group">
                 <div>
                   <label htmlFor="confirmPassword">Confirmez votre nouveau mot de passe : </label>
+                  {/* si l'utilisateur n'entre pas de confirmation au submit du mot de passe,
+                  alors il a un message d'erreur */}
+                  {((password && !confirmPassword) || (password !== confirmPassword)) && (
+                    <p className="label-password-error">{errorMessage}</p>
+                  )}
+                  {/* Si les deux mots de passe ne norrespondent pas,
+                  alors on génère le message d'erreur */}
                 </div>
                 <input type="password" id="confirmPassword" name="confirmPassword" onChange={handleConfirmPasswordChange} />
               </div>

@@ -31,7 +31,7 @@ function Users() {
             <div className="card-user">
               <div className="profil-user">
                 <div className="image-user border-bronze">
-                  <img src={`https://ynck-hng-server.eddi.cloud:8080/${user.image_path}` || avatar} alt="utilisateur" />
+                  <img src={user.image_path ? `https://ynck-hng-server.eddi.cloud:8080/${user.image_path}` : avatar} alt="utilisateur" />
                 </div>
                 <p className="nickname-user">{user.nickname}</p>
               </div>
