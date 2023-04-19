@@ -12,7 +12,6 @@ import { useEffect, useState } from 'react';
 
 // import des composants
 import Challenge from 'src/components/Challenge';
-import { useEffect, useState } from 'react';
 import Stats from './Stats';
 import DeleteUserButton from './DeleteUserButton';
 import SettingsButton from './SettingsButton';

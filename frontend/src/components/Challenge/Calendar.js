@@ -6,12 +6,6 @@ import { useParams } from 'react-router-dom';
 // import de la librairie moment js
 import moment from 'moment';
 
-// import du hook useState
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-// import de la librairie moment js
-import moment from 'moment';
-
 // création du composant Calendar
 function Calendar() {
   // state dans lequel on stock si le challenge a été réalisé ou non
