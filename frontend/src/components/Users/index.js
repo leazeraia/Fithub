@@ -46,7 +46,6 @@ function Users() {
             </div>
           </Link>
         ))}
-
       </div>
     </div>
   );

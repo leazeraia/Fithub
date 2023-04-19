@@ -129,7 +129,6 @@ function Signup() {
       <div className="signup-title">
         <h1>S'inscrire</h1>
       </div>
-
       <form
         onSubmit={(event) => {
           handleSubmit(onSubmit); handleSubmitValidation(event);
