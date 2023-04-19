@@ -161,6 +161,9 @@ button:hover{
 .signup-form-group #photo{
   display: none;
 }
+.error-message{
+  color: red;
+}
 
 @media screen and (max-width: 760px) {
   .signup-container .signup-form{

@@ -5,48 +5,49 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useForm } from 'react-hook-form'; // pour la gestion des erreurs
 import closebtn from 'src/assets/images/closebtn.png';
 import imgchoice from 'src/assets/images/imgchoice.png';
 import './styles.scss';
 
 // Stockage des données de l'utilisateur dans le state
 function Signup() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [nickName, setNickName] = useState('');
-  const [email, setEmail] = useState('');
+  const {
+    register, handleSubmit, watch, formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => console.log(data);
+  const lastNameValue = watch('lastname', '');
+  const lastName = register('lastname');
+  const firstNameValue = watch('firstname', '');
+  const firstName = register('firstname');
+  const nickNameValue = watch('nickname', '');
+  const nickName = register('nickname');
+  const email = register('email');
+  const emailValue = watch('email', '');
+  const age = register('age');
+  const ageValue = watch('age', '');
+
+  const weight = register('weight');
+  const weightValue = watch('weight', '');
+  const height = register('height');
+  const heightValue = watch('height', '');
+
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [phone, setPhone] = useState(''); // le tél est facultatif
-  const [age, setAge] = useState('');
   const [gender, setGender] = useState(''); // le sexe est facultatif pour cette 1ère version
-  const [weight, setWeight] = useState('');
-  const [height, setHeight] = useState('');
   const [photo, setPhoto] = useState('');
   const [image, setImage] = useState('');
 
   const [checkImage, setCheckImage] = useState(false);
-  // const [user, setUser] = useState('');
 
   // Récupération de la valeur entré par l'utilisateur
-  const handleFirstNameChange = (event) => setFirstName(event.target.value);
-  const handleLastNameChange = (event) => setLastName(event.target.value);
-  const handleNickNameChange = (event) => setNickName(event.target.value);
-  const handleEmailChange = (event) => setEmail(event.target.value);
   const handlePasswordChange = (event) => setPassword(event.target.value);
   const handleConfirmPasswordChange = (event) => setConfirmPassword(event.target.value);
   const handlePhoneChange = (event) => setPhone(event.target.value);
-  const handleAgeChange = (event) => setAge(event.target.value);
   const handleGenderChange = (event) => setGender(event.target.value);
-  const handleWeightChange = (event) => setWeight(event.target.value);
-  const handleHeightChange = (event) => setHeight(event.target.value);
 
-  //  const handlePhotoChange = (event) => setPhoto(event.target.files[0]);
-
-  // const handleUserChange = async (event) => {
-  //   const result = await fetch('https://ynck-hng-server.eddi.cloud:8080/user/12');
-  //   console.log(await result.json());
-  // };
   const handlePreviewImage = (event) => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -66,7 +67,7 @@ function Signup() {
 
   const navigate = useNavigate();
 
-  const handleSubmit = async (event) => {
+  const handleSubmitValidation = async (event) => {
     event.preventDefault();
 
     if (!firstName || !lastName || !email || !password || !confirmPassword || !age || !weight || !height) {
@@ -139,36 +140,75 @@ function Signup() {
         <h1>S'inscrire</h1>
       </div>
 
-      <form onSubmit={handleSubmit} className="signup-form">
+      <form onSubmit={handleSubmit(onSubmit)} className="signup-form">
         <div className="signup-form-content">
 
           <div className="signup-form-column">
+
             <div className="signup-form-group">
               <div>
                 <label htmlFor="lastname">Nom : </label>
               </div>
-              <input type="text" id="lastname" name="lastName" value={lastName} onChange={handleLastNameChange} />
+              <input
+                type="text"
+                id="lastname"
+                value={lastNameValue}
+                onChange={(event) => {
+                  lastName.onChange(event);
+                }}
+                {...register('lastname', { required: true })}
+
+              />
+              {errors.lastname && <span className="error-message">Ce champs est requis</span>}
             </div>
 
             <div className="signup-form-group">
               <div>
                 <label htmlFor="firstname">Prénom :</label>
               </div>
-              <input type="text" id="firstname" name="firstName" value={firstName} onChange={handleFirstNameChange} />
+              <input
+                type="text"
+                id="firstname"
+                value={firstNameValue}
+                onChange={(event) => {
+                  firstName.onChange(event);
+                }}
+                {...register('firstname', { required: true })}
+              />
+              {errors.firstname && <span className="error-message">Ce champs est requis</span>}
             </div>
 
             <div className="signup-form-group">
               <div>
                 <label htmlFor="nickname">Pseudo: </label>
               </div>
-              <input type="text" id="nickname" name="lastName" value={nickName} onChange={handleNickNameChange} />
+              <input
+                type="text"
+                id="nickname"
+                name="lastName"
+                value={nickNameValue}
+                onChange={(event) => {
+                  nickName.onChange(event);
+                }}
+                {...register('nickname', { required: true })}
+              />
+              {errors.nickname && <span className="error-message">Ce champs est requis</span>}
+
             </div>
 
             <div className="signup-form-group">
               <div>
                 <label htmlFor="email">Email :</label>
               </div>
-              <input type="email" value={email} name="email" onChange={handleEmailChange} />
+              <input
+                type="email"
+                value={emailValue}
+                onChange={(event) => {
+                  email.onChange(event);
+                }}
+                {...register('email', { required: true })}
+              />
+              {errors.email && <span className="error-message">Ce champs est requis</span>}
             </div>
 
             <div className="signup-form-group">
@@ -221,8 +261,16 @@ function Signup() {
               <div>
                 <label htmlFor="age">Age : </label>
               </div>
-              <input type="text" id="age" name="age" value={age} onChange={handleAgeChange} />
-                
+              <input
+                type="text"
+                id="age"
+                value={ageValue}
+                onChange={(event) => {
+                  age.onChange(event);
+                }}
+                {...register('age', { required: true })}
+              />
+              {errors.age && <span className="error-message">Ce champs est requis</span>}
             </div>
 
             <div className="signup-form-group">
@@ -242,14 +290,31 @@ function Signup() {
               <div>
                 <label htmlFor="weigth">Poids (kg): </label>
               </div>
-              <input type="text" id="weight" name="weigth" value={weight} onChange={handleWeightChange} />
+              <input
+                type="text"
+                id="weight"
+                name="weigth"
+                value={weightValue}
+                onChange={(event) => {
+                  weight.onChange(event);
+                }}
+                {...register('weight', { required: true })}
+              />
+              {errors.weight && <span className="error-message">Ce champs est requis</span>}
             </div>
 
             <div className="signup-form-group">
               <div>
                 <label htmlFor="height"> Taille (cm): </label>
               </div>
-              <input type="text" id="height" name="height" value={height} onChange={handleHeightChange} />
+              <input
+                type="text"
+                id="height"
+                value={heightValue}
+                onChange={(event) => height.onChange(event)}
+                {...register('height', { required: true })}
+              />
+              {errors.height && <span className="error-message">Ce champs est requis</span>}
             </div>
 
           </div>
