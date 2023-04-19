@@ -86,7 +86,7 @@ function Header({
       <div className="link-nav">
         <ul>
 
-          {isAuthenticated && sessionId && (<li> <Link to={`/profiles/${sessionId}`}>Mon profile</Link></li>)} {/* à modifier pour que l'id soit dynamique */}
+          {isAuthenticated && sessionId && (<li> <Link to={`/profiles/${sessionId}`}>Mon profil</Link></li>)} {/* à modifier pour que l'id soit dynamique */}
 
           <li> <Link to="/profiles">Membres</Link></li>
 

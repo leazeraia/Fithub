@@ -47,63 +47,6 @@ function Users() {
           </Link>
         ))}
 
-        <Link to="/user" className="link-card-user">
-          <div className="card-user">
-            <div className="profil-user">
-              <div className="image-user border-argent">
-                <img src={avatar_femmme} alt="utilisateur" />
-              </div>
-              <p>Username</p>
-            </div>
-            <div className="tag-level-user">
-              <p className="level-user backgroundColor-argent">Niveau 5</p>
-              <div className="tag-user">
-                <img src={medaille_argent} alt="medaille" />
-              </div>
-            </div>
-            <div className="xp-views-user backgroundColor-argent">
-              <p>30000 <br /> XP</p>
-            </div>
-          </div>
-        </Link>
-        <Link to="/user" className="link-card-user">
-          <div className="card-user">
-            <div className="profil-user">
-              <div className="image-user border-bronze">
-                <img src={avatar_homme} alt="utilisateur" />
-              </div>
-              <p>Username</p>
-            </div>
-            <div className="tag-level-user">
-              <p className="level-user backgroundColor-bronze">Niveau 5</p>
-              <div className="tag-user">
-                <img src={medaille_bronze} alt="medaille" />
-              </div>
-            </div>
-            <div className="xp-views-user backgroundColor-bronze">
-              <p>30000 <br /> XP</p>
-            </div>
-          </div>
-        </Link>
-        <Link to="user" className="link-card-user">
-          <div className="card-user">
-            <div className="profil-user">
-              <div className="image-user border-or">
-                <img src={avatar_femmme} alt="utilisateur" />
-              </div>
-              <p>Username</p>
-            </div>
-            <div className="tag-level-user">
-              <p className="level-user backgroundColor-or">Niveau 5</p>
-              <div className="tag-user">
-                <img src={medaille_or} alt="medaille" />
-              </div>
-            </div>
-            <div className="xp-views-user backgroundColor-or">
-              <p>30000 <br /> XP</p>
-            </div>
-          </div>
-        </Link>
       </div>
     </div>
   );
