@@ -36,7 +36,6 @@ function DeleteUserButton({ isAuthenticated, setIsAuthenticated }) {
       setIsAuthenticated(false);
       navigate('/');
     }
-
     navigate('/');
   }
 

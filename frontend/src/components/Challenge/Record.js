@@ -12,6 +12,7 @@ function Record() {
   const [allCategories, setAllCategories] = useState('');
   const [allActivities, setAllActivities] = useState('');
   const [activity, setActivity] = useState('');
+
   const [userActivities, setuserActivities] = useState([]);
   // state qui permet d'initier un compteur
   const [counter, setCounter] = useState(0);

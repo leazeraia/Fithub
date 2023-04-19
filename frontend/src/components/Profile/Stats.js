@@ -135,7 +135,6 @@ function Stats() {
       chart.destroy();
     };
   }, [chartDatas]);
-
   return (
     <div className="stats">
       <i className="fa-solid fa-arrows-rotate stats__refresh" onClick={() => refreshButton()} />

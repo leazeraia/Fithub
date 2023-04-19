@@ -77,7 +77,6 @@ function GenerateButton() {
       credentials: 'include',
       body: JSON.stringify(datas),
     });
-
     setSuccess(!success);
   };
 

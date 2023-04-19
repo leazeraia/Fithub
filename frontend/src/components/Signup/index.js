@@ -41,13 +41,13 @@ function Signup() {
   const [image, setImage] = useState('');
 
   const [checkImage, setCheckImage] = useState(false);
+  // const [user, setUser] = useState('');
 
   // Récupération de la valeur entré par l'utilisateur
   const handlePasswordChange = (event) => setPassword(event.target.value);
   const handleConfirmPasswordChange = (event) => setConfirmPassword(event.target.value);
   const handlePhoneChange = (event) => setPhone(event.target.value);
   const handleGenderChange = (event) => setGender(event.target.value);
-
   const handlePreviewImage = (event) => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -112,7 +112,6 @@ function Signup() {
     formData.append('gender', gender);
     formData.append('weight', weight);
     formData.append('height', height);
-
     formData.append('image', image);
 
     const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user', {

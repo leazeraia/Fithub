@@ -6,6 +6,12 @@ import { useParams } from 'react-router-dom';
 // import de la librairie moment js
 import moment from 'moment';
 
+// import du hook useState
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+// import de la librairie moment js
+import moment from 'moment';
+
 // création du composant Calendar
 function Calendar() {
   // state dans lequel on stock si le challenge a été réalisé ou non
@@ -23,6 +29,7 @@ function Calendar() {
     moment.locale('fr');
     // création d'un tableau vide
     const days = [];
+
     // on boucle sur les 7 derniers jours
     for (let i = 0; i < 7; i += 1) {
       // on ajoute le nom du jour au tableau
@@ -62,6 +69,7 @@ function Calendar() {
         values.push('no');
       }
     }
+
     // mise à jour du state avec le tableau des résultats
     setChallengeResults(values);
   }
@@ -79,6 +87,7 @@ function Calendar() {
   }
 
   // au chargement du composant, on récupère le calendrier
+
   useEffect(() => {
     getCalendar();
   }, []);
