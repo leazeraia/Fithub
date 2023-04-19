@@ -117,6 +117,25 @@ Challenge.belongsToMany(User, {
     otherKey: "user_id"
 });
 
+ChallengeUser.belongsTo(User, {
+    as: "UserChallengeList",
+    foreignKey: "user_id"
+});
+User.hasMany(ChallengeUser, {
+    as: "ChallengeUserList",
+    foreignKey: "user_id"
+});
+
+ChallengeUser.belongsTo(Challenge, {
+    as:"ChallengeDescription",
+    foreignKey: "challenge_id"
+});
+
+Challenge.hasMany(ChallengeUser, {
+    as:"ChallengeUserDescription",
+    foreignKey: "challenge_id"
+});
+
 User.belongsTo(Challenge, {
     as: "DailyChallenge",
     foreignKey: "challenge_id",
@@ -147,6 +166,25 @@ Activity.belongsToMany(User, {
     otherKey: "user_id"
 });
 
+ActivityUser.belongsTo(User, {
+    as: "UserActivityList",
+    foreignKey: "user_id"
+});
+
+User.hasMany(ActivityUser, {
+    as: "ActivityUserList",
+    foreignKey: "user_id"
+});
+
+ActivityUser.belongsTo(Activity, {
+    as: "ActivityDescription",
+    foreignKey: "activity_id"
+});
+
+Activity.hasMany(ActivityUser, {
+    as: "ActivityUserDescription",
+    foreignKey: "activity_id"
+});
 // possess
 
 Activity.belongsTo(CategoryActivity, {
@@ -242,6 +280,7 @@ Company.hasMany(Product, {
 
 module.exports = {
     Activity,
+    ActivityUser,
     CategoryActivity,
     Article,
     CommentArticle,

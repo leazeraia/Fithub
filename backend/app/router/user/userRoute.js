@@ -1,9 +1,20 @@
 const express = require("express");
 const router = express.Router();
+const userController = require("./../../../controllers/users/userController");
+const { errorCatcher } = require("./../../../utils/errorHandler");
+const bodySanitizer = require("./../../../utils/bodySanitizer");
+const isAuthenticated = require("./../../../utils/userValidations/isAuthenticated");
+const isAdmin = require("../../../utils/userValidations/isAdmin");
+const upload = require("../../../utils/fileUploadConfig");
 
-const userController = require("./../../controllers/user/userController");
+// Currently on route http://localhost:PORT/user/
 
-router.get("/", userController.getAll);
+router.get("/", errorCatcher(userController.findAll));
+router.get("/:userId", errorCatcher(userController.findOne));
+router.post("/", bodySanitizer, upload.single('image'), errorCatcher(userController.createOne));
+router.patch("/:userId", isAuthenticated, upload.single('image'), bodySanitizer, errorCatcher(userController.updateOne));
+router.delete("/:userId", isAdmin, errorCatcher(userController.deleteOne));
+router.post("/session/login", upload.single('image'), errorCatcher(userController.login));
+router.get("/session/logout", isAuthenticated, errorCatcher(userController.logout));
 
 module.exports = router;
-

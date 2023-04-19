@@ -25,9 +25,9 @@ class Home extends Component {
               <p> <span className="paraph-section"> De suivre vos dépenses en calories </span> <br /> Chaque calorie que tu suis te rapproches un peu plus de tes objectifs, alors continue à suivre tes dépenses pour devenir la meilleure version de toi-même! </p>
             </div>
             <div className="box-section">
-            <Link to="/signup" className='join-us'>
-              <p> <span className="paraph-section"> Rejoignez-nous ! </span> </p>
-            </Link>
+              <Link to="/signup" className="join-us">
+                <p> <span className="paraph-section"> Rejoignez-nous ! </span> </p>
+              </Link>
             </div>
 
           </div>

@@ -1,57 +1,27 @@
 // import de la feuille de style
 import './styles.scss';
-// import du hook useState
+// import des hooks
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+// import de la librairie moment pour la gestion des dates
 import moment from 'moment';
 
 // création du composant GenerateButton
-// il prend en props une fonction qui sera appelée au clic sur le bouton
-// cette fonction est définie dans le composant Challenge
 function GenerateButton() {
-  // création d'un state challenge qui contiendra le défi généré
+  // création des states challenge qui contiendra le défi généré
   // le tableau vide est la valeur par défaut du state
   // le premier élément du tableau est la valeur du state
   // le second élément du tableau est une fonction qui permet de modifier la valeur du state
   const [challenge, setChallenge] = useState({});
   const [isChallengeGenerated, setIsChallengeGenerated] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [result, setResult] = useState('no');
 
+  // récupération de l'id de l'utilisateur
   const { userId } = useParams();
 
-  async function fetchUser() {
-    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
-    const datas = await response.json();
-    console.log('datas', datas);
-    const challengeFetched = datas.resultDataWithImage.ChallengesUser;
-    const resultFetched = challengeFetched[challengeFetched.length - 1].ChallengeUser.completed;
-    const challengeDate = moment(challengeFetched[challengeFetched.length - 1].ChallengeUser.date_assigned).format('dddd Do MMMM');
-    console.log('challengeDate', challengeDate);
-    console.log('challengeFetched', challengeFetched);
-    if (challengeDate === moment().format('dddd Do MMMM')) {
-      console.log('resultFetched', resultFetched);
-      setChallenge(challengeFetched[challengeFetched.length - 1]);
-      setIsChallengeGenerated(true);
-      setResult(resultFetched);
-      switch (resultFetched) {
-        case 'yes':
-          setSuccess(true);
-          break;
-        case 'no':
-          setSuccess(false);
-          break;
-        default:
-          break;
-      }
-    }
-  }
-
-  // fonction qui génère un défi aléatoire
-  // elle est appelée dans la fonction handleGenerateChallenge
-  // la fonction handleGenerateChallenge est celle qui est appelée au clic sur le bouton
+  // récupère le défi généré par le serveur et met à jour le state challenge
+  // la génération du challenge a lieu côté serveur
   const generateChallenge = async () => {
-    // on assigne le challenge aléatoire au user dans le serveur
     const datas = {
       userId: userId,
     };
@@ -67,23 +37,50 @@ function GenerateButton() {
     setIsChallengeGenerated(true);
   };
 
+  // récupération des données de l'utilisateur
+  // ca permet de vérifier si le défi du jour a déjà été généré
+  // et si oui, de récupérer le résultat du défi
+  async function fetchUser() {
+    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    const datas = await response.json();
+    const challengeFetched = datas.resultDataWithImage.ChallengesUser;
+    // récupère le résultat du dernier défi généré
+    const resultFetched = challengeFetched[0].ChallengeUser.completed;
+    // récupère et formate la date du dernier défi généré
+    const challengeDate = moment(challengeFetched[0].ChallengeUser.date_assigned).format('dddd Do MMMM');
+    // vérifie si le défi du jour a déjà été généré et mise à jour des states
+    if (challengeDate === moment().format('dddd Do MMMM')) {
+      setChallenge(challengeFetched[0]);
+      setIsChallengeGenerated(true);
+      switch (resultFetched) {
+        case 'yes':
+          setSuccess(true);
+          break;
+        case 'no':
+          setSuccess(false);
+          break;
+        default:
+          break;
+      }
+    }
+  }
+
+  // envoie le résultat du défi au serveur : yes ou no
+  // mise à jour du state success pour afficher le bouton de modification du défi
   const sendSuccess = async () => {
     const datas = {
-      // todo : dynamiser pour que l'id du challenge corresponde à celui assigné au user
       challengeId: challenge.id,
     };
-    const sendDatas = await fetch(`https://ynck-hng-server.eddi.cloud:8080/challenge/user/${userId}`, {
+    await fetch(`https://ynck-hng-server.eddi.cloud:8080/challenge/user/${userId}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
       body: JSON.stringify(datas),
     });
-
-    console.log(sendDatas);
-    console.log('fonction sendSuccess');
     setSuccess(!success);
   };
 
+  // récupération des données de l'utilisateur au chargement de la page
   useEffect(() => {
     fetchUser();
   }, []);

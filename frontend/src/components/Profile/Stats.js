@@ -1,46 +1,61 @@
 // import des dépendances
+// la librairie chart.js pour le graphiques
+// la librairie moment pour formater les dates
 import Chart from 'chart.js/auto';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import moment from 'moment';
 
 // création du composant Stats
-// ce composant reçoit 3 props : date, calories et level
 function Stats() {
+  // states : chartDatas servira à stocker les données à afficher dans le graphique
   const [chartDatas, setChartDatas] = useState([]);
   const [level, setLevel] = useState('');
   const [inscriptionDate, setInscriptionDate] = useState('');
+
+  // récupération de l'id de l'utilisateur
   const { userId } = useParams();
 
+  // Récupère les données à afficher dans le graphique et dans le composant
   async function fetchGraphDatas() {
+    // récupération des données de l'utilisateur
     const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    // conversion des données au format JSON
     const datas = await response.json();
-
+    // on se servira de la variable user pour stocker les données à afficher dans le graphique
     const user = datas.userTotalActivityByDay;
+    // récupération de l'xp
     const { xp } = datas.resultDataWithImage;
+    // récupération et formatage de la date d'inscription
     const date = moment(datas.resultDataWithImage.created_at).format('DD/MM/YYYY');
+    // calcul du niveau de l'utilisateur
     const levelfetched = (Math.sqrt(xp) * 0.08).toFixed(2);
+    // stockage des données dans les states
     setLevel(levelfetched);
     setInscriptionDate(date);
-    // const activities = datas.resultDataWithImage.ActivitiesUsers;
-    // const durationByActivity = activities.map((activity) => activity.ActivityUser.duration);
-    // console.log('durations', durationByActivity);
-    // console.log('données récupérées dans fetchGraphDatas', user);
     setChartDatas(user);
   }
 
-  // Création d'une référence pour le canvas
+  function refreshButton() {
+    window.location.reload();
+  }
+
+  // Création d'une référence pour afficher le canvas dans le DOM
   const chartRef = React.createRef();
-  // console.log('données récupérées dans chartDatas', chartDatas);
-  // initialiser le graphique
+
+  // récupération des données à afficher dans le graphique au chargement du composant
+  useEffect(() => {
+    fetchGraphDatas();
+  }, []);
+
+  // initialisation du graphique lorsque les données sont chargées
   // useEffect prend deux paramètres : une fonction et un tableau de dépendances
   // le tableau de dépendances permet de définir quand la fonction doit être exécutée
   // ici le tableau contient la prop calories :
   // la fonction sera exécutée à chaque fois que la prop calories change
-  React.useEffect(() => {
-    // création du graphique
+  useEffect(() => {
     // la classe Chart est fournie par la librairie chart.js
-    // elle prend deux paramètres : un élément DOM et un objet de configuration
+    // elle prend deux paramètres : un élément du DOM et un objet de configuration
     // l'objet de configuration contient les données à afficher, les options de style, etc.
     const chart = new Chart(chartRef.current, {
       // type de graphique
@@ -62,7 +77,6 @@ function Stats() {
           {
             label: ['Durée de l\'effort'],
             data: chartDatas.map((data) => data.total_duration_by_date),
-            // yAxisID permet de spécifier sur quel axe afficher les données
             yAxisID: 'y1',
             borderWidth: 1,
             backgroundColor: '#C0FFEE',
@@ -74,9 +88,8 @@ function Stats() {
         maintainAspectRatio: false, // permet de garder le ratio hauteur/largeur
         responsive: true, // rend le graphique redimensionnable
         scales: {
+          // axe des ordonnées
           y: {
-            // min: 0, // valeur minimale de l'axe des ordonnées
-            // max: 1000, // valeur maximale de l'axe des ordonnées
             beginAtZero: true,
             type: 'linear',
             position: 'left',
@@ -91,12 +104,8 @@ function Stats() {
               },
             },
           },
-
+          // deuxième axe des ordonnées
           y1: {
-
-            // min: 0, // valeur minimale de l'axe des ordonnées
-            // max: 120, // valeur maximale de l'axe des ordonnées
-
             beginAtZero: true,
             type: 'linear',
             position: 'right',
@@ -111,7 +120,7 @@ function Stats() {
               },
             },
             // grid permet de configurer la grille de fond
-            // drawOnChartArea permet de ne pas afficher la grille sur le graphique
+            // drawOnChartArea permet de ne pas afficher la grille sur le graphique pour cet axe
             grid: {
               drawOnChartArea: false,
             },
@@ -119,20 +128,16 @@ function Stats() {
         },
       },
     });
-    // la fonction retournée par useEffect exécutée à chaque fois que le composant est retiré du DOM
-    // ici on détruit le graphique pour éviter les fuites mémoires
-    // une fuite mémoire se produit quand un objet n'est plus utilisé mais n'est pas détruit
+      // fonction retournée par useEffect exécutée à chaque fois que le composant est retiré du DOM
+      // ici on détruit le graphique pour éviter les fuites mémoires
+      // une fuite mémoire se produit quand un objet n'est plus utilisé mais n'est pas détruit
     return () => {
       chart.destroy();
     };
   }, [chartDatas]);
-
-  useEffect(() => {
-    fetchGraphDatas();
-  }, []);
-
   return (
     <div className="stats">
+      <i className="fa-solid fa-arrows-rotate stats__refresh" onClick={() => refreshButton()} />
       <h1 className="stats__title">Statistiques </h1>
       <p className="stats__infos">Inscrit depuis le : {inscriptionDate} </p>
       <p className="stats__infos">Niveau : {level} </p>

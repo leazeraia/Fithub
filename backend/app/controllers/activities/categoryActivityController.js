@@ -32,12 +32,12 @@ const categoryActivityController = {
 
     createOne: async (req, res) => {
         const {label} = req.body;
-
+        // if no label then error
         if(!label){
             activityControllerError("Error, label is required.", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
             return res.status(400).json("Label is required.");
         };
-
+        // make sure the label is unique
         const findCategoryActivityLabel = await CategoryActivity.findOne({
             where: {
                 label
@@ -61,14 +61,14 @@ const categoryActivityController = {
     updateOne: async (req, res) => {
         const categoryActivityId = req.params.categoryActivityId;
         const {label} = req.body;
-
+        // check if the category exists
         const findCategoryActivity = await CategoryActivity.findByPk(categoryActivityId);
 
         if(!findCategoryActivity){
             activityControllerError("Error, category cannot be found.", `path : ${req.protocol}://${req.get("host")}${req.originalUrl}`);
             return res.status(404).json("Category cannot be found.");
         };
-
+        // check if the label is already taken
         if(label){
             const findCategoryActivityLabel = await CategoryActivity.findOne({
                 where: {
@@ -91,7 +91,7 @@ const categoryActivityController = {
     
     deleteOne: async (req, res) => {
         const categoryActivityId = req.params.categoryActivityId;
-
+        // check if the category exists before deleting
         const findCategoryActivity = await CategoryActivity.findByPk(categoryActivityId);
 
         if(!findCategoryActivity){

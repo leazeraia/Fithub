@@ -1,7 +1,5 @@
 // import de la feuille de style
 import './styles.scss';
-// import du hook useState
-import { useState } from 'react';
 
 // import des composants qui seront appelés dans le composant Challenge
 import Calendar from './Calendar';
