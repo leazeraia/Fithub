@@ -113,7 +113,6 @@ function Record() {
             <select
               id="category"
               onChange={(event) => {
-              // console.log(`catégorie du onChange : ${event.target.value}`);
                 fetchActivitiesByCategory(event.target.value);
                 setAllActivities([]);
               }}

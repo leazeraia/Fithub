@@ -16,7 +16,6 @@ function Users() {
 
       const userData = await response.json();
       const users = userData.data;
-      console.log(userData);
       setDataUsers(userData);
     }
     userData();

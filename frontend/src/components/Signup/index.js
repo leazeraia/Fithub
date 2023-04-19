@@ -70,14 +70,14 @@ function Signup() {
   const handleSubmitValidation = async (event) => {
     event.preventDefault();
 
-    if (!firstName || !lastName || !email || !password || !confirmPassword || !age || !weight || !height) {
-      console.log('Veuillez remplir tous les champs obligatoires.');
+    if (!firstNameValue || !lastNameValue || !nickNameValue || !emailValue || !password || !confirmPassword || !ageValue || !weightValue || !heightValue) {
+      alert('Veuillez remplir tous les champs obligatoires.');
       return;
     }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      console.log('Veuillez saisir une adresse email valide.');
+    if (!emailRegex.test(emailValue)) {
+      alert('Veuillez saisir une adresse email valide.');
       return;
     }
 
@@ -91,7 +91,7 @@ function Signup() {
     }
 
     const hasMinimumLength = password.length >= 8;
-    const hasSpecialChar = /^(?=.*[A-Z])(?=.*[&@!$#*])(?=.*[0-9]).{8,50}$/.test(password);
+    const hasSpecialChar = /^(?=.*[A-Z])(?=.*[&@!$#*.])(?=.*[0-9]).{8,50}$/.test(password);
 
     if (!hasMinimumLength || !hasSpecialChar) {
       alert(' le mot de passe doit avoir au moins 8 caractères, une majuscule et un caractère spécial !');
@@ -101,17 +101,17 @@ function Signup() {
 
     const formData = new FormData();
 
-    formData.append('firstname', firstName);
-    formData.append('lastname', lastName);
-    formData.append('nickname', nickName);
-    formData.append('email', email);
+    formData.append('firstname', firstNameValue);
+    formData.append('lastname', lastNameValue);
+    formData.append('nickname', nickNameValue);
+    formData.append('email', emailValue);
     formData.append('password', password);
     formData.append('passwordConfirm', confirmPassword);
     formData.append('phone', phone);
-    formData.append('age', age);
+    formData.append('age', ageValue);
     formData.append('gender', gender);
-    formData.append('weight', weight);
-    formData.append('height', height);
+    formData.append('weight', weightValue);
+    formData.append('height', heightValue);
     formData.append('image', image);
 
     const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user', {
@@ -122,15 +122,6 @@ function Signup() {
     if (response.ok) {
       navigate('/');
     }
-    // .then((response) => {
-    //   console.log(response.ok);
-    //   if (response.ok) {
-    //     redirect('/');
-    //   }
-    // })
-    //   .catch((error) => {
-    //     console.log('Une erreur est survenue :', error);
-    //   });
   };
 
   return (
@@ -139,7 +130,12 @@ function Signup() {
         <h1>S'inscrire</h1>
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="signup-form">
+      <form
+        onSubmit={(event) => {
+          handleSubmit(onSubmit); handleSubmitValidation(event);
+        }}
+        className="signup-form"
+      >
         <div className="signup-form-content">
 
           <div className="signup-form-column">
@@ -213,7 +209,7 @@ function Signup() {
             <div className="signup-form-group">
               <div>
                 <label htmlFor="password">Mot de passe : </label>
-                <p className="label-password">Votre mot de passe doit contenir une majuscule, 1 caractère spécial (&@!$#*) et minimum 8 caractères. </p>
+                <p className="label-password">Votre mot de passe doit contenir une majuscule, 1 caractère spécial (&@!$#*.) et minimum 8 caractères. </p>
               </div>
               <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
             </div>

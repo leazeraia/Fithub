@@ -1,14 +1,18 @@
-.container-users {
+.contener-users {
     padding: 0.5rem 3rem;
     margin-bottom: 9rem;
     background-color: #ffffff;
-}
-.contener-users {
     margin: 0 auto;
     width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 16rem);
-    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-user {
+  width: 250px;
+  margin: 10px 20px;
 }
 .contener-users .link-card-user {
     text-decoration: none;
