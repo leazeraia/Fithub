@@ -148,7 +148,7 @@ function SettingsButton() {
           <i className="fa-regular fa-circle-xmark settingsModal__closeButton" onClick={handleCloseModal} />
           <div className="signup-form-content">
 
-            <div className="signup-form-column">
+            <div className="signup-form-column name">
               <div className="signup-form-group">
                 <div>
                   <label htmlFor="lastname">Nom : </label>
@@ -206,9 +206,11 @@ function SettingsButton() {
 
                 <label htmlFor="photo" className="profil-image">
                   <span className="choice-photo-label">Modifier Photo</span>
+                  {/* si l'écran est inférieur à 1155px, alors on cache le logo d'image */}
+                  {window.innerWidth > 1100 && (
                   <img className="choice-photo" src={imgchoice} alt="pic" />
+                  )}
                 </label>
-
                 <input type="file" id="photo" name="image" accept="image/png, image/jpeg, image/jpg" onChange={handlePreviewImage} />
 
               </div>

@@ -66,6 +66,7 @@ function Profile({
       */}
       {/** Le composant Stats est visible par tous les utilisateurs */}
       {isAuthenticated && Number(userId) === sessionId && <SettingsButton />}
+      <SettingsButton />
       {isAuthenticated && Number(userId) === sessionId ? <p className="profile__presentation">Bonjour {name} ! Ici tu retrouveras tes défis quotidiens, un tracker d'activités et un suivi pour ne pas perdre le fil !</p> : '' }
       {isAuthenticated && Number(userId) === sessionId && <Challenge />}
       {/** composant Stats */}
