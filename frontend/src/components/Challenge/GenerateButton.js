@@ -45,6 +45,9 @@ function GenerateButton() {
     const datas = await response.json();
     const challengeFetched = datas.resultDataWithImage.ChallengesUser;
     // récupère le résultat du dernier défi généré
+    if (challengeFetched.length === 0) {
+      return setSuccess(false);
+    }
     const resultFetched = challengeFetched[0].ChallengeUser.completed;
     // récupère et formate la date du dernier défi généré
     const challengeDate = moment(challengeFetched[0].ChallengeUser.date_assigned).format('dddd Do MMMM');
