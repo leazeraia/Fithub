@@ -98,6 +98,11 @@ function Signup() {
       alert(' le mot de passe doit avoir au moins 8 caractères, une majuscule et un caractère spécial !');
       return;
     }
+
+    if (nickNameValue.length > 16) {
+      alert('Le pseudo doit contenir moins de 16 caractères');
+      return;
+    }
     // faire d'autres traitements ou envoyer le mot de passe au serveur
 
     const formData = new FormData();
@@ -142,7 +147,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="lastname">Nom : </label>
+                <label htmlFor="lastname">* Nom : </label>
               </div>
               <input
                 type="text"
@@ -159,7 +164,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="firstname">Prénom :</label>
+                <label htmlFor="firstname">* Prénom :</label>
               </div>
               <input
                 type="text"
@@ -175,7 +180,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="nickname">Pseudo: </label>
+                <label htmlFor="nickname">* Pseudo: </label>
               </div>
               <input
                 type="text"
@@ -193,7 +198,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="email">Email :</label>
+                <label htmlFor="email">* Email :</label>
               </div>
               <input
                 type="email"
@@ -208,7 +213,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="password">Mot de passe : </label>
+                <label htmlFor="password">* Mot de passe : </label>
                 <p className="label-password">Votre mot de passe doit contenir une majuscule, 1 caractère spécial (&@!$#*.) et minimum 8 caractères. </p>
               </div>
               <input type="password" id="password" name="password" value={password} onChange={handlePasswordChange} />
@@ -216,7 +221,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="confirmPassword">Confirmez votre mot de passe : </label>
+                <label htmlFor="confirmPassword">* Confirmez votre mot de passe : </label>
               </div>
               <input type="password" id="confirmPassword" name="confirmPassword" value={confirmPassword} onChange={handleConfirmPasswordChange} />
             </div>
@@ -254,7 +259,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="age">Age : </label>
+                <label htmlFor="age">* Age : </label>
               </div>
               <input
                 type="text"
@@ -283,7 +288,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="weigth">Poids (kg): </label>
+                <label htmlFor="weigth">* Poids (kg): </label>
               </div>
               <input
                 type="text"
@@ -300,7 +305,7 @@ function Signup() {
 
             <div className="signup-form-group">
               <div>
-                <label htmlFor="height"> Taille (cm): </label>
+                <label htmlFor="height">* Taille (cm): </label>
               </div>
               <input
                 type="text"
@@ -315,7 +320,7 @@ function Signup() {
           </div>
 
         </div>
-
+        <p className="champs-obligatoires">* : champs obligatoires</p>
         <div className="signup-form-button">
           <button type="submit">Envoyer</button>
         </div>

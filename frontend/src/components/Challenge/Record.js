@@ -12,6 +12,7 @@ function Record() {
   const [allCategories, setAllCategories] = useState('');
   const [allActivities, setAllActivities] = useState('');
   const [activity, setActivity] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const [userActivities, setuserActivities] = useState([]);
   // state qui permet d'initier un compteur
@@ -41,6 +42,16 @@ function Record() {
   const handleSubmit = async (event) => {
     // on empêche le comportement par défaut du formulaire
     event.preventDefault();
+
+    if (activity === '' || duration === 0) {
+      setErrorMessage('Veuillez remplir tous les champs');
+      return;
+    }
+
+    if (duration < 0 || duration > 180) {
+      setErrorMessage('Veuillez saisir une durée entre 0 et 180 minutes');
+      return;
+    }
     // création d'un objet qui contient les données à envoyer au serveur
     const datas = {
       user_id: userId,
@@ -65,6 +76,7 @@ function Record() {
       calories: activityFetched.calories,
       ActivityUser: { duration: activityFetched.duration },
     }];
+
     setuserActivities(newList);
     setCounter(counter + 1);
     // réinitialisation de la valeur du champ de saisie
@@ -142,12 +154,14 @@ function Record() {
             <input
               type="number"
               id="duration"
-              value={duration}
+              min={1}
+              max={180}
               onChange={(event) => setDuration(event.target.value)}
               placeholder="en minutes"
               required
             />
           </div>
+          {errorMessage && <p className="record__form__error">{errorMessage}</p>}
           <button className="record__form__button" type="submit">Enregistrer</button>
         </form>
 
@@ -159,7 +173,7 @@ function Record() {
 
             <div className="historic__activities__activity" key={act.id}>
               <p className="historic__activities__activity__infos">
-                J'ai fait : {act.label} pendant {act.ActivityUser.duration} minutes
+                J'ai fait {act.label} pendant {act.ActivityUser.duration} minutes
               </p>
               <i className="fa-regular fa-circle-xmark cross" onClick={(event) => deleteActivity(event, act.id)} />
             </div>
