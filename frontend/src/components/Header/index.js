@@ -153,9 +153,6 @@ function Header({
                 </div>
                 <input type="password" onChange={(event) => setPassword(event.target.value)} name="password" id="password" />
               </div>
-              <Link to="/reset-password" className="passwordforget">
-                Mot de passe oublié
-              </Link>
               <div className="btn-submit">
                 <button type="submit"> Connecter</button>
               </div>

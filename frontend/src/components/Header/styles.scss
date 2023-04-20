@@ -91,15 +91,20 @@
  
  
  .login-nav .form-login .form-group{
-     margin: 1rem;
+     margin: 0.7rem;
+     margin-bottom: 0.7rem;
  }
  
- .login-nav .form-login .btn-submit{
+ .login-nav .form-login{
      display: flex;
+     flex-direction:column;
      justify-content: center;
      align-items: center;
-     margin-bottom: 0.8rem;
- 
+     margin-bottom: 0.5rem;
+ }
+
+ .btn-submit{
+    margin-bottom:0.7rem;
  }
  
  .login-nav .form-login .btn-submit button{
@@ -188,12 +193,13 @@
         padding: 1rem;
         border-radius: 1.3rem;
         position: relative;
+        top: -5rem;
      }
 
      .close-button{
        display: flex;
       justify-content: flex-end;
-      margin-bottom:0.9rem;
+      margin-bottom:0;
      }
 
      .form-login{
