@@ -11,7 +11,6 @@ import './styles.css';
 // import du dossier home
 import Cookie from 'js-cookie';
 import Home from '../Home';
-import ResetPassword from '../resetPassword';
 import Header from '../Header';
 import Signup from '../Signup';
 import Profile from '../Profile';
@@ -52,7 +51,6 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/profiles" element={<Users />} />
         <Route path="/profiles/:userId" element=<Profile isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} sessionId={sessionId} setSessionId={setSessionId} /> />
-        <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/mentionslegales" element={<Mentionslegales />} />
         <Route path="*" element={<NotFound />} />

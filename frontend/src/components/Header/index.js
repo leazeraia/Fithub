@@ -8,7 +8,6 @@ import './styles.scss';
 function Header({
   isAuthenticated, setIsAuthenticated, sessionId, setSessionId,
 }) {
-  // const Search = () => {
   const [isFormVisible, setisFormVisible] = useState(false);
   const [isNavVisible, setisNavVisible] = useState(false);
   const [email, setEmail] = useState('');
@@ -33,16 +32,10 @@ function Header({
     if (!isAuthenticated) {
       try {
         const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user/session/login', {
-        // headers: { 'Content-Type': 'application/json' },
           credentials: 'include',
           method: 'post',
           body: formData,
         });
-
-        // on fait un objet pour tester à la place de la requête fetch
-        // const response = {
-        //   ok: true,
-        // };
 
         if (!response.ok) {
           setisFormVisible(false);
@@ -69,9 +62,6 @@ function Header({
     const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user/session/logout', {
       credentials: 'include',
     });
-    // const response = {
-    //   ok: true,
-    // };
     if (!response.ok) {
       setErrorMessage('Une erreur est survenue');
     }
@@ -118,13 +108,11 @@ function Header({
                     <div>
                       <label htmlFor="password">Mot de Passe</label>
                     </div>
-                    <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} name="password" id="password" />
+                    <input type="password" onChange={(event) => setPassword(event.target.value)} name="password" id="password" />
                   </div>
-                  <Link to="/reset-password" className="passwordforget">
-                    Mot de passe oublié
-                  </Link>
                   <div className="btn-submit">
                     <button type="submit"> Connecter</button>
+                    {errorMessage && <p className="error-message">{errorMessage}</p>}
                   </div>
 
                 </form>
@@ -132,7 +120,6 @@ function Header({
 
               </li>
             </ul>
-            {errorMessage && <p className="error-message">{errorMessage}</p>}
           </div>
 
         ) : '' }
@@ -164,7 +151,7 @@ function Header({
                 <div>
                   <label htmlFor="password">Mot de Passe</label>
                 </div>
-                <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} name="password" id="password" />
+                <input type="password" onChange={(event) => setPassword(event.target.value)} name="password" id="password" />
               </div>
               <Link to="/reset-password" className="passwordforget">
                 Mot de passe oublié
