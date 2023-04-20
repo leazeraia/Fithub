@@ -11,10 +11,6 @@
     flex-wrap: wrap;
 }
 
-.container-users{
-    height:100%;
-}
-
 .card-user {
   width: 250px;
   margin: 10px 20px;
