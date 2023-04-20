@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Cookie from 'js-cookie';
 import logo from '../../assets/images/Logo_black.png';
@@ -13,6 +13,8 @@ function Header({
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+
+  const navigate = useNavigate();
 
   const toggleFormVisibility = () => {
     setisFormVisible(!isFormVisible);
@@ -69,6 +71,7 @@ function Header({
     Cookie.remove('uid');
     setIsAuthenticated(false);
     window.location.reload();
+    navigate('/');
   };
 
   return (
