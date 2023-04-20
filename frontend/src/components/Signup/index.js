@@ -48,6 +48,7 @@ function Signup() {
   const handleConfirmPasswordChange = (event) => setConfirmPassword(event.target.value);
   const handlePhoneChange = (event) => setPhone(event.target.value);
   const handleGenderChange = (event) => setGender(event.target.value);
+  
   const handlePreviewImage = (event) => {
     const reader = new FileReader();
     reader.onload = () => {

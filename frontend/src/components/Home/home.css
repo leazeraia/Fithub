@@ -21,7 +21,6 @@
 }
 
 .home-section .item-section {
-    width: 50rem;
     color: #ffffff;
     font-weight: 00;
 
@@ -44,7 +43,7 @@
 
 }
 .box-section p{
-    max-width: 80% ;
+    max-width: 75% ;
 
 }
 

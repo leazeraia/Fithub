@@ -10,12 +10,17 @@ function Header({
 }) {
   // const Search = () => {
   const [isFormVisible, setisFormVisible] = useState(false);
+  const [isNavVisible, setisNavVisible] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const toggleFormVisibility = () => {
     setisFormVisible(!isFormVisible);
+  };
+
+  const toggleNavVisibility = () => {
+    setisNavVisible(!isNavVisible);
   };
 
   const handleSubmit = async (event) => {
@@ -79,11 +84,61 @@ function Header({
     <nav className="header-nav">
       <div className="logo-nav">
         <Link to="/" className="link-logo-nav">
-          <img src={logo} alt="logo FitHub" />
+          <img src={logo} className="img-logo" alt="logo FitHub" />
         </Link>
       </div>
+      <i className={isNavVisible ? '' : 'fa-solid fa-bars burger '} onClick={toggleNavVisibility} />
+      {isNavVisible
+        ? (
+          <div className="link-nav-responsive">
+
+            <ul className="form-responsive ">
+              <i className="fa-solid fa-circle-xmark close-button" onClick={toggleNavVisibility} />
+
+              {isAuthenticated && sessionId && (<li> <Link to={`/profiles/${sessionId}`}>Mon profil</Link></li>)} {/* à modifier pour que l'id soit dynamique */}
+
+              <li className="link-nav-item"> <Link to="/profiles">Membres</Link></li>
+
+              {!isAuthenticated ? <li className="link-nav-item"> <Link to="/signup"> S'inscrire</Link></li> : ''}
+
+              <li className="login-nav">
+                <p className="link-nav-item"> {isAuthenticated ? 'Déconnexion' : 'Se connecter'} </p>
+                {!isAuthenticated ? <i className="fa-solid fa-circle-plus" onClick={toggleFormVisibility} /> : <i className="fa-solid fa-circle-minus" onClick={disconnectButton} /> }
+
+                {isFormVisible && (
+                <form onSubmit={handleSubmit} className="form-login">
+                  <div className="form-group">
+                    <div>
+                      <label htmlFor="email">E-mail</label>
+                    </div>
+                    <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} name="email" id="email" />
+                  </div>
+
+                  <div className="form-group form-group-password">
+                    <div>
+                      <label htmlFor="password">Mot de Passe</label>
+                    </div>
+                    <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} name="password" id="password" />
+                  </div>
+                  <Link to="/reset-password" className="passwordforget">
+                    Mot de passe oublié
+                  </Link>
+                  <div className="btn-submit">
+                    <button type="submit"> Connecter</button>
+                  </div>
+
+                </form>
+                )}
+
+              </li>
+            </ul>
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
+          </div>
+
+        ) : '' }
 
       <div className="link-nav">
+
         <ul>
 
           {isAuthenticated && sessionId && (<li> <Link to={`/profiles/${sessionId}`}>Mon profil</Link></li>)} {/* à modifier pour que l'id soit dynamique */}

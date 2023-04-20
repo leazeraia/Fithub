@@ -1,13 +1,13 @@
 // import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import img404 from 'src/assets/images/img404.jpg';
 import './styles.scss';
 
 function NotFound() {
   return (
     <div className="container-redirection">
       <div className="redirection-title">
-        <h1>404 </h1>
+        <h1 className="error-status-title">404 </h1>
       </div>
 
       <div className="redirection-para">
