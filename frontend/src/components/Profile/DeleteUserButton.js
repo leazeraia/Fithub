@@ -41,7 +41,7 @@ function DeleteUserButton({ isAuthenticated, setIsAuthenticated }) {
 
   return (
     <div className="deleteUserButton">
-      {!isDeleteRequired ? <button className="deleteUserButton__button" type="button" onClick={handleRequireDelete}>Supprimer mon compte</button> : <><p className="deleteUserButton__warning">Attention, cette action est irréversible !</p> <i className="fa-solid fa-check" onClick={deleteUser} /></>}
+      {!isDeleteRequired ? <button className="deleteUserButton__button" type="button" onClick={handleRequireDelete}>Supprimer mon compte</button> : <><p className="deleteUserButton__warning">Attention, cette action est irréversible !</p> <i className="fa-solid fa-check confirm" onClick={deleteUser} /></>}
 
     </div>
   );
