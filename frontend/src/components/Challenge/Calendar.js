@@ -35,7 +35,7 @@ function Calendar() {
 
   // récupération des challenges de l'utilisateur
   async function fetchUserChallenges() {
-    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    const response = await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`);
     const data = await response.json();
     const challenges = data.resultDataWithImage.ChallengesUser;
     const challengeList = challenges.map((challenge) => challenge.ChallengeUser);

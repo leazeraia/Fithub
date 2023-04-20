@@ -25,7 +25,7 @@ function GenerateButton() {
     const datas = {
       userId: userId,
     };
-    const sendDatas = await fetch('https://ynck-hng-server.eddi.cloud:8080/challenge/user', {
+    const sendDatas = await fetch('https://fithub-backend-v2-production-87c0.up.railway.app/challenge/user', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
@@ -41,7 +41,7 @@ function GenerateButton() {
   // ca permet de vérifier si le défi du jour a déjà été généré
   // et si oui, de récupérer le résultat du défi
   async function fetchUser() {
-    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    const response = await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`);
     const datas = await response.json();
     const challengeFetched = datas.resultDataWithImage.ChallengesUser;
     // récupère le résultat du dernier défi généré
@@ -71,7 +71,7 @@ function GenerateButton() {
     const datas = {
       challengeId: challenge.id,
     };
-    await fetch(`https://ynck-hng-server.eddi.cloud:8080/challenge/user/${userId}`, {
+    await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/challenge/user/${userId}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',

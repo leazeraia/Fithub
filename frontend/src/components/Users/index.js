@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import medaille_or from '../../assets/images/medaille-or.png';
 import medaille_argent from '../../assets/images/medaille-argent.png';
 import medaille_bronze from '../../assets/images/medaille-bronze.png';
-import avatar_femmme from '../../assets/images/avatar-femme.png';
-import avatar_homme from '../../assets/images/avatar-homme.png';
 import avatar from '../../assets/images/avatar.jpg';
 import './users.css';
 
@@ -12,7 +10,7 @@ function Users() {
   const [dataUsers, setDataUsers] = useState([]);
   useEffect(() => {
     async function userData() {
-      const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user');
+      const response = await fetch('https://fithub-backend-v2-production-87c0.up.railway.app/user');
 
       const userData = await response.json();
       const users = userData.data;
@@ -30,7 +28,7 @@ function Users() {
             <div className="card-user">
               <div className="profil-user">
                 <div className="image-user border-bronze">
-                  <img src={user.image_path ? `https://ynck-hng-server.eddi.cloud:8080/${user.image_path}` : avatar} alt="utilisateur" />
+                  <img src={user.image_path ? `https://fithub-backend-v2-production-87c0.up.railway.app/${user.image_path}` : avatar} alt="utilisateur" />
                 </div>
                 <p className="nickname-user">{user.nickname}</p>
               </div>

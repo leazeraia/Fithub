@@ -119,7 +119,7 @@ function SettingsButton() {
     formData.append('image', image);
 
     // envoi des données au serveur avec une requête PATCH (modification)
-    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`, {
+    const response = await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`, {
       method: 'PATCH',
       credentials: 'include',
       body: (formData),

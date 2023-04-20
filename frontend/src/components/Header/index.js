@@ -31,7 +31,7 @@ function Header({
 
     if (!isAuthenticated) {
       try {
-        const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user/session/login', {
+        const response = await fetch('https://fithub-backend-v2-production-87c0.up.railway.app/user/session/login', {
           credentials: 'include',
           method: 'post',
           body: formData,
@@ -59,7 +59,7 @@ function Header({
   };
 
   const disconnectButton = async () => {
-    const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user/session/logout', {
+    const response = await fetch('https://fithub-backend-v2-production-87c0.up.railway.app/user/session/logout', {
       credentials: 'include',
     });
     if (!response.ok) {

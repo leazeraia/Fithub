@@ -22,7 +22,7 @@ function Record() {
 
   // récupération des catégories et des activités qui y sont associées
   async function fetchAllCategories() {
-    const categories = await fetch('https://ynck-hng-server.eddi.cloud:8080/category-activity');
+    const categories = await fetch('https://fithub-backend-v2-production-87c0.up.railway.app/category-activity');
     const data = await categories.json();
     setAllCategories(data);
   }
@@ -48,7 +48,7 @@ function Record() {
       duration: duration,
     };
     // envoie des données au serveur
-    const sendDatas = await fetch('https://ynck-hng-server.eddi.cloud:8080/activity/user', {
+    const sendDatas = await fetch('https://fithub-backend-v2-production-87c0.up.railway.app/activity/user', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
@@ -75,7 +75,7 @@ function Record() {
 
   // récupération des activités d'un user
   async function fetchActivities() {
-    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    const response = await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`);
     const data = await response.json();
     const activitiesDatas = data.resultDataWithImage.ActivitiesUsers;
     setuserActivities(activitiesDatas);
@@ -87,7 +87,7 @@ function Record() {
     // Récupération d'une activité et son id en fonction de l'id de l'activité
     // passé en paramètre, que je souhaite supprimer
     const oneActivity = userActivities.find((act) => act.id === id);
-    await fetch(`https://ynck-hng-server.eddi.cloud:8080/activity/user/${userId}/${oneActivity.ActivityUser.id}`, {
+    await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/activity/user/${userId}/${oneActivity.ActivityUser.id}`, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',

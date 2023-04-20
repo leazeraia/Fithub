@@ -48,7 +48,7 @@ function Signup() {
   const handleConfirmPasswordChange = (event) => setConfirmPassword(event.target.value);
   const handlePhoneChange = (event) => setPhone(event.target.value);
   const handleGenderChange = (event) => setGender(event.target.value);
-  
+
   const handlePreviewImage = (event) => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -115,7 +115,7 @@ function Signup() {
     formData.append('height', heightValue);
     formData.append('image', image);
 
-    const response = await fetch('https://ynck-hng-server.eddi.cloud:8080/user', {
+    const response = await fetch('https://fithub-backend-v2-production-87c0.up.railway.app/user', {
       method: 'POST',
       body: (formData),
     });

@@ -27,7 +27,7 @@ function DeleteUserButton({ isAuthenticated, setIsAuthenticated }) {
   // suppression de l'utilisateur de la base de données
   async function deleteUser() {
     if (isAuthenticated) {
-      await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`, {
+      await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`, {
         method: 'DELETE',
         credentials: 'include',
       });

@@ -18,7 +18,7 @@ function Historic({ activity }) {
 
   // récupération des activités de l'utilisateur et stockage dans le state activities
   async function fetchActivities() {
-    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    const response = await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`);
     const datas = await response.json();
     const activitiesDatas = datas.resultDataWithImage.ActivitiesUsers;
     setActivities(activitiesDatas);
@@ -30,7 +30,7 @@ function Historic({ activity }) {
     event.target.closest('.historic__activities__activity').remove();
     // suppression de l'activité de la base de données
     const oneActivity = activities.find((act) => act.id === id);
-    await fetch(`https://ynck-hng-server.eddi.cloud:8080/activity/user/${userId}/${oneActivity.ActivityUser.id}`, {
+    await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/activity/user/${userId}/${oneActivity.ActivityUser.id}`, {
       method: 'DELETE',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',

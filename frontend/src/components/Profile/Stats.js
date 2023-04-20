@@ -19,7 +19,7 @@ function Stats() {
   // Récupère les données à afficher dans le graphique et dans le composant
   async function fetchGraphDatas() {
     // récupération des données de l'utilisateur
-    const response = await fetch(`https://ynck-hng-server.eddi.cloud:8080/user/${userId}`);
+    const response = await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`);
     // conversion des données au format JSON
     const datas = await response.json();
     // on se servira de la variable user pour stocker les données à afficher dans le graphique
