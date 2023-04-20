@@ -103,6 +103,14 @@ function Signup() {
       alert('Le pseudo doit contenir moins de 16 caractères');
       return;
     }
+
+    if (firstNameValue.length > 25) {
+      alert('Le prénom doit contenir moins de 25 caractères');
+    }
+
+    if (lastNameValue.length > 25) {
+      alert('Le nom doit contenir moins de 25 caractères');
+    }
     // faire d'autres traitements ou envoyer le mot de passe au serveur
 
     const formData = new FormData();
@@ -294,6 +302,8 @@ function Signup() {
                 type="text"
                 id="weight"
                 name="weigth"
+                min={1}
+                max={300}
                 value={weightValue}
                 onChange={(event) => {
                   weight.onChange(event);
@@ -310,6 +320,8 @@ function Signup() {
               <input
                 type="text"
                 id="height"
+                min={1}
+                max={250}
                 value={heightValue}
                 onChange={(event) => height.onChange(event)}
                 {...register('height', { required: true })}

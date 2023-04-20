@@ -102,6 +102,19 @@ function SettingsButton() {
       }
     }
 
+    if (nickName.length > 16) {
+      alert('Le pseudo doit faire moins de 16 caractères !');
+      return;
+    }
+
+    if (firstName.length > 25) {
+      alert('Le prénom doit contenir moins de 25 caractères');
+    }
+
+    if (lastName.length > 25) {
+      alert('Le nom doit contenir moins de 25 caractères');
+    }
+
     // récupération des données du formulaire
     const formData = new FormData();
 
