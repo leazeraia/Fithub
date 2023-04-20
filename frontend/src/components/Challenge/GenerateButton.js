@@ -43,11 +43,12 @@ function GenerateButton() {
   async function fetchUser() {
     const response = await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`);
     const datas = await response.json();
+    console.log('datas', datas);
     const challengeFetched = datas.resultDataWithImage.ChallengesUser;
     // récupère le résultat du dernier défi généré
-    if (challengeFetched.length === 0) {
-      return setSuccess(false);
-    }
+    // if (challengeFetched.length === 0) {
+    //   return setSuccess(false);
+    // }
     const resultFetched = challengeFetched[0].ChallengeUser.completed;
     // récupère et formate la date du dernier défi généré
     const challengeDate = moment(challengeFetched[0].ChallengeUser.date_assigned).format('dddd Do MMMM');
