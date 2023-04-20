@@ -68,6 +68,7 @@ function Header({
     Cookie.remove('logged_in');
     Cookie.remove('uid');
     setIsAuthenticated(false);
+    window.location.reload();
   };
 
   return (
