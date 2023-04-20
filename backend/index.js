@@ -14,12 +14,15 @@ const https = require("https");
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./app/utils/swagger.json");
 
+app.set("trust proxy", 1);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
+
 app.use(cors({
-    origin: "http://localhost:8080",
+    origin: "https://fithub-fithub2.vercel.app",
     credentials: true,
 }));
+
 
 // secure true + sameSite none to allow the client to retrieve cookies
 app.use(
@@ -30,8 +33,9 @@ app.use(
         cookie: {
             // if production, then true && none
             // else false && lax
-            secure: process.env.NODE_ENV === "production" ? true : false,
-            sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+            secure: true,
+            sameSite: "none",
+            httpOnly: true,
             maxAge : 3600*60*60
         }
     })

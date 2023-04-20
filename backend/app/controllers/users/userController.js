@@ -30,19 +30,15 @@ const userController = {
         
         const userId = req.params.userId;
 
-        // Retrieve all infos except password
+          // Retrieve all infos except password
         const result = await User.findByPk(userId, {
             attributes: {
                 exclude: ['password']
             },
             include: [
+                "ActivitiesUsers",
                 {
-                    association: "ActivityUserList",
-                    include: "ActivityDescription"
-                },
-                {
-                    association: "ChallengeUserList",
-                    include: "ChallengeDescription",
+                    association: "ChallengesUser",
                     limits: 7 
                 }
             ]
