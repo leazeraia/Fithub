@@ -17,12 +17,12 @@ class Home extends Component {
             <div className="box-section">
               <img src={check} alt="check" className="cheching" />
 
-              <p> <span className="paraph-section"> Relever le défi du jour </span> <br /> Allez, c'est l'heure de relever le défis du jour et de montrer à votre corps et votre esprit de quoi vous êtes capables! </p>
+              <p> <span className="paraph-section"> Relever un défi par jour </span> <br /> Allez, c'est l'heure de relever le défi du jour et de montrer à votre corps et votre esprit de quoi vous êtes capables! </p>
             </div>
 
             <div className="box-section">
               <img src={check} alt="check" className="checking" />
-              <p> <span className="paraph-section"> De suivre vos dépenses en calories </span> <br /> Chaque calorie que tu suis te rapproches un peu plus de tes objectifs, alors continue à suivre tes dépenses pour devenir la meilleure version de toi-même! </p>
+              <p> <span className="paraph-section"> Suivre vos dépenses en calories </span> <br /> Chaque calorie dépensée vous rapproche un peu plus de vos objectifs ! Trackez vos activités pour devenir la meilleure version de vous-même ! </p>
             </div>
             <div className="box-section">
               <Link to="/signup" className="join-us">
