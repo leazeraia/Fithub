@@ -333,6 +333,7 @@ function Signup() {
 
         </div>
         <p className="champs-obligatoires">* : champs obligatoires</p>
+        <p className="champs-obligatoires">Seuls votre pseudo et votre photo seront visibles</p>
         <div className="signup-form-button">
           <button type="submit">Envoyer</button>
         </div>

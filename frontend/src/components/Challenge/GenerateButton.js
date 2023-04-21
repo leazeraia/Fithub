@@ -95,7 +95,7 @@ function GenerateButton() {
         ? (
           <div className={success ? 'generateButton__hidden' : 'generateButton__challengeGenerated'}>
             <p className="generateButton__challengeGenerated">Ton défi du jour : {challenge.label} !</p>
-            <i className="fa-solid fa-check" onClick={sendSuccess} />
+            <i className="fa-regular fa-circle-check" onClick={sendSuccess} />
           </div>
         )
         : <button className="generateButton__button" type="button" onClick={generateChallenge}>Générer mon défi quotidien !</button>}
