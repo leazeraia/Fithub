@@ -98,7 +98,7 @@ function GenerateButton() {
             <i className="fa-solid fa-check" onClick={sendSuccess} />
           </div>
         )
-        : <button className="generateButton__button" type="button" onClick={generateChallenge}>Générer mon défis quotidien !</button>}
+        : <button className="generateButton__button" type="button" onClick={generateChallenge}>Générer mon défi quotidien !</button>}
 
       {success ? (
         <><p className="success__message">Bravo, tu as réussi le challenge !</p>
