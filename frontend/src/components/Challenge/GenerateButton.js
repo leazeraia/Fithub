@@ -94,7 +94,7 @@ function GenerateButton() {
       {isChallengeGenerated
         ? (
           <div className={success ? 'generateButton__hidden' : 'generateButton__challengeGenerated'}>
-            <p className="generateButton__challengeGenerated">Ton défis aujourd'hui : {challenge.label} !</p>
+            <p className="generateButton__challengeGenerated">Ton défi du jour : {challenge.label} !</p>
             <i className="fa-solid fa-check" onClick={sendSuccess} />
           </div>
         )
