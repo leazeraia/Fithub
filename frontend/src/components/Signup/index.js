@@ -16,7 +16,6 @@ function Signup() {
     register, handleSubmit, watch, formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
   const lastNameValue = watch('lastname', '');
   const lastName = register('lastname');
   const firstNameValue = watch('firstname', '');

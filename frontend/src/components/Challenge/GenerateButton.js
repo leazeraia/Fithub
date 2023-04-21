@@ -43,7 +43,6 @@ function GenerateButton() {
   async function fetchUser() {
     const response = await fetch(`https://fithub-backend-v2-production-87c0.up.railway.app/user/${userId}`);
     const datas = await response.json();
-    console.log('datas', datas);
     const challengeFetched = datas.resultDataWithImage.ChallengesUser;
     // récupère le résultat du dernier défi généré
     if (challengeFetched.length === 0) {
