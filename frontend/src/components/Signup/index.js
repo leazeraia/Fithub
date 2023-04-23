@@ -144,7 +144,7 @@ function Signup() {
       </div>
       <form
         onSubmit={(event) => {
-          handleSubmit(onSubmit); handleSubmitValidation(event);
+          handleSubmit(); handleSubmitValidation(event);
         }}
         className="signup-form"
       >
