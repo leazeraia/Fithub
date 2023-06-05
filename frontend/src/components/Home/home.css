@@ -1,12 +1,15 @@
 .home-section{
     display: flex;
     flex-direction: column;
-    background-image: url("https://cdn.discordapp.com/attachments/1085935594250702978/1090929221460832297/man-g4a95936ad_1920.jpg");
+    background-image: url("../../assets/images/moon.jpg");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
-    align-items: center;
+    align-items: flex-start; /* Alignement à gauche */
+    justify-content: center; /* Centrage vertical */
+    
+    
 }
 
 
@@ -23,9 +26,10 @@
 .home-section .item-section {
     color: #ffffff;
     font-weight: 00;
-
-
+    max-width: 800px; 
+    
 }
+
 .box-section{
     display: flex;
     gap: 0.8rem;
@@ -33,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .box-section img{
     width: 1.8rem;
@@ -49,6 +54,7 @@
 .box-section .paraph-section{
   font-size: 1.5rem;
   font-weight: 500;
+  line-height: 2;
 }
 
 .join-us{
@@ -63,4 +69,23 @@
 
 .item-section{
   margin-top: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-section{
+    height: 100%;
+  }
+  .home-section h1{
+    font-size: 1.5rem;
+  }
+  .box-section{
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+  
 }

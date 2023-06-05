@@ -17,13 +17,18 @@ class Home extends Component {
             <div className="box-section">
               <img src={check} alt="check" className="cheching" />
 
-              <p> <span className="paraph-section"> Relever un défi par jour </span> <br /> Allez, c'est l'heure de relever le défi du jour et de montrer à votre corps et votre esprit de quoi vous êtes capables! </p>
+              <p> <span className="paraph-section"> Relever un défi par jour </span> <br /> La régularité, c'est plus facile en s'amusant : remportez des défis et montez en niveaux, la médaille d'or est à portée de clique ! </p>
             </div>
 
             <div className="box-section">
               <img src={check} alt="check" className="checking" />
-              <p> <span className="paraph-section"> Suivre vos dépenses en calories </span> <br /> Chaque calorie dépensée vous rapproche un peu plus de vos objectifs ! Trackez vos activités pour devenir la meilleure version de vous-même ! </p>
+              <p> <span className="paraph-section"> Suivre vos dépenses en calories </span> <br /> Vous pensez que planter des choux n'est pas du sport ? Enregistrez votre dernière session de jardinage, pour voir... </p>
             </div>
+            <div className="box-section">
+              <img src={check} alt="check" className="checking" />
+              <p> <span className="paraph-section"> Rejoindre une communauté </span> <br /> Partagez vos statistiques et entraidez-vous pour viser la lune </p>
+            </div>
+
             <div className="box-section">
               <Link to="/signup" className="join-us">
                 <p> <span className="paraph-section"> Rejoignez-nous ! </span> </p>
